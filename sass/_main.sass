@@ -1,2 +1,171 @@
 // Normally mainpage styles
- 
+//main section
+.main
+	+gh(#121f46, #16161f)
+	padding-bottom: 50px
+
+.header
+	padding-top: 20px
+	+clr
+	.header__in
+		float: left
+	.header__in_right
+		float: right
+	.header__logo
+		display: block
+		text-decoration: none
+		text-transform: uppercase
+		padding-top: 10px
+	.header__ico
+		display: inline-block
+		+s(logo)
+	.header__txt
+		font-size: 35px
+		color: #FFF
+		padding-left: 15px
+		vertical-align: 15px
+		+mus300
+	.header__txt_grey
+		color: #6c6c8f
+
+.menu
+	+clr
+	.menu__item
+		display: inline-block
+		margin-right: 55px
+		&:last-child
+			margin-right: 0
+		a
+			display: block
+			float: left
+			position: relative
+			text-transform: uppercase
+			color: $blue
+			font-size: 17px
+			padding: 35px 15px 0
+			+mus500
+			+box
+			&:hover
+				color: $neon
+				&:after
+					opacity: 1
+					width: 100%
+			&:after
+				content: ""
+				position: absolute
+				width: 1%
+				height: 2px
+				top: 0
+				left: 0
+				opacity: 0
+				background: $neon
+				+transition(all 0.4s ease)
+	.menu__item_is-active
+		a
+			color: #fff
+			+mus700
+
+//MOVE THIS!!11
+.svg
+	width: 500px
+	height: 500px
+//MOVE THIS!!11
+.content
+	display: table
+	width: 100%
+	position: relative
+	.content__img
+		+s(daisy)
+	.content__txt
+		display: table-cell
+		padding-right: 108px
+		color: #FFF
+		font-size: 5.12vw
+		text-transform: uppercase
+		text-align: right
+		vertical-align: middle
+		+mus100
+	.content__p_green
+		color: $neonGreen
+	.content__btn
+		position: absolute
+		right: 108px
+		bottom: 0
+		+clr
+		.btn__item
+			float: left
+			text-align: center
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+		.btnLoad
+			margin: 0 auto
+		.btn__txt
+			display: block
+			color: $lightViolet
+			font-size: 13px
+			padding-top: 15px
+			+mus500
+		.btn__txt_blue
+			color: $blue
+
+.social
+	font-size: 0
+	margin-bottom: 10px
+	.social__item
+		display: inline-block
+		margin-right: 10px
+		+opacity(0.6)
+		+transition(opacity 0.4s ease)
+		&:last-child
+			margin-right: 0
+		&:hover
+			+opacity(1)
+	.social__item_fb
+		+s(fb)
+	.social__item_tw
+		+s(tw)
+	.social__item_g
+		+s(g)
+	.social__item_flckr
+		+s(flickr)
+	.social__item_tube
+		+s(tube)
+
+.scrollThis
+	position: absolute
+	left: 50%
+	margin-left: -13px
+	+s(scroll)
+
+//section reviews
+.reviews
+	+gh(#a0e695, #c6ea91)
+	.reviews__ttl
+		font-size: 5vw//60px
+		text-transform: uppercase
+		color: $black
+		padding: 160px 0 60px 0
+		text-align: center
+		+mus100
+	.reviews__awards
+		background: #97e08f
+
+//section homeu
+.homeu
+	background: url(../img/bg1.jpg) 0 100% no-repeat
+	background-size: cover
+	.homeu__txt
+		padding: 145px 0 45px 0
+		font-size: 5vw//60px
+		text-transform: uppercase
+		+mus100
+	.homeu__p
+		color: #FFF
+	.homeu__p_green
+		color: $neonGreen
+	.homeu__desc
+		width: 35%
+		font-size: 20px
+		color: #FFF
+		+mus300

@@ -21,7 +21,95 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
+@font-face { font-family: museoSans-100; src: url("fonts/museoSans-100.eot"); src: url("fonts/museoSans-100.eot?#iefix") format("embedded-opentype"), url("fonts/museoSans-100.svg") format("svg"), url("fonts/museoSans-100.woff") format("woff"), url("fonts/museoSans-100.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: museoSans-300; src: url("fonts/museoSans-300.eot"); src: url("fonts/museoSans-300.eot?#iefix") format("embedded-opentype"), url("fonts/museoSans-300.svg") format("svg"), url("fonts/museoSans-300.woff") format("woff"), url("fonts/museoSans-300.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: museoSans-500; src: url("fonts/museoSans-500.eot"); src: url("fonts/museoSans-500.eot?#iefix") format("embedded-opentype"), url("fonts/museoSans-500.svg") format("svg"), url("fonts/museoSans-500.woff") format("woff"), url("fonts/museoSans-500.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: museoSans-700; src: url("fonts/museoSans-700.eot"); src: url("fonts/museoSans-700.eot?#iefix") format("embedded-opentype"), url("fonts/museoSans-700.svg") format("svg"), url("fonts/museoSans-700.woff") format("woff"), url("fonts/museoSans-700.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+.section { padding: 0 5.20833% 0 5.34722%; }
+.section a { text-decoration: none; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
+
+.main { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #121f46), color-stop(100%, #16161f)); background-image: -webkit-linear-gradient(left, #121f46, #16161f); background-image: -moz-linear-gradient(left, #121f46, #16161f); background-image: -o-linear-gradient(left, #121f46, #16161f); background-image: linear-gradient(left, #121f46, #16161f); padding-bottom: 50px; }
+
+.header { padding-top: 20px; *zoom: 1; }
+.header:after { content: " "; display: table; clear: both; }
+.header .header__in { float: left; }
+.header .header__in_right { float: right; }
+.header .header__logo { display: block; text-decoration: none; text-transform: uppercase; padding-top: 10px; }
+.header .header__ico { display: inline-block; background: url('../img/icons-sd0c7b5217d.png') 0 -655px no-repeat; width: 60px; height: 63px; }
+.header .header__txt { font-size: 35px; color: white; padding-left: 15px; vertical-align: 15px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.header .header__txt_grey { color: #6c6c8f; }
+
+.menu { *zoom: 1; }
+.menu:after { content: " "; display: table; clear: both; }
+.menu .menu__item { display: inline-block; margin-right: 55px; }
+.menu .menu__item:last-child { margin-right: 0; }
+.menu .menu__item a { display: block; float: left; position: relative; text-transform: uppercase; color: #1ac8f9; font-size: 17px; padding: 35px 15px 0; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.menu .menu__item a:hover { color: #52f9ff; }
+.menu .menu__item a:hover:after { opacity: 1; width: 100%; }
+.menu .menu__item a:after { content: ""; position: absolute; width: 1%; height: 2px; top: 0; left: 0; opacity: 0; background: #52f9ff; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
+.menu .menu__item_is-active a { color: white; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
+
+.svg { width: 500px; height: 500px; }
+
+.content { display: table; width: 100%; position: relative; }
+.content .content__img { background: url('../img/icons-sd0c7b5217d.png') 0 0 no-repeat; width: 598px; height: 549px; }
+.content .content__txt { display: table-cell; padding-right: 108px; color: white; font-size: 5.12vw; text-transform: uppercase; text-align: right; vertical-align: middle; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
+.content .content__p_green { color: #b7fb5b; }
+.content .content__btn { position: absolute; right: 108px; bottom: 0; *zoom: 1; }
+.content .content__btn:after { content: " "; display: table; clear: both; }
+.content .content__btn .btn__item { float: left; text-align: center; margin-right: 30px; }
+.content .content__btn .btn__item:last-child { margin-right: 0; }
+.content .content__btn .btnLoad, .content .content__btn .btnBuy { margin: 0 auto; }
+.content .content__btn .btn__txt { display: block; color: #a1a1af; font-size: 13px; padding-top: 15px; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; }
+.content .content__btn .btn__txt_blue { color: #1ac8f9; }
+
+.social { font-size: 0; margin-bottom: 10px; }
+.social .social__item { display: inline-block; margin-right: 10px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; -webkit-transition: opacity 0.4s ease; -moz-transition: opacity 0.4s ease; -o-transition: opacity 0.4s ease; transition: opacity 0.4s ease; }
+.social .social__item:last-child { margin-right: 0; }
+.social .social__item:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+.social .social__item_fb { background: url('../img/icons-sd0c7b5217d.png') 0 -1361px no-repeat; width: 31px; height: 31px; }
+.social .social__item_tw { background: url('../img/icons-sd0c7b5217d.png') 0 -1182px no-repeat; width: 31px; height: 31px; }
+.social .social__item_g { background: url('../img/icons-sd0c7b5217d.png') 0 -1141px no-repeat; width: 31px; height: 31px; }
+.social .social__item_flckr { background: url('../img/icons-sd0c7b5217d.png') 0 -1279px no-repeat; width: 31px; height: 31px; }
+.social .social__item_tube { background: url('../img/icons-sd0c7b5217d.png') 0 -1320px no-repeat; width: 31px; height: 31px; }
+
+.scrollThis { position: absolute; left: 50%; margin-left: -13px; background: url('../img/icons-sd0c7b5217d.png') 0 -1438px no-repeat; width: 26px; height: 16px; }
+
+.reviews { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a0e695), color-stop(100%, #c6ea91)); background-image: -webkit-linear-gradient(left, #a0e695, #c6ea91); background-image: -moz-linear-gradient(left, #a0e695, #c6ea91); background-image: -o-linear-gradient(left, #a0e695, #c6ea91); background-image: linear-gradient(left, #a0e695, #c6ea91); }
+.reviews .reviews__ttl { font-size: 5vw; text-transform: uppercase; color: #1d1d29; padding: 160px 0 60px 0; text-align: center; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
+.reviews .reviews__awards { background: #97e08f; }
+
+.homeu { background: url(../img/bg1.jpg) 0 100% no-repeat; background-size: cover; }
+.homeu .homeu__txt { padding: 145px 0 45px 0; font-size: 5vw; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
+.homeu .homeu__p { color: white; }
+.homeu .homeu__p_green { color: #b7fb5b; }
+.homeu .homeu__desc { width: 35%; font-size: 20px; color: white; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+
+.btnLoad, .btnBuy { background: none; color: #6c6c8f; font-size: 25px; width: 200px; height: 70px; border: 3px solid #6c6c8f; border-radius: 4px; text-transform: uppercase; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
+.btnLoad:hover, .btnBuy:hover { border-color: #52f9ff; color: #52f9ff; }
+
+.btnBuy { border: #1ac8f9; background: #1ac8f9; color: #15151f; }
+.btnBuy:hover { background: #52f9ff; color: #15151f; }
+.btnBuy .btnBuy__span { color: #005692; }
+
+.reviews__cycle { width: 58.8%; margin: 0 auto; padding-bottom: 72px; }
+.reviews__cycle .cycle__quote { text-align: center; }
+.reviews__cycle .cycle__ttl { font-size: 2vw; padding: 0 35px; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.reviews__cycle .cycle__bl { margin-top: 28px; font-size: 0; }
+.reviews__cycle .cycle__txt { font-size: 15px; color: #1d1d29; text-transform: uppercase; display: inline-block; vertical-align: 23px; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
+.reviews__cycle .cycle__txt_right { text-align: right; padding-right: 27px; }
+.reviews__cycle .cycle__txt_left { padding-left: 27px; }
+.reviews__cycle .cycle__txt_green { color: #00991d; display: block; text-transform: none; }
+.reviews__cycle .cycle__txt_sp { display: block; }
+.reviews__cycle .cycle__author { display: inline-block; background: url('../img/icons-sd0c7b5217d.png') 0 -559px no-repeat; width: 85px; height: 86px; }
+.reviews__cycle .cycle__next { position: absolute; top: 15px; right: -20px; cursor: pointer; background: url('../img/icons-sd0c7b5217d.png') 0 -1402px no-repeat; width: 16px; height: 26px; }
+.reviews__cycle .cycle__prev { position: absolute; top: 15px; left: -20px; cursor: pointer; background: url('../img/icons-sd0c7b5217d.png') 0 -1402px no-repeat; width: 16px; height: 26px; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }

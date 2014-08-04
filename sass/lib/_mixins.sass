@@ -22,7 +22,7 @@
 // $w1024: 1024px
 // $w900: 900px
 // $w860: 860px
-// $w800: 800px    
+// $w800: 800px
 // $w760: 760px
 // $w640: 640px
 // $w560: 560px
@@ -63,7 +63,7 @@
 // 			@content
 // 	@if $media == w360
 // 		@media only screen and (max-width: $w360)
-// 			@content 
+// 			@content
 // 	@if $media == w320
 // 		@media only screen and (max-width: $w320)
 // 			@content
@@ -93,11 +93,11 @@
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: 50% 50%
-	
+
 =background-size($width: 100%, $height: 100%)
 	-moz-background-size: $width $height
 	-webkit-background-size: $width $height
-	background-size: $width $height 
+	background-size: $width $height
 // retina bg
 =retina
 	@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)
@@ -118,7 +118,7 @@
 	@font-face
 		font-family: $alias
 		src: url("fonts/" + $name + ".eot")
-		src: url("fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("fonts/" + $name + ".woff") format("woff"), url("fonts/" + $name + ".ttf") format("truetype")
+		src: url("fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("fonts/" + $name + ".svg") format("svg"), url("fonts/" + $name + ".woff") format("woff"), url("fonts/" + $name + ".ttf") format("truetype")
 		font-weight: normal
 		font-style: normal
 
@@ -169,7 +169,7 @@
 		display: inline-block
 		vertical-align: middle
 		width: 0
-		height: 100% 
+		height: 100%
 
 =clr
 	&:after
@@ -316,7 +316,7 @@
 	-ms-transform: rotate($var+deg)
 	-webkit-transform: rotate($var+deg)
 	transform: rotate($var+deg)
-	
+
 =blur($var)
 	-webkit-filter: blur($var)
 	filter: blur($var)

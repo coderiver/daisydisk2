@@ -1,0 +1,78 @@
+//buttons
+.btnLoad
+	background: none
+	color: $violet
+	font-size: 25px
+	width: 200px
+	height: 70px
+	border: 3px solid $violet
+	border-radius: 4px
+	text-transform: uppercase
+	+mus500
+	+transition(all 0.4s ease)
+	&:hover
+		border-color: $neon
+		color: $neon
+
+.btnBuy
+	@extend .btnLoad
+	border: $blue
+	background: $blue
+	color: $dark
+	&:hover
+		background: $neon
+		color: $dark
+	.btnBuy__span
+		color: $darkBlue
+
+//cycle
+.reviews__cycle
+	width: 58.8%
+	margin: 0 auto
+	padding-bottom: 72px
+	.cycle__quote
+		text-align: center
+	.cycle__ttl
+		font-size: 2vw//40px
+		padding: 0 35px
+		+prevent-text
+		+mus300
+	.cycle__bl
+		margin-top: 28px
+		font-size: 0
+	.cycle__txt
+		font-size: 15px
+		color: $black
+		text-transform: uppercase
+		display: inline-block
+		vertical-align: 23px
+		+mus700
+	.cycle__txt_right
+		text-align: right
+		padding-right: 27px
+	.cycle__txt_left
+		padding-left: 27px
+	.cycle__txt_green
+		color: $darkGreen
+		display: block
+		text-transform: none
+	.cycle__txt_sp
+		display: block
+	.cycle__author
+		display: inline-block
+		+s(douglas)
+	.cycle__next
+		position: absolute
+		top: 15px
+		right: -20px
+		cursor: pointer
+		+s(next)
+	.cycle__prev
+		position: absolute
+		top: 15px
+		left: -20px
+		cursor: pointer
+		+s(next)
+		+rotate(180)
+
+

@@ -5,15 +5,131 @@
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery.fullPage.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
 
-<!-- BEGIN  out-->
+<!-- begin  out-->
 <div class="out">
-
+	<!-- begin section main-->
+	<div class="section active main">
+		<!-- begin header-->
+		<header class="header">
+			<div class="header__in">
+				<a href="#" class="header__logo">
+					<span class="header__ico"></span>
+					<span class="header__txt">Daisy<span class="header__txt_grey">Disk</span></span>
+				</a>
+			</div>
+			<div class="header__in_right">
+				<nav class="menu">
+					<li class="menu__item menu__item_is-active">
+						<a href="#">Home</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Store</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Support</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">About</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Blog</a>
+					</li>
+				</nav>
+			</div>
+		</header>
+		<!-- end header -->
+		<!-- begin content  -->
+		<div class="content">
+			<div class="content__img"></div>
+			<div class="content__txt">
+				<p class="content__p">Visualise and </p>
+				<p class="content__p_green">clean your mac</p>
+			</div>
+			<div class="content__btn">
+				<div class="btn__item">
+					<button type="button" class="btnLoad">Download</button>
+					<span class="btn__txt">version 3.0.2, OS X 10.7+</span>
+				</div>
+				<div class="btn__item">
+					<button type="button" class="btnBuy">Buy <span class="btnBuy__span">$9.99</span></button>
+					<span class="btn__txt">also available in <span class="btn__txt_blue">Mac App Store</span></span>
+				</div>
+			</div>
+		</div>
+		<div class="social">
+			<a href="#" class="social__item social__item_fb" ></a>
+			<a href="#" class="social__item social__item_tw"></a>
+			<a href="#" class="social__item social__item_g"></a>
+			<a href="#" class="social__item social__item_flckr"></a>
+			<a href="#" class="social__item social__item_tube"></a>
+		</div>
+		<!-- end content -->
+		<a href="#" class="scrollThis"></a>
+	</div>
+	<!-- end section main-->
+	<!-- begin section reviews  -->
+	<div class="section reviews">
+		<div class="reviews__ttl">
+			reviews & advantages
+		</div>
+		<!-- begin cycle  -->
+		<div class="reviews__cycle cycle-slideshow"
+			data-cycle-timeout="0"
+			data-cycle-prev=".cycle__prev"
+			data-cycle-next=".cycle__next"
+			data-cycle-slides="> div"
+		>
+			<div class="cycle__quote">
+				<p class="cycle__ttl">“With some fantastic interface features and speedy analysis, it’s certainly worth taking a closer look at.”</p>
+				<div class="cycle__bl">
+					<p class="cycle__txt cycle__txt_right">Douglas <span class="cycle__txt_sp"> Mc Dowell</span></p>
+					<span class="cycle__author"></span>
+					<p class="cycle__txt cycle__txt_left">EDITOR,<span class="cycle__txt_green">Macworld</span></p>
+				</div>
+			</div>
+			<div class="cycle__quote">
+				<p class="cycle__ttl">wowdogesomuchwowwowdogesomuchwowwowdogesomuchwowwowdogesomuchwow</p>
+				<div class="cycle__bl">
+					<p class="cycle__txt cycle__txt_right">Douglas <span class="cycle__txt_sp"> Mc Dowell</span></p>
+					<span class="cycle__author"></span>
+					<p class="cycle__txt cycle__txt_left">EDITOR,<span class="cycle__txt_green">Macworld</span></p>
+				</div>
+			</div>
+			<div class="cycle__quote">
+				<p class="cycle__ttl">“With some fantastic interface features and speedy analysis, it’s certainly worth taking a closer look at.”</p>
+				<div class="cycle__bl">
+					<p class="cycle__txt cycle__txt_right">Douglas <span class="cycle__txt_sp"> Mc Dowell</span></p>
+					<span class="cycle__author"></span>
+					<p class="cycle__txt cycle__txt_left">EDITOR,<span class="cycle__txt_green">Macworld</span></p>
+				</div>
+			</div>
+			<span class="cycle__prev"></span>
+			<span class="cycle__next"></span>
+		</div>
+		<!-- end cycle  -->
+		<div class="reviews__awards">
+			<div class="awards__item"></div>
+		</div>
+	</div>
+	<!-- end section reviews -->
+	<!-- begin homeu  -->
+	<div class="section homeu">
+		<div class="homeu__txt">
+			<p class="homeu__p">Perfect</p>
+			<p class="homeu__p_green">for home use</p>
+		</div>
+		<div class="homeu__desc">
+			<p>DaisyDisk gives you a perfect overview of all the disks connected to your Mac, be it Macintosh HD, flash card, Thunderbolt disk or network storage. The list and disk usage gauges are updated in real time, so you always can tell if there's enough space for installing a new game or downloading an HD movie.</p>
+		</div>
+	</div>
+	<!-- end homeu -->
 </div>
-<!-- END out-->
+<!-- end out-->
 
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
