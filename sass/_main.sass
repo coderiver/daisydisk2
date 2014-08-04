@@ -135,6 +135,7 @@
 .scrollThis
 	position: absolute
 	left: 50%
+	bottom: 60px
 	margin-left: -13px
 	+s(scroll)
 
@@ -195,6 +196,9 @@
 	.compare__item_disk
 		margin: 0 auto 40px
 		+s(disk)
+	.compare__item_mac
+		margin: 0 auto 40px
+		+s(mac)
 	.compare__p_green
 		color: $neonGreen
 		padding-top: 25px
@@ -230,3 +234,89 @@
 		+clr
 	.compare
 		text-align: right
+
+//features section
+.features
+	+gh(#f9d99f, #f9d99f)
+	.features__ttl
+		text-align: center
+		text-transform: uppercase
+		font-size: 5vw// 60px
+		color: $bordo
+		padding-top: 175px
+		+mus100
+	.features__data
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-around
+		padding-top: 65px
+	.features__item
+		text-align: center
+		width: 180px
+		color: #78644C
+		font-size: 20px
+		padding-bottom: 20px
+		+mus300
+	.features__item_safe
+		margin: 0 auto 25px
+		+s(safe)
+	.features__item_fast
+		margin: 0 auto 25px
+		+s(fast)
+	.features__item_friendly
+		margin: 0 auto 25px
+		+s(friendly)
+	.features__item_cost
+		margin: 0 auto 25px
+		+s(cost)
+	.features__item_visual
+		margin: 0 auto 25px
+		+s(visual)
+	.features__about
+		font-size: 15px
+		color: $bordo
+		text-transform: uppercase
+		padding-bottom: 50px
+		+mus700
+
+//monitor section
+.monitor
+	+gh(#0f1d39, #054573)
+	.monitor__inner
+		padding-top: 115px
+		position: relative
+		+clr
+	.monitor__screenshot
+		float: left
+		+s(screen)
+	.monitor__txt
+		float: right
+		text-align: right
+		font-size: 20px
+		padding: 30px 65px 0 0
+		color: #FFF
+		+mus300
+	.monitor__p
+		font-size: 5vw//60px
+		text-transform: uppercase
+		+mus100
+	.monitor__p_green
+		color: $neonGreen
+	.btn__item
+		position: absolute
+		right: 65px
+		bottom: -20px
+		.btnLoad
+			background: $blue
+			border-color: $blue
+			color: $black
+			&:hover
+				background: $neon
+				border-color: $neon
+		.btn__txt
+			display: block
+			color: #a1a1af
+			font-size: 13px
+			padding-top: 15px
+			text-align: center
+			+mus500
