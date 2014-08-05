@@ -31,6 +31,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .section { padding: 0 5.20833% 0 5.34722%; }
 .section a { text-decoration: none; }
+.section.reviews { padding: 0; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
@@ -86,7 +87,14 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .reviews { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a0e695), color-stop(100%, #c6ea91)); background-image: -webkit-linear-gradient(left, #a0e695, #c6ea91); background-image: -moz-linear-gradient(left, #a0e695, #c6ea91); background-image: -o-linear-gradient(left, #a0e695, #c6ea91); background-image: linear-gradient(left, #a0e695, #c6ea91); }
 .reviews .reviews__ttl { font-size: 5vw; text-transform: uppercase; color: #1d1d29; padding: 160px 0 60px 0; text-align: center; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
-.reviews .reviews__awards { background: #97e08f; }
+.reviews .reviews__awards { background: #97e08f; position: absolute; width: 100%; bottom: 0; }
+.reviews .awards__bl { display: flex; width: 70%; padding: 50px 15%; }
+.reviews .awards__item { color: #42a655; font-size: 15px; text-align: center; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
+.reviews .awards__quantity { display: block; font-size: 2.1vw; text-align: center; letter-spacing: -3px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.reviews .awards__item_grow { flex-grow: 2; font-size: 0; text-align: center; }
+.reviews .awards__best { background: url('../img/icons-s23b32ccbeb.png') 0 -1603px no-repeat; width: 87px; height: 57px; display: inline-block; padding-right: 50px; }
+.reviews .awards__macworld { background: url('../img/icons-s23b32ccbeb.png') 0 -1457px no-repeat; width: 107px; height: 54px; display: inline-block; padding-right: 50px; }
+.reviews .awards__macformat { background: url('../img/icons-s23b32ccbeb.png') 0 -1752px no-repeat; width: 71px; height: 54px; display: inline-block; }
 
 .homeu { background: url(../img/bg1.jpg) 0 100% no-repeat; background-size: cover; }
 .homeu .homeu__txt { padding: 145px 0 45px 0; font-size: 5vw; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }

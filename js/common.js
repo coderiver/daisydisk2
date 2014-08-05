@@ -1,32 +1,16 @@
 head.ready(function() {
 
 	$('.out').fullpage({
-		verticalCentered: false,
-		resize : true,
 		anchors:['main', 'reviews', 'homeuse', 'prouse', 'features', 'monitor'],
-		scrollingSpeed: 300,
-		easing: 'easeInQuart',
+		scrollingSpeed: 100,
 		navigation: true,
 		navigationPosition: 'right',
 		navigationTooltips: ['Main', 'Reviews & Advantages', 'Perfect for home use', 'Professional use', 'Features', 'Monitor'],
 		autoScrolling: true,
 		css3: true,
-		normalScrollElements: '#element1, .element2',
-		normalScrollElementTouchThreshold: 5,
-		keyboardScrolling: true,
-		touchSensitivity: 15,
-		continuousVertical: false,
+		touchSensitivity: 5,
 		animateAnchor: true,
-		sectionSelector: '.section',
-		slideSelector: '.slide',
-
-		//events
-		onLeave: function(index, nextIndex, direction){},
-		afterLoad: function(anchorLink, index){},
-		afterRender: function(){},
-		afterResize: function(){},
-		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-		onSlideLeave: function(anchorLink, index, slideIndex, direction){}
+		verticalCentered: false
 	});
 
 });
