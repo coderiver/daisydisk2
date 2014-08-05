@@ -71,27 +71,30 @@
 	height: 500px
 //MOVE THIS!!11
 .content
-	display: table
-	width: 100%
-	position: relative
 	.content__img
-		+s(daisy)
+		background: url(../img/daisy.png) no-repeat
+		background-size: cover
+		width: 34.828%
+		height: 0
+		padding-bottom: 32%
+		display: inline-block
 	.content__txt
-		display: table-cell
+		display: inline-block
+		width: 64.172%
 		padding-right: 108px
 		color: #FFF
 		font-size: 5.12vw
 		text-transform: uppercase
 		text-align: right
-		vertical-align: middle
+		vertical-align: 50%
 		+mus100
+		+box
 	.content__p_green
 		color: $neonGreen
 	.content__btn
-		position: absolute
-		right: 108px
-		bottom: 0
-		+clr
+		display: inline-block
+		text-align: right
+		font-size: 0
 		.btn__item
 			float: left
 			text-align: center
@@ -319,12 +322,14 @@
 	.monitor__inner
 		padding-top: 115px
 		position: relative
-		+clr
 	.monitor__screenshot
+		background: url(../img/screen.png) no-repeat
+		background-size: cover
+		width: 38.7885%
+		padding-bottom: 32%
+		height: 0
 		float: left
-		+s(screen)
 	.monitor__txt
-		float: right
 		text-align: right
 		font-size: 20px
 		padding: 30px 65px 0 0
@@ -339,7 +344,6 @@
 	.btn__item
 		position: absolute
 		right: 65px
-		bottom: -20px
 		.btnLoad
 			background: $blue
 			border-color: $blue
