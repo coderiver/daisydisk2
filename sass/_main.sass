@@ -65,11 +65,6 @@
 			color: #fff
 			+mus700
 
-//MOVE THIS!!11
-.svg
-	width: 500px
-	height: 500px
-//MOVE THIS!!11
 .content
 	.content__img
 		background: url(../img/daisy.png) no-repeat
@@ -321,6 +316,7 @@
 	+gh(#0f1d39, #054573)
 	.monitor__inner
 		padding-top: 115px
+	.monitor__deeper
 		position: relative
 	.monitor__screenshot
 		background: url(../img/screen.png) no-repeat
@@ -328,8 +324,10 @@
 		width: 38.7885%
 		padding-bottom: 32%
 		height: 0
-		float: left
 	.monitor__txt
+		position: absolute
+		top: 0
+		right: 0
 		text-align: right
 		font-size: 20px
 		padding: 30px 65px 0 0
@@ -338,12 +336,15 @@
 	.monitor__p
 		font-size: 5vw//60px
 		text-transform: uppercase
+		line-height: 1.2
 		+mus100
 	.monitor__p_green
 		color: $neonGreen
 	.btn__item
 		position: absolute
-		right: 65px
+		bottom: 0
+		right: 0
+		padding-right: 65px
 		.btnLoad
 			background: $blue
 			border-color: $blue

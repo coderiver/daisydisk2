@@ -29,7 +29,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 @font-face { font-family: museoSans-700; src: url("fonts/museoSans-700.eot"); src: url("fonts/museoSans-700.eot?#iefix") format("embedded-opentype"), url("fonts/museoSans-700.svg") format("svg"), url("fonts/museoSans-700.woff") format("woff"), url("fonts/museoSans-700.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-.section { padding: 0 5.20833% 0 5.34722%; }
+.section { padding: 0 5.20833% 0 5.34722%; width: 100%; height: 100%; position: fixed; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .section a { text-decoration: none; }
 .section.reviews { padding: 0; }
 
@@ -58,8 +58,6 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .menu .menu__item a:hover:after { opacity: 1; width: 100%; }
 .menu .menu__item a:after { content: ""; position: absolute; width: 1%; height: 2px; top: 0; left: 0; opacity: 0; background: #52f9ff; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
 .menu .menu__item_is-active a { color: white; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
-
-.svg { width: 500px; height: 500px; }
 
 .content .content__img { background: url(../img/daisy.png) no-repeat; background-size: cover; width: 34.828%; height: 0; padding-bottom: 32%; display: inline-block; }
 .content .content__txt { display: inline-block; width: 64.172%; padding-right: 108px; color: white; font-size: 5.12vw; text-transform: uppercase; text-align: right; vertical-align: 50%; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -132,12 +130,13 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .features .features__about { font-size: 15px; color: #954326; text-transform: uppercase; padding-bottom: 50px; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
 
 .monitor { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #0f1d39), color-stop(100%, #054573)); background-image: -webkit-linear-gradient(left, #0f1d39, #054573); background-image: -moz-linear-gradient(left, #0f1d39, #054573); background-image: -o-linear-gradient(left, #0f1d39, #054573); background-image: linear-gradient(left, #0f1d39, #054573); }
-.monitor .monitor__inner { padding-top: 115px; position: relative; }
-.monitor .monitor__screenshot { background: url(../img/screen.png) no-repeat; background-size: cover; width: 38.7885%; padding-bottom: 32%; height: 0; float: left; }
-.monitor .monitor__txt { text-align: right; font-size: 20px; padding: 30px 65px 0 0; color: white; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.monitor .monitor__p { font-size: 5vw; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
+.monitor .monitor__inner { padding-top: 115px; }
+.monitor .monitor__deeper { position: relative; }
+.monitor .monitor__screenshot { background: url(../img/screen.png) no-repeat; background-size: cover; width: 38.7885%; padding-bottom: 32%; height: 0; }
+.monitor .monitor__txt { position: absolute; top: 0; right: 0; text-align: right; font-size: 20px; padding: 30px 65px 0 0; color: white; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.monitor .monitor__p { font-size: 5vw; text-transform: uppercase; line-height: 1.2; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
 .monitor .monitor__p_green { color: #b7fb5b; }
-.monitor .btn__item { position: absolute; right: 65px; }
+.monitor .btn__item { position: absolute; bottom: 0; right: 0; padding-right: 65px; }
 .monitor .btn__item .btnLoad, .monitor .btn__item .btnBuy { background: #1ac8f9; border-color: #1ac8f9; color: #1d1d29; }
 .monitor .btn__item .btnLoad:hover, .monitor .btn__item .btnBuy:hover { background: #52f9ff; border-color: #52f9ff; }
 .monitor .btn__item .btn__txt { display: block; color: #a1a1af; font-size: 13px; padding-top: 15px; text-align: center; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; }
