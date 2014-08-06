@@ -1842,9 +1842,6 @@ $(function() {
 		$nav.click(function(){
 			scrollTo(this);
 		});
-		$('.request-quote').click(function(){
-			scrollTo('.nav .contact');
-		});
 
 	}
 

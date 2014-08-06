@@ -82,6 +82,7 @@
 		text-transform: uppercase
 		text-align: right
 		vertical-align: 50%
+		line-height: 1.2
 		+mus100
 		+box
 	.content__p_green
@@ -136,6 +137,8 @@
 	bottom: 60px
 	margin-left: -13px
 	+s(scroll)
+	&:hover
+		+s(scroll_active)
 
 //section reviews
 .reviews
@@ -192,6 +195,7 @@
 		padding: 8.4449% 0 2.5% 0
 		font-size: 5vw//60px
 		text-transform: uppercase
+		line-height: 1.2
 		+mus100
 	.homeu__p
 		color: #FFF
@@ -247,6 +251,7 @@
 		font-size: 5vw//60px
 		text-transform: uppercase
 		text-align: right
+		line-height: 1.2
 		+mus100
 	.pro__p
 		color: $black
@@ -359,3 +364,65 @@
 			padding-top: 15px
 			text-align: center
 			+mus500
+
+//footer
+.footer
+	background: $black
+	.footer__inner
+		padding-top: 70px
+		+clr
+	.footer__feedback, .footer__menu
+		float: left
+	.footer__p
+		color: #fff
+		font-size: 15px
+		text-transform: uppercase
+		+mus700
+	.footer__a
+		color: #00C7E4
+		margin-top: 15px
+		font-size: 15px
+		display: block
+		+mus500
+		&:hover
+			color: $neon
+	.footer__logo
+		padding: 50px 0
+	.symbol
+		+clr
+		li
+			float: left
+			padding-right: 19px
+			&:last-child
+				padding-right: 0
+	.symbol__disk
+		+s(logo_small)
+	.symbol__beat
+		+s(beat)
+	.symbol__lily
+		+s(lily)
+		margin-top: -6px
+	.footer__copyright
+		color: $lightViolet
+		font-size: 13px
+		+mus500
+		span
+			color: $blue
+	.footer__menu
+		padding-left: 100px
+	.footer__nav
+		float: left
+		padding-right: 153px
+		+clr
+		&:last-child
+			padding-right: 0
+	.nav__item
+		a
+			font-size: 15px
+			margin-bottom: 13px
+			display: block
+			color: #00C7E4
+			&:hover
+				color: $neon
+
+

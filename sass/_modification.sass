@@ -25,6 +25,36 @@
 	.btnBuy__span
 		color: $darkBlue
 
+
+//slide nav
+.nav
+	position: fixed
+	right: 65px
+	top: 50%
+	margin-top: -74px
+	z-index: 10
+	.nav__item
+		background: $blue
+		border-radius: 1px
+		background-clip: padding-box
+		margin-bottom: 20px
+		list-style-type: none
+		width: 8px
+		height: 8px
+		&:last-child
+			margin-bottom: 0
+		&.active
+			background: none
+			margin-bottom: 25px
+			a
+				+s(pagin_a)
+				margin-left: -4px
+		a
+			display: block
+			width: 8px
+			height: 8px
+
+
 //cycle
 .reviews__cycle
 	width: 58.8%
