@@ -60,7 +60,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .menu .menu__item_is-active a { color: white; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
 
 .content .content__img { background: url(../img/daisy.png) no-repeat; background-size: cover; width: 34.828%; height: 0; padding-bottom: 32%; display: inline-block; }
-.content .content__txt { display: inline-block; width: 64.172%; padding-right: 108px; color: white; font-size: 5.12vw; text-transform: uppercase; text-align: right; vertical-align: 50%; line-height: 1.2; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.content .content__txt { display: inline-block; width: 64.172%; padding-right: 108px; color: white; font-size: 5.12vw; text-transform: uppercase; text-align: right; line-height: 1.2; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .content .content__p_green { color: #b7fb5b; }
 .content .content__btn { display: inline-block; text-align: right; font-size: 0; }
 .content .content__btn .btn__item { float: left; text-align: center; margin-right: 30px; }
@@ -97,7 +97,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .homeu .homeu__txt { padding: 8.4449% 0 2.5% 0; font-size: 5vw; text-transform: uppercase; line-height: 1.2; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
 .homeu .homeu__p { color: white; }
 .homeu .homeu__p_green { color: #b7fb5b; }
-.homeu .homeu__desc { width: 34%; padding-bottom: 4.3608%; font-size: 20px; color: white; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.homeu .homeu__desc { width: 490px; padding-bottom: 4.3608%; font-size: 20px; color: white; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 
 .compare { color: white; text-transform: uppercase; font-size: 15px; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
 .compare .compare__item { text-align: center; display: inline-block; width: 150px; margin-right: 6%; }
@@ -115,7 +115,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .pro .pro__p { color: #1d1d29; }
 .pro .pro__p_green { color: #00991d; }
 .pro .pro__about { padding-right: 55px; text-align: right; }
-.pro .pro__desc { width: 34%; padding-bottom: 4.3608%; font-size: 20px; color: #1d1d29; display: inline-block; text-align: right; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; *zoom: 1; }
+.pro .pro__desc { width: 490px; padding-bottom: 4.3608%; font-size: 20px; color: #1d1d29; display: inline-block; text-align: right; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; *zoom: 1; }
 .pro .pro__desc:after { content: " "; display: table; clear: both; }
 .pro .compare { text-align: right; }
 
@@ -173,7 +173,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .btnBuy:hover { background: #52f9ff; color: #15151f; }
 .btnBuy .btnBuy__span { color: #005692; }
 
-.nav { position: fixed; right: 65px; top: 50%; margin-top: -74px; z-index: 10; }
+.nav { position: fixed; right: 65px; top: 50%; margin-top: -86.5px; z-index: 10; }
 .nav .nav__item { background: #1ac8f9; border-radius: 1px; background-clip: padding-box; margin-bottom: 20px; list-style-type: none; width: 8px; height: 8px; }
 .nav .nav__item:last-child { margin-bottom: 0; }
 .nav .nav__item.active { background: none; margin-bottom: 25px; }
