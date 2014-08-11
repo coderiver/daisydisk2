@@ -1,0 +1,167 @@
+//support
+.gradient
+	background: -webkit-radial-gradient(87% 25%, circle closest-corner,  #5e053a, #181421) no-repeat
+	background-color: #15151f
+	//background: url(../img/gradient.png) top right no-repeat
+	//background-size: cover
+
+.wrapper
+	max-width: 1440px
+	margin: 0 auto
+	.header
+		padding: 20px 77px 0
+	a
+		text-decoration: none
+
+.inner
+	padding: 0 15%
+	.inner__ttl
+		padding-top: 35px
+		+clr
+	.inner__faq
+		font-size: 60px
+		color: #fff
+		float: left
+		text-transform: uppercase
+		+mus100
+	.inner__manual
+		float: right
+	.inner__ask
+		margin: 40px 0 70px 0
+	.ask__list-item
+		margin-bottom: 17px
+		font-size: 20px
+		color: $blue
+		cursor: pointer
+		+mus300
+		&:hover
+			color: $neon
+		.is-active
+			color: #FFF
+			+mus700
+	.ask__answered
+		margin: 30px 0 45px
+		background-color: rgba(#222230, .4)
+		+mus300
+		p
+			padding: 2.6483% 3.1779% 2.6483% 5.29661%
+			font-size: 20px
+			color: #fff
+			line-height: 1.2
+	.inner__form
+		margin-bottom: 50px
+		background-color: rgba(#222230, .4)
+	.formReg
+		padding: 5.29661%
+		+clr
+		.textarea
+			margin: 0 0 25px 0
+		.btnSend
+			float: right
+	.formReg__ttl
+		margin-bottom: 40px
+		text-transform: uppercase
+		font-size: 60px
+		color: #fff
+		line-height: 1
+		+mus100
+	.formReg__desc
+		margin-bottom: 10px
+		font-size: 20px
+		color: #fff
+		+mus300
+		&.is-active
+			+mus700
+	.formReg__input
+		margin-bottom: 40px
+		+clr
+	.input__row
+		float: left
+		width: 50%
+		padding-right: 5%
+		+box
+		&:last-child
+			float: right
+			padding-right: 0
+	.formLost
+		padding: 5.29661%
+		+clr
+		.input__row
+			float: left
+		.btnSend
+			float: right
+	.formLost__ttl
+		margin-bottom: 15px
+		text-transform: uppercase
+		font-size: 30px
+		color: #fff
+		line-height: 1
+		+mus300
+	.formLost__txt
+		width: 50%
+		float: right
+		padding-top: 38px
+		font-size: 20px
+		line-height: 1.2
+		color: $lightViolet
+		+mus300
+	.version__ttl
+		@extend .inner__faq
+		float: none
+		margin-bottom: 40px
+	.version__txt
+		width: 73%
+		margin-bottom: 50px
+		font-size: 20px
+		color: $lightViolet
+		+mus300
+	.version__choose
+		margin-bottom: 65px
+		+clr
+	.choose__item
+		float: left
+		text-align: center
+		a
+			display: block
+			padding: 50px
+			&:hover
+				background-color: #21212f
+	.choose__name
+		margin-bottom: 20px
+		text-transform: uppercase
+		font-size: 15px
+		color: #00D2FF
+		+mus700
+	.choose__desc
+		font-size: 15px
+		color: $lightViolet
+		+mus300
+	.choose__disk
+		min-height: 127px
+		margin-bottom: 30px
+	.choose__disk-first
+		+s(daisydisk1)
+	.choose__disk-second
+		+s(daisydisk2)
+	.choose__disk-third
+		+s(daisydisk3)
+	.choose__disk-fourth
+		+s(daisydisk4)
+	.inner__source
+		margin-bottom: 200px
+	.source__ttl
+		padding-bottom: 42px
+		text-transform: uppercase
+		font-size: 30px
+		color: #fff
+		+mus300
+	.source__txt
+		font-size: 20px
+		color: $lightViolet
+		+mus300
+		a
+			color: #00D2FF
+			&:hover
+				color: $neon
+
+
