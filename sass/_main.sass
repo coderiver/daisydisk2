@@ -11,6 +11,7 @@
 		float: left
 	.header__in_right
 		float: right
+		position: relative
 	.header__logo
 		display: block
 		text-decoration: none
@@ -374,11 +375,14 @@
 		padding-top: 70px
 		+clr
 		&.inside
-			padding: 70px 0 70px 70px
+			padding: 7vw 0 7vw 7vw
 			a
 				text-decoration: none
 	.footer__feedback, .footer__menu
 		float: left
+	.footer__feedback
+		padding-right: 5.5%
+		+box
 	.footer__p
 		color: #fff
 		font-size: 15px
@@ -415,11 +419,13 @@
 		span
 			color: $blue
 	.footer__menu
-		padding-left: 100px
+		width: 100%
+		margin-left: -436px
+		padding-left: 436px
+		+box
 	.footer__nav
 		float: left
-		padding-right: 153px
-		+clr
+		padding-right: 11%
 		&:last-child
 			padding-right: 0
 	.nav__item

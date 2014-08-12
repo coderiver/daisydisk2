@@ -5,6 +5,7 @@
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" href="css/font-awesome.css">
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body class="gradient">
@@ -21,14 +22,15 @@
 				</a>
 			</div>
 			<div class="header__in_right">
+				<i class="fa fa-bars"></i>
 				<nav class="menu">
-					<li class="menu__item menu__item_is-active">
+					<li class="menu__item">
 						<a href="#">Home</a>
 					</li>
 					<li class="menu__item">
 						<a href="#">Store</a>
 					</li>
-					<li class="menu__item">
+					<li class="menu__item menu__item_is-active">
 						<a href="#">Support</a>
 					</li>
 					<li class="menu__item">
@@ -91,15 +93,15 @@
 				<form class="formReg">
 					<p class="formReg__ttl">Get in touch</p>
 					<p class="formReg__desc">Message:</p>
-					<textarea rows='2' class="textarea autoExpand" placeholder="andrei@gorohov.name"></textarea>
+					<textarea rows='2' class="textarea autoExpand focus" placeholder="andrei@gorohov.name"></textarea>
 					<div class="formReg__input">
 						<div class="input__row">
 							<p class="formReg__desc">Name:</p>
-							<input class="input" type="text">
+							<input class="input focus" type="text">
 						</div>
 						<div class="input__row">
 							<p class="formReg__desc">Email (so we can reply):</p>
-							<input class="input" type="email">
+							<input class="input focus" type="email">
 						</div>
 					</div>
 					<button class="btnSend" type="submit">Send</button>
@@ -111,7 +113,7 @@
 					<div class="formReg__input">
 						<div class="input__row">
 							<p class="formReg__desc">Email:</p>
-							<input class="input" type="email">
+							<input class="input focus" type="email">
 						</div>
 						<p class="formLost__txt">Enter e-mail address you used for purchasing DaisyDisk and we’ll send you the key.</p>
 					</div>

@@ -1,0 +1,86 @@
+//menu resize on 1115px
++r(1115)
+	.fa.fa-bars
+		display: block
+	.menu
+		position: absolute
+		display: none
+		right: 0
+		&.is-visible
+			display: block
+			+transition(all 0.2s ease)
+		.menu__item
+			display: block
+			margin-right: 0
+			a
+				padding: 8px 0 7px
+				font-size: 15px
+				float: none
+				text-align: right
+				&:after
+					display: none
+	.inner
+		.inner__faq, .inner__manual
+			float: none
+
++r(900)
+	.inner
+		.choose__item
+			display: inline-block
+			width: 49%
+			vertical-align: top
+
++r(720)
+	.inner
+		.input__row
+			width: 100%
+			float: none
+			padding: 0
+		.formLost__txt
+			width: 100%
+		.version__txt
+			width: 100%
+	.footer
+		.footer__menu
+			margin: 40px 0 0 0
+			padding: 0
+
++r(560)
+	.inner
+		.choose__item
+			width: 100%
+
++r(445)
+	.inner
+		.btnSend.another
+			width: 200px
+			font-size: 21px
+		.formReg .btnSend, .btnSend.another
+			float: none
+			margin: 0 auto
+			font-size: 20px
+
++r(400)
+	.header
+		.header__txt
+			font-size: 25px
+			vertical-align: 20px
+	.btnManual
+		width: 185px
+		.btnManual__txt
+			&:before
+				left: 20px
+	.textarea
+		font-size: 15px
+		padding: 18px 15px
+	.inner
+		.inner__faq, .formReg__ttl, .version__ttl
+			font-size: 50px
+		.ask__list-item, .ask__answered p,
+		.formReg__desc, .formLost__txt, .version__txt,
+		.source__txt
+			font-size: 17px
+		.formLost__ttl
+			font-size: 27px
+		.source__ttl
+			padding-bottom: 22px

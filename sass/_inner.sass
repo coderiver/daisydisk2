@@ -7,9 +7,10 @@
 
 .wrapper
 	max-width: 1440px
+	min-width: 320px
 	margin: 0 auto
 	.header
-		padding: 20px 77px 0
+		padding: 20px 5.347222% 0
 	a
 		text-decoration: none
 
@@ -116,16 +117,18 @@
 		color: $lightViolet
 		+mus300
 	.version__choose
+		display: table
+		width: 100%
 		margin-bottom: 65px
-		+clr
 	.choose__item
-		float: left
 		text-align: center
+		display: table-cell
+		width: 25%
+		&:hover
+			background-color: #21212f
 		a
 			display: block
-			padding: 50px
-			&:hover
-				background-color: #21212f
+			padding: 50px 0
 	.choose__name
 		margin-bottom: 20px
 		text-transform: uppercase
@@ -138,7 +141,7 @@
 		+mus300
 	.choose__disk
 		min-height: 127px
-		margin-bottom: 30px
+		margin: 0 auto 30px
 	.choose__disk-first
 		+s(daisydisk1)
 	.choose__disk-second

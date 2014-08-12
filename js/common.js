@@ -15,12 +15,17 @@ head.ready(function() {
 			this.rows = rows < minRows ? minRows : rows;
 		});
 
-	//some stuff on textarea/input focus
-		$('textarea.textarea').focusin(function(event) {
-			$(this).closest('p').addClass('is-active');
+	//menu mobile
+		$('.fa-bars').click(function(event) {
+			$(this).parent().find('.menu').slideToggle('fast');
 		});
-		$('textarea.textarea').focusout(function(event) {
-			$(this).closest('p').removeClass('is-active');
+
+	//some stuff on textarea/input focus
+		$('.focus').focusin(function(event) {
+			$(this).prev().addClass('is-active');
+		});
+		$('.focus').focusout(function(event) {
+			$(this).prev().removeClass('is-active');
 		});
 
 	// //for the main page
