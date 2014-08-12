@@ -216,7 +216,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .reviews__cycle .cycle__next { position: absolute; top: 15px; right: -20px; cursor: pointer; background: url('../img/icons-se8f0a4e790.png') 0 -2110px no-repeat; width: 16px; height: 26px; }
 .reviews__cycle .cycle__prev { position: absolute; top: 15px; left: -20px; cursor: pointer; background: url('../img/icons-se8f0a4e790.png') 0 -2110px no-repeat; width: 16px; height: 26px; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
-.gradient { background: -webkit-radial-gradient(87% 25%, circle closest-corner, #5e053a, #181421) no-repeat; background-color: #15151f; }
+.gradient { background: -webkit-radial-gradient(87% 25%, circle closest-corner, #5e053a, #181421) no-repeat; background: -moz-radial-gradient(87% 25%, circle closest-corner, #5e053a, #181421) no-repeat; background-color: #15151f; }
 
 .wrapper { max-width: 1440px; min-width: 320px; margin: 0 auto; }
 .wrapper .header { padding: 20px 5.34722% 0; }
@@ -270,19 +270,55 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .inner .source__txt a { color: #00d2ff; }
 .inner .source__txt a:hover { color: #52f9ff; }
 
+.inner .about { padding: 20.1388% 14.8809% 16.0714% 11.904%; text-align: center; font-size: 32px; color: white; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .who { margin-bottom: 50px; *zoom: 1; }
+.inner .who:after { content: " "; display: table; clear: both; }
+.inner .person { float: left; text-align: left; }
+.inner .person:last-child { float: right; text-align: right; }
+.inner .person__ttl { padding-bottom: 30px; text-transform: uppercase; font-size: 30px; color: white; line-height: 1; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .person__desc { font-size: 20px; color: #a1a1af; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .person__desc.last { padding-bottom: 23px; }
+.inner .person__desc.small { font-size: 15px; }
+.inner .person__mail { font-size: 15px; color: #1ac8f9; }
+.inner .person__mail:hover { color: #52f9ff; }
+.inner .known { margin-bottom: 50px; background-color: rgba(34, 34, 48, 0.4); }
+.inner .known__item { padding: 5.29661%; }
+.inner .known__ttl { margin-bottom: 40px; text-transform: uppercase; font-size: 60px; color: white; line-height: 1; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
+.inner .place { margin-bottom: 30px; }
+.inner .place__item { display: table-cell; width: 51%; padding-right: 7.667%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.inner .place__item:last-child { padding-right: 6.419%; }
+.inner .place__ttl { padding-bottom: 30px; text-transform: uppercase; font-size: 30px; color: white; line-height: 1; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .place__txt { font-size: 20px; color: #a1a1af; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .span__blue { color: #1ac8f9; }
+.inner .span__blue:hover { color: #52f9ff; }
+.inner .map { background: url(../img/map.png) no-repeat; background-size: cover; height: 0; padding-bottom: 50%; }
+
 @media only screen and (max-width: 1115px) { .fa.fa-bars { display: block; }
   .menu { position: absolute; display: none; right: 0; }
   .menu.is-visible { display: block; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
   .menu .menu__item { display: block; margin-right: 0; }
   .menu .menu__item a { padding: 8px 0 7px; font-size: 15px; float: none; text-align: right; }
   .menu .menu__item a:after { display: none; }
-  .inner .inner__faq, .inner .version__ttl, .inner .inner__manual { float: none; } }
-@media only screen and (max-width: 900px) { .inner .choose__item { display: inline-block; width: 49%; vertical-align: top; } }
+  .inner .inner__faq, .inner .version__ttl, .inner .inner__manual { float: none; }
+  .inner .person__desc { font-size: 18px; }
+  .inner .known__ttl { font-size: 50px; } }
+@media only screen and (max-width: 900px) { .inner .choose__item { display: inline-block; width: 49%; vertical-align: top; }
+  .inner .person, .inner .person:last-child { float: none; margin-bottom: 40px; text-align: center; }
+  .inner .place__item { display: block; width: 100%; padding-right: 0; }
+  .inner .place__item:last-child { margin-top: 40px; }
+  .inner .known__ttl { font-size: 40px; } }
 @media only screen and (max-width: 720px) { .inner .input__row { width: 100%; float: none; padding: 0; }
   .inner .formLost__txt { width: 100%; }
   .inner .version__txt { width: 100%; }
+  .inner .about { font-size: 27px; }
+  .inner .known__ttl { font-size: 32px; }
+  .inner .person__ttl { font-size: 27px; }
   .footer .footer__menu { margin: 40px 0 0 0; padding: 0; } }
-@media only screen and (max-width: 560px) { .inner .choose__item { width: 100%; } }
+@media only screen and (max-width: 560px) { .inner .choose__item { width: 100%; }
+  .inner .about { font-size: 23px; }
+  .inner .known__ttl { font-size: 24px; }
+  .inner .place__ttl, .inner .source__ttl { font-size: 20px; }
+  .inner .place__txt { font-size: 17px; } }
 @media only screen and (max-width: 445px) { .inner .btnSend.another { width: 200px; font-size: 21px; }
   .inner .formReg .btnSend, .inner .btnSend.another { float: none; margin: 0 auto; font-size: 20px; } }
 @media only screen and (max-width: 400px) { .header .header__txt { font-size: 25px; vertical-align: 20px; }
@@ -292,4 +328,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
   .inner .inner__faq, .inner .version__ttl, .inner .formReg__ttl, .inner .version__ttl { font-size: 50px; }
   .inner .ask__list-item, .inner .ask__answered p, .inner .formReg__desc, .inner .formLost__txt, .inner .version__txt, .inner .source__txt { font-size: 17px; }
   .inner .formLost__ttl { font-size: 27px; }
-  .inner .source__ttl { padding-bottom: 22px; } }
+  .inner .source__ttl { padding-bottom: 22px; }
+  .inner .about { font-size: 18px; padding: 20.1388% 15.881% 16.0714% 15.904%; }
+  .inner .known__ttl { font-size: 19px; }
+  .inner .person__desc { font-size: 16px; } }

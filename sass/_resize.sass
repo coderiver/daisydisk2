@@ -1,4 +1,3 @@
-//menu resize on 1115px
 +r(1115)
 	.fa.fa-bars
 		display: block
@@ -22,6 +21,10 @@
 	.inner
 		.inner__faq, .inner__manual
 			float: none
+		.person__desc
+			font-size: 18px
+		.known__ttl
+			font-size: 50px
 
 +r(900)
 	.inner
@@ -29,6 +32,18 @@
 			display: inline-block
 			width: 49%
 			vertical-align: top
+		.person, .person:last-child
+			float: none
+			margin-bottom: 40px
+			text-align: center
+		.place__item
+			display: block
+			width: 100%
+			padding-right: 0
+			&:last-child
+				margin-top: 40px
+		.known__ttl
+			font-size: 40px
 
 +r(720)
 	.inner
@@ -40,6 +55,12 @@
 			width: 100%
 		.version__txt
 			width: 100%
+		.about
+			font-size: 27px
+		.known__ttl
+			font-size: 32px
+		.person__ttl
+			font-size: 27px
 	.footer
 		.footer__menu
 			margin: 40px 0 0 0
@@ -49,6 +70,14 @@
 	.inner
 		.choose__item
 			width: 100%
+		.about
+			font-size: 23px
+		.known__ttl
+			font-size: 24px
+		.place__ttl, .source__ttl
+			font-size: 20px
+		.place__txt
+			font-size: 17px
 
 +r(445)
 	.inner
@@ -84,3 +113,10 @@
 			font-size: 27px
 		.source__ttl
 			padding-bottom: 22px
+		.about
+			font-size: 18px
+			padding: 20.1388% 15.881% 16.0714% 15.904%
+		.known__ttl
+			font-size: 19px
+		.person__desc
+			font-size: 16px
