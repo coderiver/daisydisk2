@@ -25,7 +25,12 @@
 			font-size: 18px
 		.known__ttl
 			font-size: 50px
-
+		.blog__ttl
+			margin: 35px 0 60px
+		.post__date
+			left: -15px
+			top: -30px
+			font-size: 13px
 +r(900)
 	.inner
 		.choose__item
@@ -74,10 +79,19 @@
 			font-size: 23px
 		.known__ttl
 			font-size: 24px
-		.place__ttl, .source__ttl
+		.place__ttl, .source__ttl, .post__ttl
 			font-size: 20px
 		.place__txt
 			font-size: 17px
+		.previous, .next
+			span
+				display: none
+			&:before
+				top: -15px
+		.notes__item
+			margin-bottom: 20px
+		.aftercycle
+			padding: 25px 0% 60px
 
 +r(445)
 	.inner
@@ -103,11 +117,11 @@
 		font-size: 15px
 		padding: 18px 15px
 	.inner
-		.inner__faq, .formReg__ttl, .version__ttl
+		.inner__faq, .formReg__ttl, .version__ttl, .blog__ttl
 			font-size: 50px
 		.ask__list-item, .ask__answered p,
 		.formReg__desc, .formLost__txt, .version__txt,
-		.source__txt
+		.source__txt,.post__txt, .notes__item
 			font-size: 17px
 		.formLost__ttl
 			font-size: 27px

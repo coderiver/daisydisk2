@@ -17,6 +17,7 @@
 
 //support page
 .inner
+	position: relative
 	padding: 0 15%
 	.inner__ttl
 		padding-top: 35px
@@ -63,11 +64,8 @@
 			float: right
 	.formReg__ttl
 		margin-bottom: 40px
-		text-transform: uppercase
-		font-size: 60px
-		color: #fff
 		line-height: 1
-		+mus100
+		+ttl
 	.formReg__desc
 		margin-bottom: 10px
 		font-size: 20px
@@ -95,11 +93,8 @@
 			float: right
 	.formLost__ttl
 		margin-bottom: 15px
-		text-transform: uppercase
-		font-size: 30px
-		color: #fff
 		line-height: 1
-		+mus300
+		+s-ttl
 	.formLost__txt
 		width: 50%
 		float: right
@@ -109,9 +104,8 @@
 		color: $lightViolet
 		+mus300
 	.version__ttl
-		@extend .inner__faq
-		float: none
 		margin-bottom: 40px
+		+ttl
 	.version__txt
 		width: 73%
 		margin-bottom: 50px
@@ -156,10 +150,7 @@
 		margin-bottom: 200px
 	.source__ttl
 		padding-bottom: 42px
-		text-transform: uppercase
-		font-size: 30px
-		color: #fff
-		+mus300
+		+s-ttl
 	.source__txt
 		font-size: 20px
 		color: $lightViolet
@@ -188,11 +179,8 @@
 			text-align: right
 	.person__ttl
 		padding-bottom: 30px
-		text-transform: uppercase
-		font-size: 30px
-		color: #FFF
 		line-height: 1
-		+mus300
+		+s-ttl
 	.person__desc
 		font-size: 20px
 		color: $lightViolet
@@ -213,11 +201,8 @@
 		padding: 5.29661%
 	.known__ttl
 		margin-bottom: 40px
-		text-transform: uppercase
-		font-size: 60px
-		color: #fff
 		line-height: 1
-		+mus100
+		+ttl
 	.place
 		margin-bottom: 30px
 	.place__item
@@ -229,11 +214,8 @@
 			padding-right: 6.419%
 	.place__ttl
 		padding-bottom: 30px
-		text-transform: uppercase
-		font-size: 30px
-		color: #FFF
 		line-height: 1
-		+mus300
+		+s-ttl
 	.place__txt
 		font-size: 20px
 		color: $lightViolet
@@ -247,3 +229,97 @@
 		background-size: cover
 		height: 0
 		padding-bottom: 50%
+
+
+//blog page
+.blog
+	a
+		color: $blue
+		&:hover
+			color: $neon
+	.blog__ttl
+		margin: 35px 0
+		line-height: 1
+		+ttl
+	.post
+		position: relative
+		margin-bottom: 60px
+	.post__date
+		position: absolute
+		top: 0
+		left: -15%
+		font-size: 15px
+		color: #FFF
+		+mus300
+	.post__ttl
+		margin-bottom: 23px
+		line-height: 1
+		+s-ttl
+	.post__txt, .notes__item
+		font-size: 20px
+		color: $lightViolet
+		+mus300
+		&.space
+			margin-bottom: 20px
+	.notes__item
+		span
+			display: table-cell
+			padding-left: 35px
+			line-height: 30px
+		&:before
+			display: table-cell
+			content: "\2014"
+			color: #FFF
+	.tags
+		margin-top: 45px
+		font-size: 15px
+		color: #FFF
+		.tags__span
+			text-transform: uppercase
+			+mus700
+	.blog__pagination
+		margin: 40px 0 90px 0
+		text-transform: uppercase
+		font-size: 15px
+		+mus700
+	.previous
+		display: inline-block
+		position: relative
+		padding-left: 30px
+		&:hover
+			&:before
+				+s(scroll_active)
+		&:before
+			content: ""
+			position: absolute
+			left: -5px
+			+s(scroll)
+			+rotate(90)
+	.count
+		display: inline-block
+		margin: 0 3%
+	.count__item
+		padding: 7px 12px
+		background: $blue
+		+border-radius(5px)
+		+background-clip(padding-box)
+		color: $dark
+		&:hover
+			background: $neon
+			color: $dark
+		&.is-active
+			background: none
+			color: #FFF
+	.next
+		display: inline-block
+		padding-right: 30px
+		position: relative
+		&:hover
+			&:before
+				+s(scroll_active)
+		&:before
+			content: ""
+			position: absolute
+			right: 0
+			+s(scroll)
+			+rotate(270)
