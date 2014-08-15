@@ -28,6 +28,14 @@ head.ready(function() {
 			$(this).prev().removeClass('is-active');
 		});
 
+	//store page select
+		$('.select').click(function(event) {
+			$(this).find('.country').toggleClass('is-visible');
+			$(this).toggleClass('is-active');
+			return false;
+		});
+
+
 	// //for the main page
 	// $(function() {
 	// function sliderNav(){

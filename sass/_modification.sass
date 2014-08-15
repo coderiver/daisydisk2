@@ -82,7 +82,7 @@
 .textarea
 	width: 100%
 	min-height: 230px
-	padding: 18px 25px
+	padding: 18px 0 18px 20px
 	font-size: 25px
 	color: $neonGreen
 	border: 1px solid rgba(161,161,175,.4)
@@ -103,6 +103,140 @@
 .input
 	@extend .textarea
 	min-height: 50px
+
+//dropdown
+.select
+	position: relative
+	width: 270px
+	min-height: 50px
+	font-size: 25px
+	background-color: rgba(38,38,54,.7)
+	+box
+	+mus300
+	&.is-active
+		&:after
+			+s(select_highlight)
+		.chosen
+			border: 1px solid $neonGreen
+			color: $neonGreen
+	a
+		display: block
+		position: relative
+		color: $lightViolet
+		padding: 9px 0 9px 43px
+		&:first-child
+	&:before
+		content: ""
+		position: absolute
+		top: 21px
+		left: 17px
+		+s(us)
+	&:after
+		content: ""
+		position: absolute
+		top: 20px
+		right: 17px
+		+s(dropdown)
+	&.another
+		width: 100%
+		margin-bottom: 25px
+		&:before
+			display: none
+		&:after
+			top: 25px
+		.country
+			width: 100%
+			a
+				padding: 0px 0px 0px 20px
+		.chosen
+			padding: 15px 20px
+	.chosen
+		border: 1px solid rgba(161,161,175,.4)
+		+border-radius(5px)
+		+background-clip(padding-box)
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+	.country
+		position: absolute
+		width: 270px
+		font-size: 15px
+		padding: 25px 0
+		background-color: #21212f
+		border: 1px solid rgba(161,161,175,.4)
+		+border-radius(0 0 5px 5px)
+		+background-clip(padding-box)
+		+border-radius(5px)
+		+mus500
+		&.is-visible
+			display: block
+		a
+			padding: 0px 0px 0px 45px
+			line-height: 24px
+			&:before
+				content: ""
+				position: absolute
+				top: 7px
+				left: 15px
+			&:hover
+				color: $neon
+	.us
+		&:before
+			+s(us)
+	.canada
+		&:before
+			+s(canada)
+	.uk
+		&:before
+			+s(uk)
+	.au
+		&:before
+			+s(au)
+	.denmark
+		&:before
+			+s(denmark)
+	.france
+		&:before
+			+s(france)
+	.germany
+		&:before
+			+s(germany)
+
+//radio checkbox
+.radio
+	display: inline-block
+	position: relative
+	input
+		position: absolute
+		left: 0
+		top: 8px
+		width: 12px
+		height: 12px
+		z-index: 2
+		opacity: 0
+		&:checked
+			+ .radio__title
+				&:after
+					display: block
+
+.radio__title
+	display: inline-block
+	position: relative
+	z-index: 1
+	&:before
+		content: ""
+		position: absolute
+		top: 7px
+		left: 0
+		+s(radio)
+	&:after
+		content: ""
+		display: none
+		position: absolute
+		top: 5px
+		left: -2px
+		z-index: 2
+		+s(radio1)
 
 //slide nav
 .nav

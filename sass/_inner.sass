@@ -62,10 +62,20 @@
 			margin: 0 0 25px 0
 		.btnSend
 			float: right
+		.input
+			&.another
+				margin: 0 0 20px 0
+			&.small
+				margin: 0 0 15px 0
+	.formReg__prettl
+		padding-bottom: 70px
+		+s-ttl
 	.formReg__ttl
 		margin-bottom: 40px
 		line-height: 1
 		+ttl
+		&.center
+			text-align: center
 	.formReg__desc
 		margin-bottom: 10px
 		font-size: 20px
@@ -76,11 +86,23 @@
 	.formReg__input
 		margin-bottom: 40px
 		+clr
+	.formReg__warning
+		padding-right: 65px
+		font-size: 15px
+		color: $lightViolet
+		line-height: 1.2
+		+mus500
 	.input__row
 		float: left
 		width: 50%
 		padding-right: 5%
 		+box
+		&.nopad
+			padding: 0
+		&.wbigchange
+			width: 52.9%
+		&.wchange
+			width: 39.2%
 		&:last-child
 			float: right
 			padding-right: 0
@@ -323,3 +345,95 @@
 			right: 0
 			+s(scroll)
 			+rotate(270)
+
+
+//store page
+.store
+	.product
+		margin: 35px 0 60px
+	.product__row
+		margin-bottom: 30px
+		+clr
+		&:last-child
+			margin-bottom: 0
+	.product__info
+		float: left
+		text-transform: uppercase
+		font-size: 30px
+		color: #FFF
+		+mus300
+		span
+			color: $neonGreen
+	.product__country
+		float: right
+	.product__quantity
+		display: table-cell
+		padding-right: 50px
+		font-size: 20px
+		color: #FFF
+		box-sizing: border-box
+		+mus300
+		input
+			max-width: 85px
+			padding: 12px 0 8px 20px
+			font-size: 25px
+			color: #FFF
+			background-color: rgba(38,38,54,.7)
+			border: 1px solid rgba(161,161,175,.4)
+			+border-radius(5px)
+			+background-clip(padding-box)
+			+placeholder-color(#fff)
+			+box
+			+mus300
+	.product__desc
+		display: table-cell
+		padding-right: 50px
+		font-size: 20px
+		color: $lightViolet
+		+mus300
+		+box
+	.inner__form
+		margin-bottom: 70px
+	.payment
+		margin-bottom: 70px
+	.payment__ttl
+		margin-bottom: 35px
+		+s-ttl
+	.payment__choice
+		padding-bottom: 10px
+	.radio__title
+		font-size: 20px
+		padding-left: 25px
+		color: $lightViolet
+		+mus300
+		.card
+			display: inline-block
+		.viza
+			+s(viza)
+		.mastercard
+			+s(mastercard)
+		.untitled
+			+s(untitled)
+		.discover
+			+s(discover)
+		.paypal
+			padding-right: 15px
+			+s(paypal)
+		.amazon
+			padding-right: 10px
+			+s(amazon)
+	.proceed
+		margin-top: 60px
+		+clr
+		.btnSend
+			float: right
+	.proceed__txt
+		float: left
+		width: 60%
+		font-size: 15px
+		color: $lightViolet
+		+mus500
+		a
+			color: $blue
+			&:hover
+				color: $neon

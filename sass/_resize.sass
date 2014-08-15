@@ -31,6 +31,9 @@
 			left: -15px
 			top: -30px
 			font-size: 13px
+		.formReg .input
+			font-size: 20px
+
 +r(900)
 	.inner
 		.choose__item
@@ -49,6 +52,21 @@
 				margin-top: 40px
 		.known__ttl
 			font-size: 40px
+		.formReg__warning, .product__desc
+			padding-right: 0
+		.product__info
+			font-size: 27px
+		.formReg .input
+			font-size: 18px
+		.select .chosen
+			font-size: 18px
+			padding: 11px 30px 11px 45px
+		.select
+			&.another
+				&:after
+					top: 20px
+				.chosen
+					padding: 11px 30px 11px 20px
 
 +r(720)
 	.inner
@@ -56,6 +74,10 @@
 			width: 100%
 			float: none
 			padding: 0
+			&.wbigchange
+				width: 100%
+			&.wchange
+				width: 100%
 		.formLost__txt
 			width: 100%
 		.version__txt
@@ -66,6 +88,19 @@
 			font-size: 32px
 		.person__ttl
 			font-size: 27px
+		.product__info, .product__country
+			float: none
+		.product__info
+			margin-bottom: 20px
+		.formReg__ttl.center
+			font-size: 50px
+		.proceed
+			.proceed__txt
+				float: none
+				width: 100%
+			.btnSend
+				float: none
+				margin-top: 20px
 	.footer
 		.footer__menu
 			margin: 40px 0 0 0
@@ -92,6 +127,11 @@
 			margin-bottom: 20px
 		.aftercycle
 			padding: 25px 0% 60px
+		.product__desc
+			display: block
+			padding-top: 20px
+		.formReg__ttl.center
+			font-size: 40px
 
 +r(445)
 	.inner
@@ -102,6 +142,28 @@
 			float: none
 			margin: 0 auto
 			font-size: 20px
+		.product__info
+			font-size: 25px
+		.select, .country
+			width: 185px
+		.select
+			font-size: 20px
+			&.another
+				width: 100%
+				font-size: 25px
+				&:after
+					right: 17px
+			&:before
+				top: 18px
+				left: 15px
+			&:after
+				top: 20px
+				right: 7px
+		.formReg__prettl
+			text-align: center
+			font-size: 23px
+		.formReg__ttl.center
+			font-size: 30px
 
 +r(400)
 	.header
@@ -121,7 +183,7 @@
 			font-size: 50px
 		.ask__list-item, .ask__answered p,
 		.formReg__desc, .formLost__txt, .version__txt,
-		.source__txt,.post__txt, .notes__item
+		.source__txt,.post__txt, .notes__item, .product__desc
 			font-size: 17px
 		.formLost__ttl
 			font-size: 27px
@@ -132,5 +194,12 @@
 			padding: 20.1388% 15.881% 16.0714% 15.904%
 		.known__ttl
 			font-size: 19px
-		.person__desc
+		.person__desc, .radio__title
 			font-size: 16px
+		.proceed__txt
+			font-size: 13px
+
++r(320)
+	.product__info span
+		display: block
+
