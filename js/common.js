@@ -29,12 +29,36 @@ head.ready(function() {
 		});
 
 	//store page select
-		$('.select').click(function(event) {
+		$('#worldMap').click(function(event) {
 			$(this).find('.country').toggleClass('is-visible');
 			$(this).toggleClass('is-active');
 			return false;
 		});
 
+		$('#worldMap').find('.country a').click(function(event) {
+			var countryChange = $(this).data('name');
+			var currencyChange = $(this).data('currency');
+			var priceChange = $(this).data('price');
+			var countryFlag = $(this).attr('class');
+			var chosen = $('#worldMap').children('.chosen');
+
+			$(chosen).removeAttr('class').addClass('chosen ' + countryFlag).text(countryChange);
+			$('.product__info').find('.currency').text(currencyChange);
+			$('.product__info').find('.price').text(priceChange);
+		});
+
+		$('#countryList').click(function(event) {
+			$(this).find('.country').toggleClass('is-visible');
+			$(this).toggleClass('is-active');
+			return false;
+		});
+
+		$('#countryList').find('.country a').click(function(event) {
+			var countryChange = $(this).data('name');
+			var chosen = $('#countryList').children('.chosen');
+
+			$(chosen).text(countryChange);
+		});
 
 	// //for the main page
 	// $(function() {

@@ -199,8 +199,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .select { position: relative; width: 270px; min-height: 50px; font-size: 25px; background-color: rgba(38, 38, 54, 0.7); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 .select.is-active:after { background: url('../img/icons-sd1b9cca841.png') 0 -2603px no-repeat; width: 21px; height: 12px; }
 .select.is-active .chosen { border: 1px solid #b7fb5b; color: #b7fb5b; }
-.select a { display: block; position: relative; color: #a1a1af; padding: 9px 0 9px 43px; }
-.select:before { content: ""; position: absolute; top: 21px; left: 17px; background: url('../img/icons-sd1b9cca841.png') 0 -2185px no-repeat; width: 16px; height: 11px; }
+.select a { display: block; position: relative; color: #a1a1af; padding: 9px 40px 9px 43px; }
+.select a:before { content: ""; position: absolute; top: 21px; left: 17px; }
 .select:after { content: ""; position: absolute; top: 20px; right: 17px; background: url('../img/icons-sd1b9cca841.png') 0 -2625px no-repeat; width: 21px; height: 12px; }
 .select.another { width: 100%; margin-bottom: 25px; }
 .select.another:before { display: none; }
