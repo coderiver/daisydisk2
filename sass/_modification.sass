@@ -76,8 +76,7 @@
 	font-size: 30px
 	cursor: pointer
 	display: none
-	padding-top: 30px
-	outline: none
+	margin-top: 30px
 
 //textarea
 .textarea
@@ -271,8 +270,10 @@
 	width: 58.8%
 	margin: 0 auto
 	padding-bottom: 72px
+	position: relative
 	.cycle__quote
 		text-align: center
+		width: 100%
 	.cycle__ttl
 		font-size: 2vw//40px
 		padding: 0 35px
@@ -318,6 +319,7 @@
 
 .blog__cycle
 	margin: 42px 0
+	position: relative
 	img
 		width: 100%
 	.blog__prev
@@ -345,24 +347,25 @@
 		left: 50%
 		margin: 30px 0 0 -36px
 		text-align: center
-	.cycle-span
-		display: inline-block
-		width: 8px
-		height: 8px
-		margin-right: 14.3px
-		background: $blue
-		border-radius: 1px
-		background-clip: padding-box
-		cursor: pointer
-		vertical-align: middle
-		&:hover
-			background: $neon
-		&:last-child
-			margin-right: 0
-	.cycle-pager-active
-		+s(pagin_a)
-		&:hover
+		.cycle-pager-active
 			+s(pagin_a)
+			&:hover
+				+s(pagin_a)
+		span
+			display: inline-block
+			width: 8px
+			height: 8px
+			margin-right: 14.3px
+			background: $blue
+			border-radius: 1px
+			background-clip: padding-box
+			cursor: pointer
+			vertical-align: middle
+			text-indent: -1000px
+			&:hover
+				background: $neon
+			&:last-child
+				margin-right: 0
 
 .aftercycle
 	padding: 26px 20% 58px
