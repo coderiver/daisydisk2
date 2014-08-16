@@ -269,7 +269,7 @@
 		&:hover
 			color: $neon
 	.blog__ttl
-		margin: 35px 0
+		margin: 42px 0 36px 0
 		line-height: 1
 		+ttl
 	.post
@@ -278,7 +278,7 @@
 	.post__date
 		position: absolute
 		top: 0
-		left: -15%
+		left: -13.5%
 		font-size: 15px
 		color: #FFF
 		+mus300
@@ -286,37 +286,53 @@
 		margin-bottom: 23px
 		line-height: 1
 		+s-ttl
-	.post__txt, .notes__item
+	.post__txt
+		font-size: 20px
+		color: $lightViolet
+		line-height: 24px
+		+mus300
+		&.space
+			margin-bottom: 25px
+		&.padding
+			padding-right: 20px
+		&.big-padding
+			padding-right: 25px
+	.post__notes
+		line-height: 1
+	.notes__item
 		font-size: 20px
 		color: $lightViolet
 		+mus300
 		&.space
-			margin-bottom: 20px
-	.notes__item
+			margin-bottom: 28px
+			span
+				line-height: 22px
+				&.padding
+					padding-right: 20px
 		span
 			display: table-cell
-			padding-left: 35px
+			padding-left: 31px
 			line-height: 30px
 		&:before
 			display: table-cell
 			content: "\2014"
 			color: #FFF
 	.tags
-		margin-top: 45px
+		margin-top: 37px
 		font-size: 15px
 		color: #FFF
 		.tags__span
 			text-transform: uppercase
 			+mus700
 	.blog__pagination
-		margin: 40px 0 90px 0
+		margin: 100px 0 94px 0
 		text-transform: uppercase
 		font-size: 15px
 		+mus700
 	.previous
 		display: inline-block
 		position: relative
-		padding-left: 30px
+		padding-left: 20px
 		&:hover
 			&:before
 				+s(scroll_active)
@@ -328,22 +344,27 @@
 			+rotate(90)
 	.count
 		display: inline-block
-		margin: 0 3%
+		margin: 0 2.6%
+		font-size: 0
 	.count__item
+		margin-right: 5.5px
 		padding: 7px 12px
+		font-size: 15px
+		color: $dark
 		background: $blue
 		+border-radius(5px)
 		+background-clip(padding-box)
-		color: $dark
 		&:hover
 			background: $neon
 			color: $dark
+		&:last-child
+			margin-right: 0
 		&.is-active
 			background: none
 			color: #FFF
 	.next
 		display: inline-block
-		padding-right: 30px
+		padding-right: 29px
 		position: relative
 		&:hover
 			&:before
