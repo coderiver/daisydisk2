@@ -48,14 +48,14 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .header .header__in_right { float: right; position: relative; z-index: 10; }
 .header .header__logo { display: block; text-decoration: none; text-transform: uppercase; padding-top: 10px; }
 .header .header__ico { display: inline-block; background: url('../img/icons-sd1b9cca841.png') 0 -706px no-repeat; width: 60px; height: 63px; }
-.header .header__txt { font-size: 35px; color: white; padding-left: 15px; vertical-align: 15px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.header .header__txt { font-size: 35px; color: white; padding-left: 15px; vertical-align: 18px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 .header .header__txt_grey { color: #6c6c8f; }
 
 .menu { *zoom: 1; }
 .menu:after { content: " "; display: table; clear: both; }
-.menu .menu__item { display: inline-block; margin-right: 55px; }
+.menu .menu__item { display: inline-block; margin-right: 57px; }
 .menu .menu__item:last-child { margin-right: 0; }
-.menu .menu__item a { display: block; float: left; position: relative; text-transform: uppercase; color: #1ac8f9; font-size: 17px; padding: 35px 15px 0; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.menu .menu__item a { display: block; float: left; position: relative; text-transform: uppercase; color: #1ac8f9; font-size: 17px; padding: 35px 12px 0 18px; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .menu .menu__item a:hover { color: #52f9ff; }
 .menu .menu__item a:hover:after { opacity: 1; width: 100%; }
 .menu .menu__item a:after { content: ""; position: absolute; width: 1%; height: 2px; top: 0; left: 0; opacity: 0; background: #52f9ff; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
@@ -147,26 +147,26 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .footer { background: #1d1d29; }
 .footer .footer__inner { padding-top: 70px; *zoom: 1; }
 .footer .footer__inner:after { content: " "; display: table; clear: both; }
-.footer .footer__inner.inside { padding: 7vw 0 7vw 7vw; }
+.footer .footer__inner.inside { padding: 4.6vw 0 7vw 5.35vw; }
 .footer .footer__inner.inside a { text-decoration: none; }
 .footer .footer__feedback, .footer .footer__menu { float: left; }
-.footer .footer__feedback { padding-right: 5.5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.footer .footer__feedback { padding-right: 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .footer .footer__p { color: white; font-size: 15px; text-transform: uppercase; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
-.footer .footer__a { color: #00c7e4; margin-top: 15px; font-size: 15px; display: block; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; }
+.footer .footer__a { color: #00c7e4; margin-top: 4px; font-size: 15px; display: block; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; }
 .footer .footer__a:hover { color: #52f9ff; }
-.footer .footer__logo { padding: 50px 0; }
+.footer .footer__logo { padding: 45px 0; }
 .footer .symbol { *zoom: 1; }
 .footer .symbol:after { content: " "; display: table; clear: both; }
-.footer .symbol li { float: left; padding-right: 19px; }
+.footer .symbol li { float: left; padding-right: 18px; }
 .footer .symbol li:last-child { padding-right: 0; }
 .footer .symbol__disk { background: url('../img/icons-sd1b9cca841.png') 0 -779px no-repeat; width: 60px; height: 63px; }
 .footer .symbol__beat { background: url('../img/icons-sd1b9cca841.png') 0 -852px no-repeat; width: 61px; height: 61px; }
-.footer .symbol__lily { background: url('../img/icons-sd1b9cca841.png') 0 -632px no-repeat; width: 64px; height: 64px; margin-top: -6px; }
-.footer .footer__copyright { color: #a1a1af; font-size: 13px; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; }
+.footer .symbol__lily { background: url('../img/icons-sd1b9cca841.png') 0 -632px no-repeat; width: 64px; height: 64px; margin-top: -8px; }
+.footer .footer__copyright { color: #a1a1af; font-size: 13px; line-height: 1.2; letter-spacing: 0.1px; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; }
 .footer .footer__copyright span { color: #1ac8f9; }
 .footer .footer__menu { width: 100%; margin-left: -436px; padding-left: 436px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.footer .footer__nav { float: left; padding-right: 11%; }
-.footer .footer__nav:last-child { padding-right: 0; }
+.footer .footer__nav { float: left; padding: 3px 17% 0 10.3%; letter-spacing: 0.2px; line-height: 13px; }
+.footer .footer__nav:last-child { padding: 0; }
 .footer .nav__item a { font-size: 15px; margin-bottom: 13px; display: block; color: #00c7e4; }
 .footer .nav__item a:hover { color: #52f9ff; }
 
@@ -268,10 +268,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .gradient { background: -webkit-radial-gradient(87% 25%, circle closest-corner, #5e053a, #181421) no-repeat; background: -moz-radial-gradient(87% 25%, circle closest-corner, #5e053a, #181421) no-repeat; background-color: #15151f; }
 
 .wrapper { max-width: 1440px; min-width: 320px; margin: 0 auto; }
-.wrapper .header { padding: 20px 5.34722% 0; }
+.wrapper .header { padding: 20px 3% 0 5.34722%; }
 .wrapper a { text-decoration: none; }
 
-.inner { position: relative; padding: 0 15%; }
+.inner { position: relative; padding: 0 13.8% 0 15%; }
 .inner .inner__ttl { padding-top: 35px; *zoom: 1; }
 .inner .inner__ttl:after { content: " "; display: table; clear: both; }
 .inner .inner__faq { font-size: 60px; color: white; float: left; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
@@ -322,33 +322,35 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .inner .choose__disk-third { background: url('../img/icons-sd1b9cca841.png') 0 0 no-repeat; width: 118px; height: 127px; }
 .inner .choose__disk-fourth { background: url('../img/icons-sd1b9cca841.png') 0 -137px no-repeat; width: 120px; height: 126px; }
 .inner .inner__source { margin-bottom: 200px; }
-.inner .source__ttl { padding-bottom: 42px; font-size: 30px; color: white; text-transform: uppercase; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.inner .source__txt { font-size: 20px; color: #a1a1af; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .source__ttl { padding-bottom: 15px; font-size: 60px; color: white; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
+.inner .source__txt { padding: 0 33px 0 4px; font-size: 20px; color: #a1a1af; line-height: 24px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 .inner .source__txt a { color: #00d2ff; }
 .inner .source__txt a:hover { color: #52f9ff; }
 
-.inner .about { padding: 20.1388% 14.8809% 16.0714% 11.904%; text-align: center; font-size: 32px; color: white; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .about { padding: 19.2% 2.8% 16.6% 0; text-align: center; font-size: 32px; color: white; line-height: 1.2; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .about p { width: 75%; margin: 0 auto; }
 .inner .who { margin-bottom: 50px; *zoom: 1; }
 .inner .who:after { content: " "; display: table; clear: both; }
 .inner .person { float: left; text-align: left; }
 .inner .person:last-child { float: right; text-align: right; }
-.inner .person__ttl { padding-bottom: 30px; line-height: 1; font-size: 30px; color: white; text-transform: uppercase; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.inner .person__desc { font-size: 20px; color: #a1a1af; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.inner .person__desc.last { padding-bottom: 23px; }
+.inner .person__ttl { padding-bottom: 24px; line-height: 1; font-size: 30px; color: white; text-transform: uppercase; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .person__desc { font-size: 20px; color: #a1a1af; line-height: 1.2; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .person__desc.last { padding-bottom: 14px; }
 .inner .person__desc.small { font-size: 15px; }
-.inner .person__mail { font-size: 15px; color: #1ac8f9; }
+.inner .person__mail { font-size: 15px; color: #1ac8f9; letter-spacing: 0.35px; }
 .inner .person__mail:hover { color: #52f9ff; }
 .inner .known { margin-bottom: 50px; background-color: rgba(34, 34, 48, 0.4); }
-.inner .known__item { padding: 5.29661%; }
-.inner .known__ttl { margin-bottom: 40px; line-height: 1; font-size: 60px; color: white; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
-.inner .place { margin-bottom: 30px; }
-.inner .place__item { display: table-cell; width: 51%; padding-right: 7.667%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.inner .place__item:last-child { padding-right: 6.419%; }
-.inner .place__ttl { padding-bottom: 30px; line-height: 1; font-size: 30px; color: white; text-transform: uppercase; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.inner .place__txt { font-size: 20px; color: #a1a1af; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .known__item { padding: 5.3% 5.3% 5.3% 5%; }
+.inner .known__ttl { margin-bottom: 33px; line-height: 1; font-size: 60px; color: white; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
+.inner .place { margin-bottom: 33px; }
+.inner .place__item { display: table-cell; width: 50%; padding-right: 7%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.inner .place__item:last-child { padding-right: 6%; }
+.inner .place__ttl { padding-bottom: 24px; line-height: 1; font-size: 30px; color: white; text-transform: uppercase; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .place__txt { font-size: 20px; color: #a1a1af; line-height: 24px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 .inner .span__blue { color: #1ac8f9; }
 .inner .span__blue:hover { color: #52f9ff; }
-.inner .map { background: url(../img/map.png) no-repeat; background-size: cover; height: 0; padding-bottom: 50%; }
+.inner .map { width: 87%; margin: 0 auto; }
+.inner .map img { width: 100%; }
 
 .blog a { color: #1ac8f9; }
 .blog a:hover { color: #52f9ff; }
@@ -422,6 +424,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
   .inner .place__item { display: block; width: 100%; padding-right: 0; }
   .inner .place__item:last-child { margin-top: 40px; }
   .inner .known__ttl { font-size: 40px; }
+  .inner .about p { width: 100%; }
   .inner .formReg__warning, .inner .product__desc { padding-right: 0; }
   .inner .product__info { font-size: 27px; }
   .inner .formReg .input { font-size: 18px; }
@@ -441,7 +444,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
   .inner .formReg__ttl.center { font-size: 50px; }
   .inner .proceed .proceed__txt { float: none; width: 100%; }
   .inner .proceed .btnSend { float: none; margin-top: 20px; }
-  .footer .footer__menu { margin: 40px 0 0 0; padding: 0; } }
+  .footer .footer__menu { margin: 40px 0 0 0; padding: 0; }
+  .footer .footer__nav { padding-left: 0; } }
 @media only screen and (max-width: 560px) { .inner .choose__item { width: 100%; }
   .inner .about { font-size: 23px; }
   .inner .known__ttl { font-size: 24px; }
@@ -470,6 +474,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
   .textarea, .input { font-size: 15px; padding: 18px 15px; }
   .inner .inner__faq, .inner .formReg__ttl, .inner .version__ttl, .inner .blog__ttl { font-size: 50px; }
   .inner .ask__list-item, .inner .ask__answered p, .inner .formReg__desc, .inner .formLost__txt, .inner .version__txt, .inner .source__txt, .inner .post__txt, .inner .notes__item, .inner .product__desc { font-size: 17px; }
+  .inner .source__txt { padding: 0; }
   .inner .formLost__ttl { font-size: 27px; }
   .inner .source__ttl { padding-bottom: 22px; }
   .inner .about { font-size: 18px; padding: 20.1388% 15.881% 16.0714% 15.904%; }

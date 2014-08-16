@@ -11,14 +11,14 @@
 	min-width: 320px
 	margin: 0 auto
 	.header
-		padding: 20px 5.347222% 0
+		padding: 20px 3% 0 5.347222%
 	a
 		text-decoration: none
 
 //support page
 .inner
 	position: relative
-	padding: 0 15%
+	padding: 0 13.8% 0 15%
 	.inner__ttl
 		padding-top: 35px
 		+clr
@@ -171,11 +171,13 @@
 	.inner__source
 		margin-bottom: 200px
 	.source__ttl
-		padding-bottom: 42px
-		+s-ttl
+		padding-bottom: 15px
+		+ttl
 	.source__txt
+		padding: 0 33px 0 4px
 		font-size: 20px
 		color: $lightViolet
+		line-height: 24px
 		+mus300
 		a
 			color: #00D2FF
@@ -185,11 +187,15 @@
 //about us page
 .inner
 	.about
-		padding: 20.1388% 14.8809% 16.0714% 11.904%
+		padding: 19.2% 2.8% 16.6% 0
 		text-align: center
 		font-size: 32px
 		color: #fff
+		line-height: 1.2
 		+mus300
+		p
+			width: 75%
+			margin: 0 auto
 	.who
 		margin-bottom: 50px
 		+clr
@@ -200,57 +206,60 @@
 			float: right
 			text-align: right
 	.person__ttl
-		padding-bottom: 30px
+		padding-bottom: 24px
 		line-height: 1
 		+s-ttl
 	.person__desc
 		font-size: 20px
 		color: $lightViolet
+		line-height: 1.2
 		+mus300
 		&.last
-			padding-bottom: 23px
+			padding-bottom: 14px
 		&.small
 			font-size: 15px
 	.person__mail
 		font-size: 15px
 		color: $blue
+		letter-spacing: 0.35px
 		&:hover
 			color: $neon
 	.known
 		margin-bottom: 50px
 		background-color: rgba(#222230, .4)
 	.known__item
-		padding: 5.29661%
+		padding: 5.3% 5.3% 5.3% 5%
 	.known__ttl
-		margin-bottom: 40px
+		margin-bottom: 33px
 		line-height: 1
 		+ttl
 	.place
-		margin-bottom: 30px
+		margin-bottom: 33px
 	.place__item
 		display: table-cell
-		width: 51%
-		padding-right: 7.667%
+		width: 50%
+		padding-right: 7%
 		+box
 		&:last-child
-			padding-right: 6.419%
+			padding-right: 6%
 	.place__ttl
-		padding-bottom: 30px
+		padding-bottom: 24px
 		line-height: 1
 		+s-ttl
 	.place__txt
 		font-size: 20px
 		color: $lightViolet
+		line-height: 24px
 		+mus300
 	.span__blue
 		color: $blue
 		&:hover
 			color: $neon
 	.map
-		background: url(../img/map.png) no-repeat
-		background-size: cover
-		height: 0
-		padding-bottom: 50%
+		width: 87%
+		margin: 0 auto
+		img
+			width: 100%
 
 
 //blog page
