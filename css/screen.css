@@ -147,7 +147,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .footer { background: #1d1d29; }
 .footer .footer__inner { padding-top: 70px; *zoom: 1; }
 .footer .footer__inner:after { content: " "; display: table; clear: both; }
-.footer .footer__inner.inside { padding: 4.6vw 0 7vw 5.35vw; }
+.footer .footer__inner.inside { padding: 4.6% 0 7% 5.4%; }
 .footer .footer__inner.inside a { text-decoration: none; }
 .footer .footer__feedback, .footer .footer__menu { float: left; }
 .footer .footer__feedback { padding-right: 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -184,17 +184,20 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .btnManual .btnManual__txt, .btnSend .btnManual__txt { display: inline-block; padding-left: 92px; vertical-align: middle; text-align: left; text-transform: uppercase; font-size: 15px; color: #15151f; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
 .btnManual .btnManual__txt:before, .btnSend .btnManual__txt:before { content: ""; position: absolute; top: 20px; left: 30px; background: url('../img/icons-sd1b9cca841.png') 0 -1579px no-repeat; width: 72px; height: 58px; }
 
-.btnSend { width: 122px; height: 50px; text-transform: uppercase; font-size: 25px; color: #07243b; letter-spacing: -1px; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; }
-.btnSend.another { width: 280px; letter-spacing: 0.7px; }
+.btnSend { width: 122px; height: 50px; padding-right: 6px; text-transform: uppercase; font-size: 25px; color: #07243b; letter-spacing: -2px; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; }
+.btnSend.another { width: 280px; letter-spacing: 0.2px; padding: 0px 0px 0px 3px; }
 
 .fa.fa-bars { color: white; font-size: 30px; cursor: pointer; display: none; margin-top: 30px; }
 
-.textarea, .input { width: 100%; min-height: 230px; padding: 18px 0 18px 20px; font-size: 25px; color: #b7fb5b; border: 1px solid rgba(161, 161, 175, 0.4); background-color: rgba(45, 45, 64, 0.7); overflow: hidden; resize: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.textarea:-moz-placeholder, .input:-moz-placeholder, .textarea::-moz-placeholder, .input::-moz-placeholder { color: #a1a1af; opacity: 1; }
-.textarea::-webkit-input-placeholder, .input::-webkit-input-placeholder { color: #a1a1af; }
-.textarea:focus, .input:focus { -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; border: 1px solid #b6fa5b; background-color: rgba(21, 21, 31, 0.7); box-shadow: rgba(21, 21, 31, 0.7); }
+.textarea { width: 100%; min-height: 230px; padding: 17px 18px; font-size: 23px; color: #b7fb5b; border: 1px solid rgba(161, 161, 175, 0.4); background-color: rgba(45, 45, 64, 0.7); overflow: hidden; resize: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.textarea:-moz-placeholder, .textarea::-moz-placeholder { color: #a1a1af; opacity: 1; }
+.textarea::-webkit-input-placeholder { color: #a1a1af; }
+.textarea:focus { -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; border: 1px solid #b6fa5b; background-color: rgba(21, 21, 31, 0.7); box-shadow: rgba(21, 21, 31, 0.7); }
 
-.input { min-height: 50px; }
+.input { width: 100%; height: 50px; padding: 0 18px; font-size: 25px; color: #b7fb5b; border: 1px solid rgba(161, 161, 175, 0.4); background-color: rgba(45, 45, 64, 0.7); -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.input:-moz-placeholder, .input::-moz-placeholder { color: #a1a1af; opacity: 1; }
+.input::-webkit-input-placeholder { color: #a1a1af; }
+.input:focus { -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; border: 1px solid #b6fa5b; background-color: rgba(21, 21, 31, 0.7); box-shadow: rgba(21, 21, 31, 0.7); }
 
 .select { position: relative; width: 270px; min-height: 50px; font-size: 25px; background-color: rgba(38, 38, 54, 0.7); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 .select.is-active:after { background: url('../img/icons-sd1b9cca841.png') 0 -2603px no-repeat; width: 21px; height: 12px; }
@@ -272,60 +275,69 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .wrapper a { text-decoration: none; }
 
 .inner { position: relative; padding: 0 13.8% 0 15%; }
-.inner .inner__ttl { padding-top: 35px; *zoom: 1; }
+.inner .inner__ttl { padding-top: 25px; *zoom: 1; }
 .inner .inner__ttl:after { content: " "; display: table; clear: both; }
-.inner .inner__faq { font-size: 60px; color: white; float: left; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
+.inner .inner__faq { float: left; padding-top: 20px; text-transform: uppercase; font-size: 60px; color: white; line-height: 1; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
 .inner .inner__manual { float: right; }
-.inner .inner__ask { margin: 40px 0 70px 0; }
-.inner .ask__list-item { margin-bottom: 17px; font-size: 20px; color: #1ac8f9; cursor: pointer; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.inner .ask__list-item:hover { color: #52f9ff; }
-.inner .ask__list-item .is-active { color: white; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
-.inner .ask__answered { margin: 30px 0 45px; background-color: rgba(34, 34, 48, 0.4); font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.inner .ask__answered p { padding: 2.6483% 3.1779% 2.6483% 5.29661%; font-size: 20px; color: white; line-height: 1.2; }
-.inner .inner__form { margin-bottom: 50px; background-color: rgba(34, 34, 48, 0.4); }
-.inner .formReg { padding: 5.29661%; *zoom: 1; }
+.inner .inner__ask { margin: 31px 0 50px 0; }
+.inner .ask__list-item { line-height: 36px; cursor: pointer; }
+.inner .ask__list-item span { font-size: 20px; color: #1ac8f9; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .ask__list-item span:hover { color: #52f9ff; }
+.inner .ask__list-item.is-active { margin-top: -3px; }
+.inner .ask__list-item.is-active span { display: inline-block; color: white; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
+.inner .ask__list-item.is-active span:hover { color: white; }
+.inner .ask__answered { background-color: rgba(34, 34, 48, 0.4); margin-bottom: 30px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .ask__answered p { padding: 4% 4% 3% 5%; font-size: 20px; color: white; line-height: 24px; }
+.inner .inner__form { margin-bottom: 42px; background-color: rgba(34, 34, 48, 0.4); }
+.inner .inner__form.last { margin-bottom: 62px; }
+.inner .formReg { padding: 5.3% 5%; *zoom: 1; }
 .inner .formReg:after { content: " "; display: table; clear: both; }
-.inner .formReg .textarea, .inner .formReg .input { margin: 0 0 25px 0; }
+.inner .formReg .textarea { margin: 0 0 18px 0; }
 .inner .formReg .btnSend { float: right; }
 .inner .formReg .input.another { margin: 0 0 20px 0; }
 .inner .formReg .input.small { margin: 0 0 15px 0; }
 .inner .formReg__prettl { padding-bottom: 70px; font-size: 30px; color: white; text-transform: uppercase; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.inner .formReg__ttl { margin-bottom: 40px; line-height: 1; font-size: 60px; color: white; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
+.inner .formReg__ttl { margin-bottom: 25px; line-height: 1; font-size: 60px; color: white; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
 .inner .formReg__ttl.center { text-align: center; }
-.inner .formReg__desc { margin-bottom: 10px; font-size: 20px; color: white; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .formReg__desc { margin-left: -3px; font-size: 20px; color: white; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 .inner .formReg__desc.is-active { font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
-.inner .formReg__input { margin-bottom: 40px; *zoom: 1; }
+.inner .formReg__input { margin-bottom: 41px; *zoom: 1; }
 .inner .formReg__input:after { content: " "; display: table; clear: both; }
 .inner .formReg__warning { padding-right: 65px; font-size: 15px; color: #a1a1af; line-height: 1.2; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; }
-.inner .input__row { float: left; width: 50%; padding-right: 5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.inner .input__row { float: left; width: 50%; padding-right: 2.5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.inner .input__row input { margin-top: 3px; }
 .inner .input__row.nopad { padding: 0; }
 .inner .input__row.wbigchange { width: 52.9%; }
 .inner .input__row.wchange { width: 39.2%; }
-.inner .input__row:last-child { float: right; padding-right: 0; }
-.inner .formLost { padding: 5.29661%; *zoom: 1; }
+.inner .input__row:last-child { float: right; padding: 0 0 0 2.6%; }
+.inner .formLost { padding: 5.3% 5%; *zoom: 1; }
 .inner .formLost:after { content: " "; display: table; clear: both; }
 .inner .formLost .input__row { float: left; }
 .inner .formLost .btnSend { float: right; }
-.inner .formLost__ttl { margin-bottom: 15px; line-height: 1; font-size: 30px; color: white; text-transform: uppercase; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.inner .formLost__txt { width: 50%; float: right; padding-top: 38px; font-size: 20px; line-height: 1.2; color: #a1a1af; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.inner .version__ttl { margin-bottom: 40px; font-size: 60px; color: white; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
-.inner .version__txt { width: 73%; margin-bottom: 50px; font-size: 20px; color: #a1a1af; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.inner .version__choose { display: table; width: 100%; margin-bottom: 65px; }
-.inner .choose__item { text-align: center; display: table-cell; width: 25%; }
+.inner .formLost .formReg__input { margin-bottom: 48px; }
+.inner .formLost__ttl { margin-bottom: 8px; line-height: 1; font-size: 30px; color: white; text-transform: uppercase; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .formLost__txt { width: 50%; float: right; padding: 25px 0 0 2.4%; font-size: 20px; line-height: 1.2; color: #a1a1af; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.inner .version__ttl { margin-bottom: 29px; line-height: 1; font-size: 60px; color: white; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
+.inner .version__txt { width: 73%; margin-bottom: 42px; padding-left: 4px; font-size: 20px; color: #a1a1af; line-height: 24px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.inner .version__choose { display: table; width: 92%; margin-bottom: 50px; }
+.inner .wrapper__disk { width: 100%; height: 142px; }
+.inner .choose__item { text-align: center; display: table-cell; width: 23%; }
 .inner .choose__item:hover { background-color: #21212f; }
 .inner .choose__item a { display: block; padding: 50px 0; }
 .inner .choose__name { margin-bottom: 20px; text-transform: uppercase; font-size: 15px; color: #00d2ff; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
 .inner .choose__desc { font-size: 15px; color: #a1a1af; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.inner .choose__disk { min-height: 127px; margin: 0 auto 30px; }
+.inner .choose__disk { margin: 0 auto; }
 .inner .choose__disk-first { background: url('../img/icons-sd1b9cca841.png') 0 -408px no-repeat; width: 126px; height: 118px; }
 .inner .choose__disk-second { background: url('../img/icons-sd1b9cca841.png') 0 -273px no-repeat; width: 126px; height: 125px; }
 .inner .choose__disk-third { background: url('../img/icons-sd1b9cca841.png') 0 0 no-repeat; width: 118px; height: 127px; }
 .inner .choose__disk-fourth { background: url('../img/icons-sd1b9cca841.png') 0 -137px no-repeat; width: 120px; height: 126px; }
 .inner .inner__source { margin-bottom: 200px; }
 .inner .source__ttl { padding-bottom: 15px; font-size: 60px; color: white; text-transform: uppercase; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
+.inner .source__ttl.small { padding-bottom: 30px; font-size: 30px; color: white; text-transform: uppercase; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 .inner .source__txt { padding: 0 33px 0 4px; font-size: 20px; color: #a1a1af; line-height: 24px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 .inner .source__txt a { color: #00d2ff; }
 .inner .source__txt a:hover { color: #52f9ff; }
+.inner .source__txt.another { padding: 0 30px 0 3px; }
 
 .inner .about { padding: 19.2% 2.8% 16.6% 0; text-align: center; font-size: 32px; color: white; line-height: 1.2; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 .inner .about p { width: 75%; margin: 0 auto; }
@@ -439,9 +451,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
   .inner .select .chosen { font-size: 18px; padding: 11px 30px 11px 45px; }
   .inner .select.another:after { top: 20px; }
   .inner .select.another .chosen { padding: 11px 30px 11px 20px; } }
-@media only screen and (max-width: 720px) { .inner .input__row { width: 100%; float: none; padding: 0; }
+@media only screen and (max-width: 720px) { .inner .input__row { width: 100%; float: none; margin-bottom: 20px; padding: 0; }
   .inner .input__row.wbigchange { width: 100%; }
   .inner .input__row.wchange { width: 100%; }
+  .inner .input__row:last-child { padding: 0; }
   .inner .formLost__txt { width: 100%; }
   .inner .version__txt { width: 100%; }
   .inner .about { font-size: 27px; }
@@ -464,7 +477,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
   .inner .notes__item { margin-bottom: 20px; }
   .inner .aftercycle { padding: 25px 0% 60px; }
   .inner .product__desc { display: block; padding-top: 20px; }
-  .inner .formReg__ttl.center { font-size: 40px; } }
+  .inner .formReg__ttl.center { font-size: 40px; }
+  .inner .ask__list-item { margin-bottom: 15px; line-height: 24px; }
+  .inner .ask__answered { margin-top: 15px; } }
 @media only screen and (max-width: 445px) { .inner .btnSend.another { width: 200px; font-size: 21px; }
   .inner .formReg .btnSend, .inner .btnSend.another { float: none; margin: 0 auto; font-size: 20px; }
   .inner .product__info { font-size: 25px; }
@@ -483,7 +498,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 @media only screen and (max-width: 400px) { .header .header__txt { font-size: 25px; vertical-align: 20px; }
   .btnManual, .btnSend { width: 185px; }
   .btnManual .btnManual__txt:before, .btnSend .btnManual__txt:before { left: 20px; }
-  .textarea, .input { font-size: 15px; padding: 18px 15px; }
+  .textarea { font-size: 15px; padding: 18px 15px; }
   .inner .inner__faq, .inner .formReg__ttl, .inner .version__ttl, .inner .blog__ttl { font-size: 50px; }
   .inner .ask__list-item, .inner .ask__answered p, .inner .formReg__desc, .inner .formLost__txt, .inner .version__txt, .inner .source__txt, .inner .post__txt, .inner .notes__item, .inner .product__desc { font-size: 17px; }
   .inner .source__txt { padding: 0; }

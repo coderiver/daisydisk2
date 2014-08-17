@@ -20,46 +20,56 @@
 	position: relative
 	padding: 0 13.8% 0 15%
 	.inner__ttl
-		padding-top: 35px
+		padding-top: 25px
 		+clr
 	.inner__faq
+		float: left
+		padding-top: 20px
+		text-transform: uppercase
 		font-size: 60px
 		color: #fff
-		float: left
-		text-transform: uppercase
+		line-height: 1
 		+mus100
 	.inner__manual
 		float: right
 	.inner__ask
-		margin: 40px 0 70px 0
+		margin: 31px 0 50px 0
 	.ask__list-item
-		margin-bottom: 17px
-		font-size: 20px
-		color: $blue
+		line-height: 36px
 		cursor: pointer
-		+mus300
-		&:hover
-			color: $neon
-		.is-active
-			color: #FFF
-			+mus700
+		span
+			font-size: 20px
+			color: $blue
+			+mus300
+			&:hover
+				color: $neon
+		&.is-active
+			margin-top: -3px
+			span
+				display: inline-block
+				color: #FFF
+				+mus700
+				&:hover
+					color: #FFF
 	.ask__answered
-		margin: 30px 0 45px
 		background-color: rgba(#222230, .4)
+		margin-bottom: 30px
 		+mus300
 		p
-			padding: 2.6483% 3.1779% 2.6483% 5.29661%
+			padding: 4% 4% 3% 5%
 			font-size: 20px
 			color: #fff
-			line-height: 1.2
+			line-height: 24px
 	.inner__form
-		margin-bottom: 50px
+		margin-bottom: 42px
 		background-color: rgba(#222230, .4)
+		&.last
+			margin-bottom: 62px
 	.formReg
-		padding: 5.29661%
+		padding: 5.3% 5%
 		+clr
 		.textarea
-			margin: 0 0 25px 0
+			margin: 0 0 18px 0
 		.btnSend
 			float: right
 		.input
@@ -71,20 +81,20 @@
 		padding-bottom: 70px
 		+s-ttl
 	.formReg__ttl
-		margin-bottom: 40px
+		margin-bottom: 25px
 		line-height: 1
 		+ttl
 		&.center
 			text-align: center
 	.formReg__desc
-		margin-bottom: 10px
+		margin-left: -3px
 		font-size: 20px
 		color: #fff
 		+mus300
 		&.is-active
 			+mus700
 	.formReg__input
-		margin-bottom: 40px
+		margin-bottom: 41px
 		+clr
 	.formReg__warning
 		padding-right: 65px
@@ -95,8 +105,10 @@
 	.input__row
 		float: left
 		width: 50%
-		padding-right: 5%
+		padding-right: 2.5%
 		+box
+		input
+			margin-top: 3px
 		&.nopad
 			padding: 0
 		&.wbigchange
@@ -105,43 +117,52 @@
 			width: 39.2%
 		&:last-child
 			float: right
-			padding-right: 0
+			padding: 0 0 0 2.6%
 	.formLost
-		padding: 5.29661%
+		padding: 5.3% 5%
 		+clr
 		.input__row
 			float: left
 		.btnSend
 			float: right
+		.formReg__input
+			margin-bottom: 48px
 	.formLost__ttl
-		margin-bottom: 15px
+		margin-bottom: 8px
 		line-height: 1
 		+s-ttl
 	.formLost__txt
 		width: 50%
 		float: right
-		padding-top: 38px
+		padding: 25px 0 0 2.4%
 		font-size: 20px
 		line-height: 1.2
 		color: $lightViolet
 		+mus300
+		+box
 	.version__ttl
-		margin-bottom: 40px
+		margin-bottom: 29px
+		line-height: 1
 		+ttl
 	.version__txt
 		width: 73%
-		margin-bottom: 50px
+		margin-bottom: 42px
+		padding-left: 4px
 		font-size: 20px
 		color: $lightViolet
+		line-height: 24px
 		+mus300
 	.version__choose
 		display: table
+		width: 92%
+		margin-bottom: 50px
+	.wrapper__disk
 		width: 100%
-		margin-bottom: 65px
+		height: 142px
 	.choose__item
 		text-align: center
 		display: table-cell
-		width: 25%
+		width: 23%
 		&:hover
 			background-color: #21212f
 		a
@@ -158,8 +179,7 @@
 		color: $lightViolet
 		+mus300
 	.choose__disk
-		min-height: 127px
-		margin: 0 auto 30px
+		margin: 0 auto
 	.choose__disk-first
 		+s(daisydisk1)
 	.choose__disk-second
@@ -173,6 +193,9 @@
 	.source__ttl
 		padding-bottom: 15px
 		+ttl
+		&.small
+			padding-bottom: 30px
+			+s-ttl
 	.source__txt
 		padding: 0 33px 0 4px
 		font-size: 20px
@@ -183,6 +206,8 @@
 			color: #00D2FF
 			&:hover
 				color: $neon
+		&.another
+			padding: 0 30px 0 3px
 
 //about us page
 .inner

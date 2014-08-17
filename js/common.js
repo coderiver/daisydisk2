@@ -91,6 +91,22 @@ head.ready(function() {
 			$(this).prev().removeClass('is-active');
 		});
 
+		//store page select
+		function showCountryList(elem) {
+			elem.find('.country').toggleClass('is-visible');
+			elem.toggleClass('is-active');
+		}
+
+		$('#worldMap').click(function() {
+			showCountryList($(this));
+			return false;
+		});
+
+		$('#countryList').click(function() {
+			showCountryList($(this));
+			return false;
+		});
+
 		$('#worldMap').find('.country a').click(function() {
 			var countryChange = $(this).data('name');
 			var currencyChange = $(this).data('currency');
@@ -101,21 +117,6 @@ head.ready(function() {
 			$(chosen).removeAttr('class').addClass('chosen ' + countryFlag).text(countryChange);
 			$('.product__info').find('.currency').text(currencyChange);
 			$('.product__info').find('.price').text(priceChange);
-		});
-
-		function showCountryList() {
-			$(this).find('.country').toggleClass('is-visible');
-			$(this).toggleClass('is-active');
-			return false;
-		}
-
-		//store page select
-		$('#worldMap').click(function() {
-			showCountryList();
-		});
-
-		$('#countryList').click(function() {
-			showCountryList();
 		});
 
 		$('#countryList').find('.country a').click(function(event) {
