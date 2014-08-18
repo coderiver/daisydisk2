@@ -5,23 +5,14 @@
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" href="css/font-awesome.css">
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body class="index">
-
 <!-- begin  out-->
-<div class="out">
-	<div class="nav">
-		<li class="nav__item"><a href="#"></a></li>
-		<li class="nav__item"><a href="#"></a></li>
-		<li class="nav__item"><a href="#"></a></li>
-		<li class="nav__item"><a href="#"></a></li>
-		<li class="nav__item"><a href="#"></a></li>
-		<li class="nav__item"><a href="#"></a></li>
-		<li class="nav__item"><a href="#"></a></li>
-	</div>
+<div id="fullpage" class="out">
 	<!-- begin section main-->
-	<div class="section item-slider main">
+	<div class="section main">
 		<!-- begin header-->
 		<header class="header">
 			<div class="header__in">
@@ -31,6 +22,7 @@
 				</a>
 			</div>
 			<div class="header__in_right">
+				<i class="fa fa-bars"></i>
 				<nav class="menu">
 					<li class="menu__item menu__item_is-active">
 						<a href="#">Home</a>
@@ -55,7 +47,7 @@
 		<div class="content">
 			<div class="content__img"></div>
 			<div class="content__txt">
-				<p class="content__p">Visualise and </p>
+				<p class="content__p">Visualize and </p>
 				<p class="content__p_green">clean your mac</p>
 				<div class="content__btn">
 					<div class="btn__item">
@@ -81,7 +73,7 @@
 	</div>
 	<!-- end section main-->
 	<!-- begin section reviews  -->
-	<div class="section item-slider reviews">
+	<div class="section reviews">
 		<div class="reviews__ttl">
 			reviews & advantages
 		</div>
@@ -98,9 +90,11 @@
 				<div class="cycle__quote">
 					<p class="cycle__ttl">“With some fantastic interface features and speedy analysis, it’s certainly worth taking a closer look at.”</p>
 					<div class="cycle__bl">
-						<p class="cycle__txt cycle__txt_right">Douglas <span class="cycle__txt_sp"> Mc Dowell</span></p>
-						<span class="cycle__author"></span>
-						<p class="cycle__txt cycle__txt_left">EDITOR,<span class="cycle__txt_green">Macworld</span></p>
+						<div class="cycle__inner">
+							<p class="cycle__txt cycle__txt_right">Douglas <span class="cycle__txt_sp"> Mc Dowell</span></p>
+							<span class="cycle__author"></span>
+							<p class="cycle__txt">EDITOR,<span class="cycle__txt_green">Macworld</span></p>
+						</div>
 					</div>
 				</div>
 				<div class="cycle__quote">
@@ -108,15 +102,15 @@
 					<div class="cycle__bl">
 						<p class="cycle__txt cycle__txt_right">Douglas <span class="cycle__txt_sp"> Mc Dowell</span></p>
 						<span class="cycle__author"></span>
-						<p class="cycle__txt cycle__txt_left">EDITOR,<span class="cycle__txt_green">Macworld</span></p>
+						<p class="cycle__txt">EDITOR,<span class="cycle__txt_green">Macworld</span></p>
 					</div>
 				</div>
 				<div class="cycle__quote">
 					<p class="cycle__ttl">“With some fantastic interface features and speedy analysis, it’s certainly worth taking a closer look at.”</p>
 					<div class="cycle__bl">
-						<p class="cycle__txt cycle__txt_right">Douglas <span class="cycle__txt_sp"> Mc Dowell</span></p>
+						<p class="cycle__txt">Douglas <span class="cycle__txt_sp"> Mc Dowell</span></p>
 						<span class="cycle__author"></span>
-						<p class="cycle__txt cycle__txt_left">EDITOR,<span class="cycle__txt_green">Macworld</span></p>
+						<p class="cycle__txt">EDITOR,<span class="cycle__txt_green">Macworld</span></p>
 					</div>
 				</div>
 			</div>
@@ -138,7 +132,7 @@
 	</div>
 	<!-- end section reviews -->
 	<!-- begin homeu  -->
-	<div class="section item-slider homeu">
+	<div class="section homeu">
 		<div class="homeu__txt">
 			<p class="homeu__p">Perfect</p>
 			<p class="homeu__p_green">for home use</p>
@@ -167,7 +161,7 @@
 	</div>
 	<!-- end homeu -->
 	<!-- begin pro  -->
-	<div class="section item-slider pro">
+	<div class="section pro">
 		<div class="pro__txt">
 			<p class="pro__p">Best tool for</p>
 			<p class="pro__p_green">Professionals</p>
@@ -196,7 +190,7 @@
 	</div>
 	<!-- end prof -->
 	<!-- begin features  -->
-	<div class="section item-slider features">
+	<div class="section features">
 		<div class="features__ttl">Features</div>
 		<div class="features__data">
 			<div class="features__item">
@@ -223,7 +217,7 @@
 	</div>
 	<!-- end features -->
 	<!-- begin monitor  -->
-	<div class="section item-slider monitor">
+	<div class="section monitor">
 		<div class="monitor__inner">
 			<div class="monitor__deeper">
 				<div class="monitor__screenshot"></div>
@@ -239,7 +233,7 @@
 	</div>
 	<!-- end monitor -->
 	<!-- begin footer  -->
-	<div class="section item-slider footer">
+	<div class="section footer">
 		<div class="footer__inner">
 			<div class="footer__feedback">
 				<p class="footer__p">Give us some feedback:</p>

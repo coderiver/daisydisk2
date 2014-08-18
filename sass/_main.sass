@@ -24,7 +24,7 @@
 	.header__txt
 		font-size: 35px
 		color: #FFF
-		padding-left: 15px
+		padding-left: 13px
 		vertical-align: 18px
 		+mus300
 	.header__txt_grey
@@ -69,26 +69,30 @@
 
 .content
 	.content__img
+		display: inline-block
+		width: 47%
+		height: 0
+		margin: -2px 0 0 4px
+		padding-bottom: 43%
 		background: url(../img/daisy.png) no-repeat
 		background-size: cover
-		width: 34.828%
-		height: 0
-		padding-bottom: 32%
-		display: inline-block
 	.content__txt
-		display: inline-block
-		width: 64.172%
-		padding-right: 108px
+		position: absolute
+		top: 35%
+		right: 12.5%
 		color: #FFF
 		font-size: 5.12vw
 		text-transform: uppercase
 		text-align: right
-		line-height: 1.2
+		line-height: 1.14
 		+mus100
 		+box
+	.content__p
+		letter-spacing: -2.1px
 	.content__p_green
 		color: $neonGreen
-		padding-bottom: 2%
+		padding-bottom: 4.5%
+		letter-spacing: -2.5px
 	.content__btn
 		display: inline-block
 		text-align: right
@@ -96,7 +100,7 @@
 		.btn__item
 			float: left
 			text-align: center
-			margin-right: 30px
+			margin-right: 32px
 			&:last-child
 				margin-right: 0
 		.btnLoad
@@ -105,14 +109,16 @@
 			display: block
 			color: $lightViolet
 			font-size: 13px
-			padding-top: 15px
+			padding-top: 11px
+			text-transform: none
 			+mus500
 		.btn__txt_blue
 			color: $blue
 
 .social
+	position: absolute
 	font-size: 0
-	margin-bottom: 10px
+	bottom: 58px
 	.social__item
 		display: inline-block
 		margin-right: 10px
@@ -136,7 +142,7 @@
 .scrollThis
 	position: absolute
 	left: 50%
-	bottom: 60px
+	bottom: 70px
 	margin-left: -13px
 	+s(scroll)
 	&:hover
@@ -146,10 +152,10 @@
 .reviews
 	+gh(#a0e695, #c6ea91)
 	.reviews__ttl
-		font-size: 5vw//60px
+		font-size: 4.2vw
 		text-transform: uppercase
 		color: $black
-		padding: 160px 0 60px 0
+		padding: 165px 0 30px 0
 		text-align: center
 		+mus100
 	.reviews__awards
@@ -160,7 +166,7 @@
 	.awards__bl
 		display: flex
 		width: 70%
-		padding: 50px 15%
+		padding: 47px 15%
 	.awards__item
 		color: #42A655
 		font-size: 15px
@@ -168,7 +174,7 @@
 		+mus700
 	.awards__quantity
 		display: block
-		font-size: 2.1vw//40px
+		font-size: 3vw
 		text-align: center
 		letter-spacing: -3px
 		+mus300

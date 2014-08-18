@@ -1,69 +1,48 @@
 head.ready(function() {
-	var onIndexPage = window.location.href.indexOf("index.html") != -1;
 
-	if (onIndexPage) {
-		var $doc = $(document),
-			$win = $(window),
-			winW = $win.width(),
-			winH = $win.height(),
-			$body = $('body'),
-			$panels = $('.item-slider'),
-			$nav = $('.nav li');
-			panelsLen = $panels.length,
-			$header = $('.header'),
-			linkScrollDuration = 1100,
-			flag = true,
-			$clientVideo = $('.client-video .jp-jplayer'),
-			isHomepage = $body.hasClass('index');
+	//slides on index page
+	$('#fullpage').fullpage({
+		anchors:['main', 'reviews', 'homeuse', 'prouse', 'features', 'monitor'],
+		scrollingSpeed: 300,
+		navigation: true,
+		navigationPosition: 'right',
+		navigationTooltips: ['Main', 'Reviews & Advantages', 'Perfect for home use', 'Professional use', 'Features', 'Monitor', 'Contacts'],
+		autoScrolling: true,
+		css3: true,
+		animateAnchor: true,
+		verticalCentered: false,
 
-		function initPanels(){
-			$.each($panels, function(panelIdx){
-				var $panel = $panels.eq(panelIdx);
-					// panelStart = panelIdx == 0 ? '0%' : '100%',
-				$panel.attr('data-'+(panelIdx-1)*100+'p', 'transform:translate(0,100%)') // -1 - in-start
-				$panel.attr('data-'+(panelIdx-0.5)*100+'p', 'transform:translate(0,0%)') // -0.5 - in-end
-				$panel.attr('data-'+(panelIdx)*100+'p', 'transform:translate(0,0%)') // 0 - out-start
 
-				if (panelIdx + 1 < panelsLen){
-					$panel.attr('data-'+(panelIdx+1)*100+'p', 'transform:translate(0,-100%)') // +1 - out-end
-				}
-			})
-		}
+		afterLoad: function(anchorLink, index){
+			var paginator = $('#fp-nav').find('span');
 
-		function scrollTo(blockToScroll) {
-			var curPos = $(document).scrollTop(),
-				heightScroll = $(window).height() * $(blockToScroll).index(),
-				scrollTime = Math.abs(heightScroll-curPos)/7.73;
-			s.animateTo(heightScroll);
-		}
-
-		initPanels();
-
-		s = skrollr.init({
-			smoothScrollingDuration:linkScrollDuration,
-			render: function(data){
-				var secMax = data.maxTop/winH,
-					curSecIdx = Math.round(data.curTop / winH),
-					a = ($nav.filter('.active').index()),
-					b = ($nav.eq(curSecIdx).index());
-
-		    	if(flag) {
-					$nav.eq(curSecIdx).addClass('active').siblings().removeClass('active');
-					flag = false;
-				} else {
-					if(a != b) flag = true;
-				}
+			if (anchorLink == 'reviews' || anchorLink == 'features') {
+				paginator.addClass('another');
 			}
-		});
+			else {
+				paginator.removeClass('another');
+			};
+		},
 
-		$(window).resize(function() {
-			$(window).scrollTop($panels.eq($nav.filter('.active').index()).offset().top);
-		});
+		onLeave: function(index, nextIndex, direction){
+			var prevPage = $('.section.active').prev('.section'),
+				nextPage = $('.section.active').next('.section');
 
-		$nav.click(function(){
-			scrollTo(this);
-		});
-	} else {
+			if (direction =='down') {
+				prevPage.addClass('is-slidedown');
+				setTimeout(function() {
+					$('.section').removeClass('is-slidedown');
+				}, 600)
+			}
+			else if (direction =='up') {
+				nextPage.addClass('is-slideup');
+				setTimeout(function() {
+					$('.section').removeClass('is-slideup');
+				}, 600)
+			};
+		},
+	});
+
 		//FAQ
 		$('.ask__list-item').click(function(event) {
 			$(this).toggleClass('is-active');
@@ -125,5 +104,5 @@ head.ready(function() {
 
 			$(chosen).text(countryChange);
 		});
-	}
+
 });
