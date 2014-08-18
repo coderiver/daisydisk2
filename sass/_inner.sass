@@ -68,6 +68,8 @@
 	.formReg
 		padding: 5.3% 5%
 		+clr
+		&.another
+			padding: 4.3% 5% 5% 5%
 		.textarea
 			margin: 0 0 18px 0
 		.btnSend
@@ -76,18 +78,18 @@
 			&.another
 				margin: 0 0 20px 0
 			&.small
-				margin: 0 0 15px 0
+				margin: 0 0 10px 0
 	.formReg__prettl
-		padding-bottom: 70px
+		padding-bottom: 52px
 		+s-ttl
 	.formReg__ttl
-		margin-bottom: 25px
+		margin-bottom: 24px
 		line-height: 1
 		+ttl
 		&.center
 			text-align: center
 	.formReg__desc
-		margin-left: -3px
+		margin: 0 0 0.9px -3px
 		font-size: 20px
 		color: #fff
 		+mus300
@@ -96,11 +98,15 @@
 	.formReg__input
 		margin-bottom: 41px
 		+clr
+		&.another
+			margin-bottom: 67px
+		&.last
+			margin-bottom: 0
 	.formReg__warning
-		padding-right: 65px
+		padding: 14px 50px 0 0
 		font-size: 15px
 		color: $lightViolet
-		line-height: 1.2
+		line-height: 18px
 		+mus500
 	.input__row
 		float: left
@@ -112,9 +118,11 @@
 		&.nopad
 			padding: 0
 		&.wbigchange
-			width: 52.9%
+			width: 54%
+			margin-top: 17px
 		&.wchange
-			width: 39.2%
+			width: 43.3%
+			margin-top: 17px
 		&:last-child
 			float: right
 			padding: 0 0 0 2.6%
@@ -405,32 +413,36 @@
 //store page
 .store
 	.product
-		margin: 35px 0 60px
+		margin: 35px 0 65px
 	.product__row
-		margin-bottom: 30px
+		margin-bottom: 24px
 		+clr
 		&:last-child
 			margin-bottom: 0
 	.product__info
 		float: left
 		text-transform: uppercase
+		margin: 4px 0 0 -3px
 		font-size: 30px
-		color: #FFF
 		+mus300
 		span
 			color: $neonGreen
+			&:first-child
+				color: #FFF
 	.product__country
 		float: right
 	.product__quantity
 		display: table-cell
-		padding-right: 50px
+		padding-right: 48px
 		font-size: 20px
 		color: #FFF
 		box-sizing: border-box
 		+mus300
+		p
+			margin: 0 0 2px -1px
 		input
-			max-width: 85px
-			padding: 12px 0 8px 20px
+			max-width: 83px
+			padding: 9px 0 9px 18px
 			font-size: 25px
 			color: #FFF
 			background-color: rgba(38,38,54,.7)
@@ -442,27 +454,34 @@
 			+mus300
 	.product__desc
 		display: table-cell
-		padding-right: 50px
+		padding-right: 100px
 		font-size: 20px
 		color: $lightViolet
+		line-height: 24px
 		+mus300
 		+box
 	.inner__form
-		margin-bottom: 70px
+		margin-bottom: 60px
 	.payment
-		margin-bottom: 70px
+		padding-left: 48px
+		margin-bottom: 150px
 	.payment__ttl
-		margin-bottom: 35px
+		margin-bottom: 19px
 		+s-ttl
 	.payment__choice
-		padding-bottom: 10px
+		line-height: 35px
 	.radio__title
 		font-size: 20px
-		padding-left: 25px
+		padding-left: 21px
 		color: $lightViolet
 		+mus300
 		.card
 			display: inline-block
+			margin-right: 3px
+			&:first-child
+				margin-left: 5px
+			&.last
+				margin-right: 12.5px
 		.viza
 			+s(viza)
 		.mastercard
@@ -472,21 +491,26 @@
 		.discover
 			+s(discover)
 		.paypal
-			padding-right: 15px
+			margin-right: 15px
 			+s(paypal)
 		.amazon
-			padding-right: 10px
+			margin-right: 5px
 			+s(amazon)
 	.proceed
-		margin-top: 60px
+		margin-top: 52px
 		+clr
 		.btnSend
 			float: right
+			margin: 2px 50px 0 0
+			padding-left: 5px
+			letter-spacing: 0.25px
 	.proceed__txt
 		float: left
-		width: 60%
+		width: 55%
+		padding-left: 3px
 		font-size: 15px
 		color: $lightViolet
+		line-height: 18px
 		+mus500
 		a
 			color: $blue
