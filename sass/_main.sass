@@ -114,6 +114,8 @@
 			+mus500
 		.btn__txt_blue
 			color: $blue
+			&:hover
+				color: $neon
 
 .social
 	position: absolute
@@ -165,8 +167,8 @@
 		bottom: 0
 	.awards__bl
 		display: flex
-		width: 70%
-		padding: 47px 15%
+		width: 62.5%
+		padding: 40px 19% 76px 19.25%
 	.awards__item
 		color: #42A655
 		font-size: 15px
@@ -174,25 +176,32 @@
 		+mus700
 	.awards__quantity
 		display: block
-		font-size: 3vw
+		font-size: 2.8vw
 		text-align: center
-		letter-spacing: -3px
+		letter-spacing: -3.5px
+		line-height: 1.5
 		+mus300
+	.awards__desc
+		margin-top: -5px
+		line-height: 19.5px
+		letter-spacing: 0.15px
 	.awards__item_grow
 		flex-grow: 2
 		font-size: 0
+		margin-top: 10px
 		text-align: center
 	.awards__best
+		display: inline-block
+		padding: 6px 50px 0 0
 		+s(best)
-		display: inline-block
-		padding-right: 50px
 	.awards__macworld
+		display: inline-block
+		padding: 9px 50px 0 0
 		+s(macworld)
-		display: inline-block
-		padding-right: 50px
 	.awards__macformat
-		+s(macformat)
 		display: inline-block
+		padding-top: 9px
+		+s(macformat)
 
 
 //section homeu
@@ -200,18 +209,20 @@
 	background: url(../img/bg1.jpg) 0 100% no-repeat
 	background-size: cover
 	.homeu__txt
-		padding: 8.4449% 0 2.5% 0
-		font-size: 5vw//60px
+		margin-left: -7px
+		padding: 11.2% 0 1.8% 0
 		text-transform: uppercase
-		line-height: 1.2
+		font-size: 4.25vw
+		line-height: 1.15
+		letter-spacing: -0.76px
 		+mus100
 	.homeu__p
 		color: #FFF
 	.homeu__p_green
 		color: $neonGreen
 	.homeu__desc
-		width: 490px
-		padding-bottom: 4.3608%
+		width: 500px
+		padding-bottom: 3.2%
 		font-size: 20px//1.05vw
 		color: #FFF
 		line-height: 1.2
@@ -225,28 +236,34 @@
 	.compare__item
 		text-align: center
 		display: inline-block
-		width: 150px
-		margin-right: 6%
+		width: 135px
+		margin-right: 8.5%
+		&:first-child
+			margin-right: 8.65%
 		&:last-child
-			margin-right: 0
+			margin: 0 0 0 0.45%
 	.compare__item_laptop
-		margin: 0 auto 40px
-		+s(laptop)
+		img
+			display: block
+			margin: 25px auto 35px
 	.compare__item_cloud
-		margin: 0 auto 40px
-		+s(cloud)
+		img
+			display: block
+			margin: 25px auto 28px
 	.compare__item_usb
-		margin: 0 auto 40px
-		+s(usb)
+		img
+			display: block
+			margin: 25px auto 26px
 	.compare__item_disk
-		margin: 0 auto 40px
-		+s(disk)
+		img
+			display: block
+			margin: 18px auto 22px
 	.compare__item_mac
 		margin: 0 auto 40px
 		+s(mac)
 	.compare__p_green
 		color: $neonGreen
-		padding-top: 20px
+		padding-top: 14.2px
 		text-transform: none
 	.compare__p_gr
 		color: $neonGreen

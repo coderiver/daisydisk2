@@ -74,6 +74,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .content .content__btn .btnLoad, .content .content__btn .btnBuy { margin: 0 auto; }
 .content .content__btn .btn__txt { display: block; color: #a1a1af; font-size: 13px; padding-top: 11px; text-transform: none; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; }
 .content .content__btn .btn__txt_blue { color: #1ac8f9; }
+.content .content__btn .btn__txt_blue:hover { color: #52f9ff; }
 
 .social { position: absolute; font-size: 0; bottom: 58px; }
 .social .social__item { display: inline-block; margin-right: 10px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; -webkit-transition: opacity 0.4s ease; -moz-transition: opacity 0.4s ease; -o-transition: opacity 0.4s ease; transition: opacity 0.4s ease; }
@@ -91,29 +92,31 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .reviews { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a0e695), color-stop(100%, #c6ea91)); background-image: -webkit-linear-gradient(left, #a0e695, #c6ea91); background-image: -moz-linear-gradient(left, #a0e695, #c6ea91); background-image: -o-linear-gradient(left, #a0e695, #c6ea91); background-image: linear-gradient(left, #a0e695, #c6ea91); }
 .reviews .reviews__ttl { font-size: 4.2vw; text-transform: uppercase; color: #1d1d29; padding: 165px 0 30px 0; text-align: center; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
 .reviews .reviews__awards { background: #97e08f; position: absolute; width: 100%; bottom: 0; }
-.reviews .awards__bl { display: flex; width: 70%; padding: 47px 15%; }
+.reviews .awards__bl { display: flex; width: 62.5%; padding: 40px 19% 76px 19.25%; }
 .reviews .awards__item { color: #42a655; font-size: 15px; text-align: center; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
-.reviews .awards__quantity { display: block; font-size: 3vw; text-align: center; letter-spacing: -3px; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
-.reviews .awards__item_grow { flex-grow: 2; font-size: 0; text-align: center; }
-.reviews .awards__best { background: url('../img/icons-sd1b9cca841.png') 0 -1231px no-repeat; width: 87px; height: 57px; display: inline-block; padding-right: 50px; }
-.reviews .awards__macworld { background: url('../img/icons-sd1b9cca841.png') 0 -1085px no-repeat; width: 107px; height: 54px; display: inline-block; padding-right: 50px; }
-.reviews .awards__macformat { background: url('../img/icons-sd1b9cca841.png') 0 -1380px no-repeat; width: 71px; height: 54px; display: inline-block; }
+.reviews .awards__quantity { display: block; font-size: 2.8vw; text-align: center; letter-spacing: -3.5px; line-height: 1.5; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.reviews .awards__desc { margin-top: -5px; line-height: 19.5px; letter-spacing: 0.15px; }
+.reviews .awards__item_grow { flex-grow: 2; font-size: 0; margin-top: 10px; text-align: center; }
+.reviews .awards__best { display: inline-block; padding: 6px 50px 0 0; background: url('../img/icons-sd1b9cca841.png') 0 -1231px no-repeat; width: 87px; height: 57px; }
+.reviews .awards__macworld { display: inline-block; padding: 9px 50px 0 0; background: url('../img/icons-sd1b9cca841.png') 0 -1085px no-repeat; width: 107px; height: 54px; }
+.reviews .awards__macformat { display: inline-block; padding-top: 9px; background: url('../img/icons-sd1b9cca841.png') 0 -1380px no-repeat; width: 71px; height: 54px; }
 
 .homeu { background: url(../img/bg1.jpg) 0 100% no-repeat; background-size: cover; }
-.homeu .homeu__txt { padding: 8.4449% 0 2.5% 0; font-size: 5vw; text-transform: uppercase; line-height: 1.2; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
+.homeu .homeu__txt { margin-left: -7px; padding: 11.2% 0 1.8% 0; text-transform: uppercase; font-size: 4.25vw; line-height: 1.15; letter-spacing: -0.76px; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
 .homeu .homeu__p { color: white; }
 .homeu .homeu__p_green { color: #b7fb5b; }
-.homeu .homeu__desc { width: 490px; padding-bottom: 4.3608%; font-size: 20px; color: white; line-height: 1.2; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.homeu .homeu__desc { width: 500px; padding-bottom: 3.2%; font-size: 20px; color: white; line-height: 1.2; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 
 .compare { color: white; text-transform: uppercase; font-size: 15px; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
-.compare .compare__item { text-align: center; display: inline-block; width: 150px; margin-right: 6%; }
-.compare .compare__item:last-child { margin-right: 0; }
-.compare .compare__item_laptop { margin: 0 auto 40px; background: url('../img/icons-sd1b9cca841.png') 0 -2061px no-repeat; width: 71px; height: 46px; }
-.compare .compare__item_cloud { margin: 0 auto 40px; background: url('../img/icons-sd1b9cca841.png') 0 -1647px no-repeat; width: 70px; height: 56px; }
-.compare .compare__item_usb { margin: 0 auto 40px; background: url('../img/icons-sd1b9cca841.png') 0 -1739px no-repeat; width: 70px; height: 60px; }
-.compare .compare__item_disk { margin: 0 auto 40px; background: url('../img/icons-sd1b9cca841.png') 0 -923px no-repeat; width: 72px; height: 72px; }
+.compare .compare__item { text-align: center; display: inline-block; width: 135px; margin-right: 8.5%; }
+.compare .compare__item:first-child { margin-right: 8.65%; }
+.compare .compare__item:last-child { margin: 0 0 0 0.45%; }
+.compare .compare__item_laptop img { display: block; margin: 25px auto 35px; }
+.compare .compare__item_cloud img { display: block; margin: 25px auto 28px; }
+.compare .compare__item_usb img { display: block; margin: 25px auto 26px; }
+.compare .compare__item_disk img { display: block; margin: 18px auto 22px; }
 .compare .compare__item_mac { margin: 0 auto 40px; background: url('../img/icons-sd1b9cca841.png') 0 -1954px no-repeat; width: 72px; height: 56px; }
-.compare .compare__p_green { color: #b7fb5b; padding-top: 20px; text-transform: none; }
+.compare .compare__p_green { color: #b7fb5b; padding-top: 14.2px; text-transform: none; }
 .compare .compare__p_gr { color: #b7fb5b; }
 
 .pro { background: url(../img/bg2.jpg) 0 100% no-repeat; background-size: cover; }
@@ -248,13 +251,14 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .reviews__cycle .cycle__quote { text-align: center; width: 100%; }
 .reviews__cycle .cycle__ttl { font-size: 2.7vw; letter-spacing: 0.45px; line-height: 1.25; padding-top: 3px; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 .reviews__cycle .cycle__bl { margin-top: 18px; font-size: 0; }
-.reviews__cycle .cycle__inner { width: 30%; margin: 0 auto; *zoom: 1; }
+.reviews__cycle .cycle__inner { width: 310px; margin: 0 auto; *zoom: 1; }
 .reviews__cycle .cycle__inner:after { content: " "; display: table; clear: both; }
-.reviews__cycle .cycle__txt { float: left; padding-top: 31px; text-transform: uppercase; font-size: 15px; color: #1d1d29; line-height: 18px; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
-.reviews__cycle .cycle__txt_right { text-align: right; }
+.reviews__cycle .cycle__txt { float: left; text-transform: uppercase; font-size: 15px; color: #1d1d29; line-height: 18px; padding-top: 30px; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
+.reviews__cycle .cycle__txt_right { text-align: right; margin-left: 3px; }
+.reviews__cycle .cycle__txt_left { text-align: left; }
 .reviews__cycle .cycle__txt_green { color: #00991d; display: block; text-transform: none; }
 .reviews__cycle .cycle__txt_sp { display: block; }
-.reviews__cycle .cycle__author { float: left; margin: 0 23px 0 28px; background: url('../img/icons-sd1b9cca841.png') 0 -536px no-repeat; width: 85px; height: 86px; }
+.reviews__cycle .cycle__author { float: left; display: block; margin: 0 28px 0 29px; background: url('../img/icons-sd1b9cca841.png') 0 -536px no-repeat; width: 85px; height: 86px; }
 .reviews__cycle .cycle__next { position: absolute; top: 12px; right: -16px; cursor: pointer; background: url('../img/icons-sd1b9cca841.png') 0 -2439px no-repeat; width: 16px; height: 26px; }
 .reviews__cycle .cycle__prev { position: absolute; top: 12px; left: -16px; cursor: pointer; background: url('../img/icons-sd1b9cca841.png') 0 -2439px no-repeat; width: 16px; height: 26px; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
