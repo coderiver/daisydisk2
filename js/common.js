@@ -1,48 +1,53 @@
 head.ready(function() {
 
-	//slides on index page
-	$('#fullpage').fullpage({
-		anchors:['main', 'reviews', 'homeuse', 'prouse', 'features', 'monitor'],
-		scrollingSpeed: 300,
-		navigation: true,
-		navigationPosition: 'right',
-		navigationTooltips: ['Main', 'Reviews & Advantages', 'Perfect for home use', 'Professional use', 'Features', 'Monitor', 'Contacts'],
-		autoScrolling: true,
-		css3: true,
-		animateAnchor: true,
-		verticalCentered: false,
+	var onIndexPage = window.location.href.indexOf("index.html") != -1;
+
+	if (onIndexPage) {
+		$("html, body" ).css("overflow", "hidden");
+
+		$('#fullpage').fullpage({
+			anchors:['main', 'reviews', 'homeuse', 'prouse', 'features', 'monitor'],
+			scrollingSpeed: 300,
+			navigation: true,
+			navigationPosition: 'right',
+			navigationTooltips: ['Main', 'Reviews & Advantages', 'Perfect for home use', 'Professional use', 'Features', 'Monitor', 'Contacts'],
+			autoScrolling: true,
+			css3: true,
+			animateAnchor: true,
+			verticalCentered: false,
 
 
-		afterLoad: function(anchorLink, index){
-			var paginator = $('#fp-nav').find('span');
+			afterLoad: function(anchorLink, index){
+				var paginator = $('#fp-nav').find('span');
 
-			if (anchorLink == 'reviews' || anchorLink == 'features') {
-				paginator.addClass('another');
-			}
-			else {
-				paginator.removeClass('another');
-			};
-		},
+				if (anchorLink == 'reviews' || anchorLink == 'features') {
+					paginator.addClass('another');
+				}
+				else {
+					paginator.removeClass('another');
+				};
+			},
 
-		onLeave: function(index, nextIndex, direction){
-			var prevPage = $('.section.active').prev('.section'),
-				nextPage = $('.section.active').next('.section');
+			onLeave: function(index, nextIndex, direction){
+				var prevPage = $('.section.active').prev('.section'),
+					nextPage = $('.section.active').next('.section');
 
-			if (direction =='down') {
-				prevPage.addClass('is-slidedown');
-				setTimeout(function() {
-					$('.section').removeClass('is-slidedown');
-				}, 600)
-			}
-			else if (direction =='up') {
-				nextPage.addClass('is-slideup');
-				setTimeout(function() {
-					$('.section').removeClass('is-slideup');
-				}, 600)
-			};
-		},
-	});
-
+				if (direction =='down') {
+					prevPage.addClass('is-slidedown');
+					setTimeout(function() {
+						$('.section').removeClass('is-slidedown');
+					}, 600)
+				}
+				else if (direction =='up') {
+					nextPage.addClass('is-slideup');
+					setTimeout(function() {
+						$('.section').removeClass('is-slideup');
+					}, 600)
+				};
+			},
+		});
+	} else {
+		$("html, body" ).css("overflow", "auto");
 		//FAQ
 		$('.ask__list-item').click(function(event) {
 			$(this).toggleClass('is-active');
@@ -104,5 +109,7 @@ head.ready(function() {
 
 			$(chosen).text(countryChange);
 		});
+	}
+
 
 });

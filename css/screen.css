@@ -546,7 +546,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
   .inner .proceed__txt { font-size: 13px; }
   .inner .payment { padding-left: 0; } }
 @media only screen and (max-width: 320px) { .product__info span:first-child { display: block; } }
-html, body { margin: 0; padding: 0; overflow: hidden; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+html, body { margin: 0; padding: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 #superContainer { height: 100%; position: relative; -ms-touch-action: none; touch-action: none; }
 
