@@ -30,7 +30,6 @@
 		color: $darkBlue
 		padding-left: 18px
 
-
 .btnManual
 	display: block
 	position: relative
@@ -56,9 +55,11 @@
 		&:before
 			content: ""
 			position: absolute
+			width: 71px
+			height: 60px
 			top: 20px
 			left: 30px
-			+s(manual)
+			background: url(../img/svg/manual.svg) no-repeat
 
 .btnSend
 	@extend .btnManual

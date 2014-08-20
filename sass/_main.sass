@@ -70,12 +70,12 @@
 .content
 	.content__img
 		display: inline-block
-		width: 47%
+		width: 43%
 		height: 0
-		margin: -2px 0 0 4px
 		padding-bottom: 43%
-		background: url(../img/daisy.png) no-repeat
+		background: url(../img/daisy.svg) no-repeat
 		background-size: cover
+		transform: rotate(-5deg) skew(13deg, -2deg) translateX(3.65%) translateY(3px)
 	.content__txt
 		position: absolute
 		top: 35%
@@ -243,25 +243,25 @@
 		&:last-child
 			margin: 0 0 0 0.45%
 	.compare__item_laptop
-		img
+		.laptop
 			display: block
 			margin: 25px auto 35px
 	.compare__item_cloud
-		img
+		.cloud
 			display: block
-			margin: 25px auto 28px
+			margin: 26px auto 31px
 	.compare__item_usb
-		img
+		.usb
 			display: block
-			margin: 20px auto 31px
+			margin: 20px auto 29px
 	.compare__item_disk
-		img
+		.disk
 			display: block
-			margin: 18px auto 22px
+			margin: 15px auto 22px
 	.compare__item_mac
 		margin-left: 7px
-		img
-			margin: 0 auto 28px
+		.mac
+			margin: 0 auto 27px
 	.compare__p_green
 		color: $neonGreen
 		padding-top: 14.2px
@@ -309,8 +309,15 @@
 				margin-right: 9.5%
 			&:last-child
 				margin-right: 0
-			.compare__item_cloud img
-				margin: 25px auto 31px
+			.compare__item_cloud
+				.cloud
+					margin: 25px auto 28px
+			.compare__item_disk
+				.disk
+					margin: 15px auto 24px
+			.compare__item_usb
+				.usb
+					margin: 20px auto 31px
 		.compare__p_green
 			padding-top: 15px
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="71px" height="60px" viewBox="0 0 71 60" enable-background="new 0 0 71 60" xml:space="preserve">
+<style>
+	.usb {
+		fill: #fff;
+	}
+
+	.stroke {
+		stroke: #fff;
+	}
+</style>
+<g id="external_disk">
+	<g>
+		<path class="usb" fill="#0D0F0F" d="M65.996,44.138c1.559,0,2.523,1.237,2.143,2.749l-1.951,7.752c-0.379,1.512-1.967,2.749-3.525,2.749H8.338
+			c-1.559,0-3.146-1.237-3.526-2.749l-1.95-7.752c-0.381-1.512,0.583-2.749,2.143-2.749H65.996 M65.996,41.888H5.004
+			c-1.441,0-2.744,0.61-3.574,1.675c-0.829,1.064-1.103,2.476-0.75,3.874l1.95,7.751c0.629,2.496,3.136,4.45,5.708,4.45h54.324
+			c2.574,0,5.08-1.955,5.709-4.451l1.949-7.751c0.352-1.398,0.078-2.811-0.752-3.874C68.74,42.498,67.438,41.888,65.996,41.888
+			L65.996,41.888z"/>
+	</g>
+
+		<line class="stroke" fill="none" stroke="#0D0F0F" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="62.238" y1="50.981" x2="8.762" y2="50.981"/>
+	<g>
+
+			<path class="stroke" fill="none" stroke="#0D0F0F" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M68.83,44.11L57.305,5.331c-0.443-1.495-2.082-2.717-3.641-2.717H17.338c-1.559,0-3.197,1.223-3.643,2.717L2.17,44.11"/>
+	</g>
+</g>
+</svg>
