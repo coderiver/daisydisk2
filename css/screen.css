@@ -136,8 +136,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .pro .pro__txt { padding: 11% 6.5% 1.5% 0; font-size: 4.25vw; text-transform: uppercase; text-align: right; line-height: 1.2; letter-spacing: 0.3px; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
 .pro .pro__p { color: #1d1d29; }
 .pro .pro__p_green { color: #00991d; }
-.pro .pro__about { padding-right: 55px; text-align: right; }
-.pro .pro__desc { width: 39%; padding-bottom: 3.8%; padding-right: 3.25%; font-size: 20px; color: #1d1d29; display: inline-block; text-align: right; line-height: 1.2; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; *zoom: 1; }
+.pro .pro__about { padding: 0 6.9% 3.8% 0; text-align: right; }
+.pro .pro__desc { width: 39%; font-size: 20px; color: #1d1d29; display: inline-block; text-align: right; line-height: 1.2; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; *zoom: 1; }
 .pro .pro__desc:after { content: " "; display: table; clear: both; }
 .pro .compare { text-align: right; padding-right: 5.1%; }
 .pro .compare .compare__item { line-height: 1.3; margin-right: 9%; }
@@ -154,22 +154,18 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .features .features__data:after { content: " "; display: table; clear: both; }
 .features .features__item { float: left; width: 180px; padding-bottom: 20px; text-align: center; color: #78644c; font-size: 20px; line-height: 25px; vertical-align: top; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 .features .features__item:first-child { width: 185px; margin-right: 4.2%; }
-.features .features__item:first-child .features__about { padding-bottom: 35px; }
 .features .features__item:nth-child(2) { width: 194px; margin-right: 4.5%; }
-.features .features__item:nth-child(2) .features__about { padding-bottom: 35px; }
 .features .features__item:nth-child(3) { margin-right: 5.2%; }
 .features .features__item:nth-child(3) .features__about { padding-bottom: 32px; }
 .features .features__item:nth-child(4) { margin-right: 5.1%; }
-.features .features__item:nth-child(4) .features__about { padding-bottom: 35px; }
 .features .features__item:last-child { margin-right: 0; }
-.features .features__item:last-child .features__about { padding-bottom: 35px; }
 .features .features__item_safe { margin: 0 auto 18px; }
 .features .features__item_fast { margin: 0 auto 18px; }
 .features .features__item_friendly { margin: 0 auto 20px; }
 .features .features__item_cost { margin: 0 auto 20px; }
 .features .features__item_visual { margin: 0 auto 28px; }
 .features .features__item_visual .visual { padding-top: 15px; }
-.features .features__about { font-size: 15px; color: #954326; text-transform: uppercase; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
+.features .features__about { font-size: 15px; padding-bottom: 35px; color: #954326; text-transform: uppercase; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
 
 .monitor { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #0f1d39), color-stop(100%, #054573)); background-image: -webkit-linear-gradient(left, #0f1d39, #054573); background-image: -moz-linear-gradient(left, #0f1d39, #054573); background-image: -o-linear-gradient(left, #0f1d39, #054573); background-image: linear-gradient(left, #0f1d39, #054573); }
 .monitor .monitor__inner { padding-top: 115px; }
@@ -476,6 +472,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .store .proceed__txt a { color: #1ac8f9; }
 .store .proceed__txt a:hover { color: #52f9ff; }
 
+@media only screen and (max-width: 1400px) { .features { text-align: center; }
+  .features .features__item { float: none; display: inline-block; font-size: 18px; line-height: 22px; }
+  .features .features__item:last-child { margin-right: 5%; } }
 @media only screen and (max-width: 1115px) { .menu .menu__item { margin-right: 23px; }
   .content .content__txt { top: 29%; }
   .inner .inner__faq, .inner .inner__manual { float: none; }
@@ -484,7 +483,6 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
   .inner .blog__ttl { margin: 35px 0 60px; }
   .inner .post__date { left: -15px; top: -30px; font-size: 13px; }
   .inner .formReg .input { font-size: 20px; }
-  .inner .pro .pro__desc { padding-right: 1.25%; }
   .reviews .awards__bl { width: 70%; padding: 41px 16% 41px 16%; }
   .btnLoad, .btnBuy { width: 180px; } }
 @media only screen and (max-width: 1020px) { .fa.fa-bars { display: block; }
