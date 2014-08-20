@@ -117,7 +117,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .homeu .homeu__txt { margin-left: -7px; padding: 11% 0 1.8% 0; text-transform: uppercase; font-size: 4.25vw; line-height: 1.15; letter-spacing: -0.76px; font-family: "museoSans-100", Myriad Pro, Arial, sans-serif; }
 .homeu .homeu__p { color: white; }
 .homeu .homeu__p_green { color: #b7fb5b; }
-.homeu .homeu__desc { width: 500px; padding-bottom: 3.2%; font-size: 20px; color: white; line-height: 1.2; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
+.homeu .homeu__desc { width: 39%; padding-bottom: 3.2%; font-size: 20px; color: white; line-height: 1.2; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; }
 
 .compare { color: white; text-transform: uppercase; font-size: 15px; font-family: "museoSans-700", Myriad Pro, Arial, sans-serif; }
 .compare .compare__item { text-align: center; display: inline-block; width: 135px; margin-right: 8.5%; }
@@ -137,7 +137,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
 .pro .pro__p { color: #1d1d29; }
 .pro .pro__p_green { color: #00991d; }
 .pro .pro__about { padding-right: 55px; text-align: right; }
-.pro .pro__desc { width: 500px; padding-bottom: 3.8%; padding-right: 3.25%; font-size: 20px; color: #1d1d29; display: inline-block; text-align: right; line-height: 1.2; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; *zoom: 1; }
+.pro .pro__desc { width: 39%; padding-bottom: 3.8%; padding-right: 3.25%; font-size: 20px; color: #1d1d29; display: inline-block; text-align: right; line-height: 1.2; font-family: "museoSans-300", Myriad Pro, Arial, sans-serif; *zoom: 1; }
 .pro .pro__desc:after { content: " "; display: table; clear: both; }
 .pro .compare { text-align: right; padding-right: 5.1%; }
 .pro .compare .compare__item { line-height: 1.3; margin-right: 9%; }
@@ -484,7 +484,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
   .inner .blog__ttl { margin: 35px 0 60px; }
   .inner .post__date { left: -15px; top: -30px; font-size: 13px; }
   .inner .formReg .input { font-size: 20px; }
-  .inner .pro__desc { padding-right: 1.25%; }
+  .inner .pro .pro__desc { padding-right: 1.25%; }
   .reviews .awards__bl { width: 70%; padding: 41px 16% 41px 16%; }
   .btnLoad, .btnBuy { width: 180px; } }
 @media only screen and (max-width: 1020px) { .fa.fa-bars { display: block; }
