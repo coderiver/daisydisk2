@@ -3,8 +3,13 @@ head.ready(function() {
 	var onIndexPage = window.location.href.indexOf("index.html") != -1;
 
 	if (onIndexPage) {
-		$("html, body" ).css("overflow", "hidden");
 
+		//menu mobile
+		$('.fa.fa-bars').click(function(event) {
+			$(this).parent().find('.menu').slideToggle();
+		});
+
+		$("html, body" ).css("overflow", "hidden");
 		$('#fullpage').fullpage({
 			anchors:['main', 'reviews', 'homeuse', 'prouse', 'features', 'monitor'],
 			scrollingSpeed: 300,
@@ -18,7 +23,8 @@ head.ready(function() {
 
 
 			afterLoad: function(anchorLink, index){
-				var paginator = $('#fp-nav').find('span');
+				var paginator = $('#fp-nav').find('span'),
+					menu = $('.fixed');
 
 				if (anchorLink == 'reviews' || anchorLink == 'features') {
 					paginator.addClass('another');
@@ -26,6 +32,14 @@ head.ready(function() {
 				else {
 					paginator.removeClass('another');
 				};
+
+				if (anchorLink == 'reviews' || anchorLink == 'homeuse' || anchorLink == 'prouse' || anchorLink == 'features' || anchorLink == 'monitor' ) {
+					menu.slideDown();
+				}
+				else {
+					menu.slideUp();
+				};
+
 			},
 
 			onLeave: function(index, nextIndex, direction){
@@ -48,6 +62,7 @@ head.ready(function() {
 		});
 	} else {
 		$("html, body" ).css("overflow", "auto");
+
 		//FAQ
 		$('.ask__list-item').click(function(event) {
 			$(this).toggleClass('is-active');
@@ -63,8 +78,8 @@ head.ready(function() {
 		});
 
 		//menu mobile
-		$('.fa-bars').click(function(event) {
-			$(this).parent().find('.menu').slideToggle('fast');
+		$('.fa.fa-bars').click(function(event) {
+			$(this).parent().find('.menu').slideToggle();
 		});
 
 		//some stuff on textarea/input focus

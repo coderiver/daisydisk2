@@ -29,6 +29,44 @@
 		+mus300
 	.header__txt_grey
 		color: #6c6c8f
+	&.fixed
+		position: fixed
+		width: 100%
+		height: 80px
+		top: 0
+		padding: 0 5.1% 0 5.4%
+		background: #1D1D29
+		z-index: 200
+		+box
+		&.is-visible
+			display: block
+		.header__logo
+			padding-top: 20px
+		.header__ico
+			+s(logo_menu)
+		.header__txt
+			font-size: 25px
+			vertical-align: 9px
+			padding-left: 7px
+		.menu
+			float: left
+			margin-right: 58px
+			.menu__item
+				margin-right: 39px
+				&:last-child
+					margin-right: 0
+				a
+					margin-top: 10px
+					padding: 20px 15px 0 15px
+					text-decoration: none
+		.btnBuy
+			float: right
+			width: 125px
+			height: 40px
+			margin-top: 20px
+			font-size: 17px
+			span
+				padding-left: 3px
 
 .menu
 	+clr
@@ -73,7 +111,7 @@
 		width: 43%
 		height: 0
 		padding-bottom: 43%
-		background: url(../img/daisy.svg) no-repeat
+		background: url(../img/svg/daisy.svg) no-repeat
 		background-size: cover
 		transform: rotate(-5deg) skew(13deg, -2deg) translateX(3.65%) translateY(3px)
 	.content__txt
@@ -168,7 +206,7 @@
 	.awards__bl
 		display: flex
 		width: 62.5%
-		padding: 40px 19% 76px 19.25%
+		padding: 41px 19% 41px 19.25%
 	.awards__item
 		color: #42A655
 		font-size: 15px
