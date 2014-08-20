@@ -484,6 +484,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -webki
   .inner .blog__ttl { margin: 35px 0 60px; }
   .inner .post__date { left: -15px; top: -30px; font-size: 13px; }
   .inner .formReg .input { font-size: 20px; }
+  .inner .pro__desc { padding-right: 1.25%; }
   .reviews .awards__bl { width: 70%; padding: 41px 16% 41px 16%; }
   .btnLoad, .btnBuy { width: 180px; } }
 @media only screen and (max-width: 1020px) { .fa.fa-bars { display: block; }
