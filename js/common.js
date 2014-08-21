@@ -9,7 +9,6 @@ head.ready(function() {
 			$(this).parent().find('.menu').slideToggle();
 		});
 
-		$("html, body" ).css("overflow", "hidden");
 		$('#fullpage').fullpage({
 			anchors:['main', 'reviews', 'homeuse', 'prouse', 'features', 'monitor'],
 			scrollingSpeed: 300,
