@@ -60,7 +60,7 @@ head.ready(function() {
 			},
 		});
 	} else {
-		$("html, body" ).css("overflow", "auto");
+		$("body").css("overflow", "auto");
 
 		//FAQ
 		$('.ask__list-item').click(function(event) {
@@ -122,6 +122,22 @@ head.ready(function() {
 			var chosen = $('#countryList').children('.chosen');
 
 			$(chosen).text(countryChange);
+		});
+
+		//hide select on click outside of it
+		$('html').click(function() {
+			$('.select').removeClass('is-active');
+			if($('.country').is(':visible')) {
+				$('.country').hide();
+			}
+		});
+
+		$('.select').click(function(event){
+			if($(this).hasClass('is-active')) {
+				$(this).children('.country').show();
+			} else {
+				$(this).children('.country').hide();
+			}
 		});
 	}
 

@@ -1,15 +1,41 @@
 //support
-.gradient
-	background: -webkit-radial-gradient(87% 25%, circle closest-corner,  #5e053a, #181421) no-repeat
-	background: -moz-radial-gradient(87% 25%, circle closest-corner,  #5e053a, #181421) no-repeat
-	background-color: #15151f
-	//background: url(../img/gradient.png) top right no-repeat
-	//background-size: cover
+.violet
+	background: url(../img/gradient_violet.png) top right no-repeat
+	+gr
+	&:before
+		background: url(../img/violet.png) top right no-repeat
+		+fill
+
+.blue
+	background: url(../img/gradient_blue.png) top right no-repeat
+	+gr
+	&:before
+		background: url(../img/blue.png) top right no-repeat
+		+fill
+
+.green
+	background: url(../img/gradient_green.png) top right no-repeat
+	+gr
+	&:before
+		background: url(../img/green.png) top right no-repeat
+		+fill
+
+.seafoam
+	background: url(../img/gradient_seafoam.png) top right no-repeat
+	+gr
+	&:before
+		background: url(../img/seafoam.png) top right no-repeat
+		+fill
+
+.pic
+	background: url(../img/pic.png) top center no-repeat
+	background-size: contain
 
 .wrapper
 	max-width: 1440px
 	min-width: 320px
 	margin: 0 auto
+	position: relative
 	.header
 		padding: 20px 3% 0 5.347222%
 	a
@@ -33,7 +59,7 @@
 	.inner__manual
 		float: right
 	.inner__ask
-		margin: 31px 0 50px 0
+		margin: 34px 0 51px 0
 	.ask__list-item
 		line-height: 36px
 		cursor: pointer
@@ -44,19 +70,20 @@
 			&:hover
 				color: $neon
 		&.is-active
-			margin-top: -3px
+			margin-top: -2.5px
 			span
 				display: inline-block
+				margin-bottom: 19px
 				color: #FFF
 				+mus700
 				&:hover
 					color: #FFF
 	.ask__answered
 		background-color: rgba(#222230, .4)
-		margin-bottom: 30px
+		margin-bottom: 35px
 		+mus300
 		p
-			padding: 4% 4% 3% 5%
+			padding: 2.5% 4% 2.5% 5%
 			font-size: 20px
 			color: #fff
 			line-height: 24px
@@ -94,6 +121,7 @@
 		color: #fff
 		+mus300
 		&.is-active
+			margin: -2px 0 2.9px -3px
 			+mus700
 	.formReg__input
 		margin-bottom: 41px
@@ -113,8 +141,6 @@
 		width: 50%
 		padding-right: 2.5%
 		+box
-		input
-			margin-top: 3px
 		&.nopad
 			padding: 0
 		&.wbigchange
@@ -134,7 +160,7 @@
 		.btnSend
 			float: right
 		.formReg__input
-			margin-bottom: 48px
+			margin-bottom: 51px
 	.formLost__ttl
 		margin-bottom: 8px
 		line-height: 1
@@ -142,7 +168,7 @@
 	.formLost__txt
 		width: 50%
 		float: right
-		padding: 25px 0 0 2.4%
+		padding: 27px 0 0 2.4%
 		font-size: 20px
 		line-height: 1.2
 		color: $lightViolet

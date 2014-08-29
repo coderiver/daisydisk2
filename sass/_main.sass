@@ -1,7 +1,6 @@
-// Normally mainpage styles
 //main section
 .main
-	+gh(#121f46, #16161f)
+	+gh(#001a46, #0e0e19)
 	padding-bottom: 50px
 
 .header
@@ -104,6 +103,10 @@
 		a
 			color: #fff
 			+mus700
+			&:hover
+				color: #fff
+			&:after
+				display: none
 
 .content
 	.content__img
@@ -522,8 +525,10 @@
 		line-height: 1.2
 		letter-spacing: 0.1px
 		+mus500
-		span
+		a
 			color: $blue
+			&:hover
+				color: $neon
 	.footer__menu
 		width: 100%
 		margin-left: -436px

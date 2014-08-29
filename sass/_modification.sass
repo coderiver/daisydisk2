@@ -34,7 +34,7 @@
 	display: block
 	position: relative
 	width: 214px
-	height: 90px
+	height: 87px
 	border-radius: 5px
 	background-clip: padding-box
 	background: $blue
@@ -57,7 +57,7 @@
 			position: absolute
 			width: 71px
 			height: 60px
-			top: 20px
+			top: 15px
 			left: 30px
 			background: url(../img/svg/manual.svg) no-repeat
 
@@ -65,16 +65,16 @@
 	@extend .btnManual
 	width: 122px
 	height: 50px
-	padding-right: 6px
+	padding: 0 0 0 4px
 	text-transform: uppercase
-	font-size: 25px
+	font-size: 23.5px
 	color: #07243B
-	letter-spacing: -2px
+	letter-spacing: 1px
 	+mus500
 	&.another
 		width: 280px
-		letter-spacing: 0.2px
-		padding: 0px 0px 0px 3px
+		padding: 0px 0px 0 5px
+		letter-spacing: 0.55px
 
 //fa-bars
 .fa.fa-bars
@@ -89,10 +89,10 @@
 	width: 100%
 	min-height: 230px
 	padding: 17px 18px
-	font-size: 23px
-	color: $neonGreen
+	font-size: 25px
 	border: 1px solid rgba(161,161,175,.4)
 	background-color: rgba(45,45,64,.7)
+	color: #a1a1af
 	overflow: hidden
 	resize: none
 	@include border-radius(5px)
@@ -104,16 +104,17 @@
 		border: 1px solid #b6fa5b
 		background-color: rgba(21,21,31,.7)
 		box-shadow: rgba(21,21,31,.7)
+		color: $neonGreen
 
 //input
 .input
 	width: 100%
 	height: 50px
-	padding: 0 13px
+	padding: 5px 13px 0 13px
 	font-size: 25px
-	color: $neonGreen
 	border: 1px solid rgba(161,161,175,.4)
 	background-color: rgba(45,45,64,.7)
+	color: #a1a1af
 	@include border-radius(5px)
 	+mus300
 	+box
@@ -123,6 +124,7 @@
 		border: 1px solid #b6fa5b
 		background-color: rgba(21,21,31,.7)
 		box-shadow: rgba(21,21,31,.7)
+		color: $neonGreen
 
 //dropdown
 .select
@@ -131,13 +133,16 @@
 	min-height: 50px
 	font-size: 25px
 	background-color: rgba(38,38,54,.7)
+	border: 1px solid rgba(161,161,175,.4)
+	+border-radius(5px)
+	+background-clip(padding-box)
 	+box
 	+mus300
 	&.is-active
+		border: 1px solid $neonGreen
 		&:after
 			+s(select_highlight)
 		.chosen
-			border: 1px solid $neonGreen
 			color: $neonGreen
 	a
 		display: block
@@ -170,15 +175,12 @@
 		.chosen
 			padding: 9px 13px 4px
 	.chosen
-		border: 1px solid rgba(161,161,175,.4)
-		+border-radius(5px)
-		+background-clip(padding-box)
 		white-space: nowrap
 		overflow: hidden
 		text-overflow: ellipsis
 	.country
 		position: absolute
-		width: 266px
+		width: 269px
 		font-size: 15px
 		padding: 20px 0
 		background-color: #21212f
@@ -186,6 +188,7 @@
 		+border-radius(0 0 5px 5px)
 		+background-clip(padding-box)
 		+border-radius(5px)
+		+box
 		+mus500
 		&.is-visible
 			display: block
@@ -373,9 +376,10 @@
 	.cycle-pager
 		position: absolute
 		left: 50%
-		margin: 30px 0 0 -36px
+		margin: 30px 0 0 -31px
 		text-align: center
 		.cycle-pager-active
+			margin: 0 11px 0 -4px
 			+s(pagin_a)
 			&:hover
 				+s(pagin_a)
@@ -383,7 +387,7 @@
 			display: inline-block
 			width: 8px
 			height: 8px
-			margin-right: 14.3px
+			margin-right: 15px
 			background: $blue
 			border-radius: 1px
 			background-clip: padding-box
