@@ -913,15 +913,18 @@
 			mouseenter: function(){
 				var tooltip = $(this).parents().data('tooltip');
 				$('<div class="fp-tooltip ' + options.navigationPosition +'">' + tooltip + '</div>').hide().appendTo($(this)).fadeIn(200);
+				$(this).find('span').addClass('neon');
 				if($(this).hasClass('active')){
 					$(this).find('.fp-tooltip').remove();
 				}
 			},
 			mouseleave: function(){
 				$(this).find('.fp-tooltip').fadeOut().remove();
+				$(this).find('span').removeClass('neon');
 			},
 			click: function(){
 				$(this).find('.fp-tooltip').fadeOut().remove();
+				$(this).find('span').removeClass('neon');
 			},
 		}, '#fp-nav li a');
 

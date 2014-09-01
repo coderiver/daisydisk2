@@ -679,7 +679,7 @@ html, body { margin: 0; padding: 0; overflow: hidden; -webkit-tap-highlight-colo
 
 #fp-nav span, .fp-slidesNav span { top: 2px; left: 2px; width: 8px; height: 8px; background-color: #19c7f8; position: absolute; z-index: 1; -webkit-border-radius: 1px; -moz-border-radius: 1px; -ms-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; -webkit-background-clip: padding; -moz-background-clip: padding; background-clip: padding-box; }
 #fp-nav span.another, .fp-slidesNav span.another { background: #00991d; }
-#fp-nav span:hover, .fp-slidesNav span:hover { background: #52f9ff; }
+#fp-nav span.neon, .fp-slidesNav span.neon { background: #52f9ff; }
 
 .fp-tooltip { position: absolute; padding: 9px 32px 10px 16px; top: -12px; max-width: 220px; font-size: 15px; color: #52f9ff; background: #1d1d29; white-space: nowrap; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; font-family: "museoSans-500", Myriad Pro, Arial, sans-serif; }
 .fp-tooltip.right { right: -10px; }
