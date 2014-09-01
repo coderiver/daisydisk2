@@ -119,8 +119,9 @@
 		transform: rotate(-5deg) skew(13deg, -2deg) translateX(3.65%) translateY(3px)
 	.content__txt
 		position: absolute
-		top: 35%
-		right: 12.5%
+		top: 50vh
+		right: 12.5vw
+		margin-top: -157px
 		color: #FFF
 		font-size: 5.12vw
 		text-transform: uppercase
@@ -132,7 +133,7 @@
 		letter-spacing: -2.1px
 	.content__p_green
 		color: $neonGreen
-		padding-bottom: 4.5%
+		padding-bottom: 4.5vh
 		letter-spacing: -2.5px
 	.content__btn
 		display: inline-block
@@ -193,13 +194,16 @@
 
 //section reviews
 .reviews
-	+gh(#a0e695, #c6ea91)
+	+gh(#a0e695, #c3ea91)
+	.ab
+		margin-top: -415px
 	.reviews__ttl
-		font-size: 4.2vw
+		height: 130px //for title to stay on the same place, when resize + padding-bottom: 65px
+		padding-top: 180px
 		text-transform: uppercase
-		color: $black
-		padding: 165px 0 30px 0
 		text-align: center
+		font-size: 4.2vw
+		color: $black
 		+mus100
 	.reviews__awards
 		background: #97e08f
@@ -251,7 +255,7 @@
 	background-size: cover
 	.homeu__txt
 		margin-left: -7px
-		padding: 11% 0 1.8% 0
+		padding: 19.7vh 0 3vh 0
 		text-transform: uppercase
 		font-size: 4.25vw
 		line-height: 1.15
@@ -262,17 +266,19 @@
 	.homeu__p_green
 		color: $neonGreen
 	.homeu__desc
-		width: 39%
-		padding-bottom: 3.2%
-		font-size: 20px//1.05vw
+		width: 38.5%
+		font-size: 20px
 		color: #FFF
 		line-height: 1.2
 		+mus300
 
 .compare
-	color: #FFF
+	position: absolute
+	width: 90.4%
+	bottom: 50px
 	text-transform: uppercase
 	font-size: 15px
+	color: #FFF
 	+mus700
 	.compare__item
 		text-align: center
@@ -286,23 +292,23 @@
 	.compare__item_laptop
 		.laptop
 			display: block
-			margin: 25px auto 35px
+			margin: 0 auto 32px
 	.compare__item_cloud
 		.cloud
 			display: block
-			margin: 26px auto 31px
+			margin: 0 auto 26px
 	.compare__item_usb
 		.usb
 			display: block
-			margin: 20px auto 29px
+			margin: 0 auto 24px
 	.compare__item_disk
 		.disk
 			display: block
-			margin: 15px auto 22px
+			margin: 0 auto 18px
 	.compare__item_mac
 		margin-left: 7px
 		.mac
-			margin: 0 auto 27px
+			margin: 0 auto 20px
 	.compare__p_green
 		color: $neonGreen
 		padding-top: 14.2px
@@ -315,7 +321,7 @@
 	background: url(../img/bg2.jpg) 0 72% no-repeat
 	background-size: cover
 	.pro__txt
-		padding: 11% 6.5% 1.5% 0
+		padding: 19vh 6vw 1.5vh 0
 		font-size: 4.25vw
 		text-transform: uppercase
 		text-align: right
@@ -327,10 +333,10 @@
 	.pro__p_green
 		color: $darkGreen
 	.pro__about
-		padding: 0 6.9% 3.8% 0
+		padding-right: 6vw
 		text-align: right
 	.pro__desc
-		width: 39% //500px
+		width: 38.5%
 		font-size: 20px
 		color: $black
 		display: inline-block
@@ -339,8 +345,12 @@
 		+mus300
 		+clr
 	.compare
-		text-align: right
+		position: absolute
+		width: 90.4%
+		bottom: 50px
 		padding-right: 5.1%
+		text-align: right
+		box-sizing: border-box
 		.compare__item
 			line-height: 1.3
 			margin-right: 9%
@@ -362,28 +372,32 @@
 
 //features section
 .features
-	+gh(#f9d99f, #f9d99f)
+	+gh(#f9d99f, #f9e59f)
+	.ab
+		margin-top: -419px
+		width: 90.4%
 	.features__ttl
-		padding-top: 12.5%
+		height: 145px
+		padding-top: 170px
 		margin-left: -14px
 		text-align: center
 		text-transform: uppercase
-		font-size: 4.2vw// 60px
+		font-size: 4.2vw
 		color: $bordo
 		letter-spacing: -0.5px
 		+mus100
 	.features__data
-		padding: 3% 0 0 5%
+		padding: 0 0 0 5%
 		max-width: 1300px
 		margin: 0 auto
 		+clr
 	.features__item
-		float: left
+		display: inline-block
 		width: 180px
 		padding-bottom: 20px
 		text-align: center
+		font-size: 0
 		color: #78644C
-		font-size: 20px
 		line-height: 25px
 		vertical-align: top
 		+mus300
@@ -413,6 +427,8 @@
 		margin: 0 auto 28px
 		.visual
 			padding-top: 15px
+	.features__desc
+		font-size: 20px
 	.features__about
 		font-size: 15px
 		padding-bottom: 35px
@@ -422,7 +438,7 @@
 
 //monitor section
 .monitor
-	+gh(#0f1d39, #054573)
+	+gh(#151520, #0c3556)
 	.monitor__inner
 		padding-top: 115px
 	.monitor__deeper
@@ -431,19 +447,18 @@
 	.monitor__screenshot
 		background: url(../img/screen.png) no-repeat
 		background-size: cover
-		display: table
-		float: left
 		width: 51.17%
 		margin-left: -10px
 		padding-bottom: 42%
 		height: 0
 	.monitor__txt
-		display: table
-		float: right
-		width: 45%
+		position: absolute
+		width: 40%
+		top: 50vh
+		right: 6.5vw
+		margin-top: -322px
 		text-align: right
 		font-size: 20px
-		padding: 26px 95px 0 0
 		color: #FFF
 		+box
 		+mus300
@@ -458,8 +473,7 @@
 	.btn__item
 		position: absolute
 		bottom: -26px
-		right: 0
-		padding-right: 94px
+		right: 6.5vw
 		.btnLoad
 			background: $blue
 			border-color: $blue

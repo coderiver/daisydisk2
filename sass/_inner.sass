@@ -313,13 +313,108 @@
 	.span__blue
 		color: $blue
 		&:hover
+		&.hover
 			color: $neon
 	.map
 		width: 87%
 		margin: 0 auto
+		position: relative
 		img
 			width: 100%
-
+		.dots
+			position: absolute
+			+s(dots)
+			&:hover
+			&.hover
+				margin: -4px 0 0 -4px
+				+s(dots-h)
+			&.c1
+				top: 14.2%
+				left: 20.2%
+			&.c2
+				top: 32%
+				left: 6.3%
+			&.c3
+				top: 20.6%
+				left: 25.6%
+			&.c4
+				top: 34.5%
+				left: 17.2%
+			&.c5
+				top: 40.6%
+				left: 13.9%
+			&.c6
+				top: 51.2%
+				left: 22.3%
+			&.c7
+				top: 57.5%
+				left: 28%
+			&.c8
+				left: 38.9%
+				top: 26.6%
+			&.c9
+				top: 9.3%
+				left: 43.8%
+			&.c10
+				top: 18.1%
+				left: 40.9%
+			&.c11
+				top: 11%
+				left: 46.6%
+			&.c12
+				top: 11%
+				left: 49.8%
+			&.c13
+				top: 18%
+				left: 47.6%
+			&.c14
+				top: 25%
+				left: 46.2%
+			&.c15
+				top: 32.4%
+				right: 42%
+				&:hover
+					margin: -4px -4px 0 0
+			&.c16
+				top: 42.4%
+				right: 31.1%
+				&:hover
+					margin: -4px -4px 0 0
+			&.c17
+				top: 30.5%
+				right: 14.3%
+				&:hover
+					margin: -4px -4px 0 0
+			&.c18
+				top: 33.4%
+				right: 20.6%
+				&:hover
+					margin: -4px -4px 0 0
+			&.c19
+				top: 40.2%
+				right: 19.7%
+				&:hover
+					margin: -4px -4px 0 0
+			&.c20
+				bottom: 30%
+				right: 13%
+				&:hover
+					margin: 0 -4px -4px 0
+			&.c21
+				bottom: 35.5%
+				right: 17.5%
+				&:hover
+					margin: 0 -4px -4px 0
+			&.c22
+				bottom: 44.2%
+				right: 18.2%
+				&:hover
+					margin: 0 -4px -4px 0
+			&.c23
+				bottom: 47.5%
+				right: 22.9%
+				&:hover
+					margin: 0 -4px -4px 0
 
 //blog page
 .blog

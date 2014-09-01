@@ -9,6 +9,15 @@ head.ready(function() {
 			$(this).parent().find('.menu').slideToggle();
 		});
 
+
+		$(document).on({
+				mouseenter: function(){
+					if($(this).children('a').hasClass('active')){
+						$(this).children('fp-tooltip').remove();
+					}
+				}
+			}, '#fp-nav li');
+
 		$('#fullpage').fullpage({
 			anchors:['main', 'reviews', 'homeuse', 'prouse', 'features', 'monitor'],
 			scrollingSpeed: 300,
@@ -35,10 +44,10 @@ head.ready(function() {
 				if (anchorLink == 'reviews' || anchorLink == 'homeuse' || anchorLink == 'prouse' || anchorLink == 'features' || anchorLink == 'monitor' ) {
 					menu.slideDown();
 				}
+
 				else {
 					menu.slideUp();
 				};
-
 			},
 
 			onLeave: function(index, nextIndex, direction){
@@ -88,6 +97,17 @@ head.ready(function() {
 		$('.focus').focusout(function(event) {
 			$(this).prev().removeClass('is-active');
 		});
+
+		//double hover on link with same href
+		var doubleHover = function(selector, hoverClass) {
+		$(document).on('mouseover mouseout', selector, function(e) {
+			$(selector)
+				.filter('[href="' + $(this).attr('href') + '"]')
+				.toggleClass(hoverClass, e.type == 'mouseover');
+			});
+		}
+
+		doubleHover('a', 'hover');
 
 		//store page select
 		function showCountryList(elem) {
