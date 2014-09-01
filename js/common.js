@@ -9,15 +9,6 @@ head.ready(function() {
 			$(this).parent().find('.menu').slideToggle();
 		});
 
-
-		$(document).on({
-				mouseenter: function(){
-					if($(this).children('a').hasClass('active')){
-						$(this).children('fp-tooltip').remove();
-					}
-				}
-			}, '#fp-nav li');
-
 		$('#fullpage').fullpage({
 			anchors:['main', 'reviews', 'homeuse', 'prouse', 'features', 'monitor'],
 			scrollingSpeed: 300,
