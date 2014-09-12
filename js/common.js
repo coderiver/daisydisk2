@@ -11,6 +11,7 @@ head.ready(function() {
 		});
 
 	} else if (onInnerPage) {
+		$("body", "html").css('height', 'auto');
 		$("header").css('position', 'static');
 
 		//FAQ
