@@ -15,10 +15,15 @@ head.ready(function() {
 		});
 
 		//fixed menu
-		$(document).on("load scroll", menuChange);
+		// $(document).on("load", menuChange);
+		$(document).on("scroll", menuChange);
+
+		menuChange();
 
 		function menuChange(event){
 	    var scrollPos = $(document).scrollTop();
+
+	    console.log("scrollPos", scrollPos);
 
 	    if (scrollPos > 0) {
 	    	$('.header').addClass('fixed');
