@@ -1,4 +1,13 @@
-+r(1400)
++r(1500)
+	.content
+		.content__img
+			max-width: 650px
+			max-width: 650px
+
++r(1440)
+	.content
+		.content__img
+			width: 50%
 	.features
 		text-align: center
 		.features__item
@@ -11,28 +20,19 @@
 	.menu
 		.menu__item
 			margin-right: 23px
-	.inner
-		.inner__faq, .inner__manual
-			float: none
-		.person__desc
-			font-size: 18px
-		.known__ttl
-			font-size: 50px
-		.blog__ttl
-			margin: 35px 0 60px
-		.post__date
-			left: -15px
-			top: -30px
-			font-size: 13px
-		.formReg .input
-			font-size: 20px
-	.reviews
-		.awards__bl
-			width: 70%
-			padding: 41px 16% 41px 16%
 	.btnLoad
 		width: 180px
+	.reviews
+		.awards__bl
+			padding: 41px 10%
+		.reviews__ttl
+			font-size: 40px
+		.cycle__ttl, .awards__quantity
+			font-size: 25px
+			margin-bottom: 10px
 	.features
+		.features__ttl
+			font-size: 40px
 		.features__about
 			padding-bottom: 10px
 		.features__item:nth-child(3)
@@ -48,9 +48,30 @@
 			margin: 0 auto 12px
 		.features__item_visual
 			margin: 0 auto 20px
-
+	.inner
+		.inner__faq, .inner__manual
+			float: none
+		.person__desc
+			font-size: 18px
+		.known__ttl
+			font-size: 50px
+		.blog__ttl
+			margin: 35px 0 60px
+		.post__date
+			left: -15px
+			top: -30px
+			font-size: 13px
+		.formReg .input
+			font-size: 20px
 
 +r(1020)
+	.main
+		height: auto
+	.content
+		.content__txt
+			right: 0
+	.social
+		margin-bottom: 15px
 	.fa.fa-bars
 		display: block
 	.menu
@@ -76,19 +97,84 @@
 				float: left
 			.bntBuy
 				margin-left: 25px
+	.scrollThis
+		display: none
+	.social
+		position: static
+	.monitor
+		.monitor__screenshot
+			img
+				width: 470px
 
 +r(900)
 	.content__inner
-		font-size: 43px
+		font-size: 40px
+	.content
+		.content__btn
+			.btn__item
+				margin-bottom: 15px
+				margin-right: 10px
+			.btnBuy, .btnLoad
+				width: 160px
+				font-size: 20px
+			.btn__txt
+				padding-top: 10px
+				font-size: 11px
+	.reviews
+		.awards__bl
+			display: block
+			padding: 41px 0
+			text-align: center
+		.awards__item
+			display: inline-block
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+		.awards__best
+			padding: 6px 30px 0px 0px
+		.awards__macworld
+			padding: 9px 30px 0px 0px
 	.homeu
 		.homeu__txt
-			font-size: 39px
+			font-size: 40px
 		.homeu__desc
-			width: 80%
-	.pro .pro__txt
-		font-size: 39px
+			width: 90%
+	.compare
+		position: static
+		width: auto
+		.compare__item
+			width: 30%
+			margin-bottom: 20px
+	.pro
+		.pro__txt
+			font-size: 39px
+		.pro__p
+			color: #FFFFFF
 		.pro__desc
-			width: 80%
+			width: 90%
+			color: #FFFFFF
+		.compare
+			padding-right: 0
+			.compare__item
+				width: 40%
+				margin-right: 0
+				&:first-child
+					margin-right: 0
+	.monitor
+		.monitor__p
+			font-size: 35px
+		.monitor__txt
+			width: 30%
+			font-size: 19px
+			right: 0
+		.btn__item
+			right: 0
+			.btnLoad
+				width: 160px
+				font-size: 20px
+			.btn__txt
+				padding-top: 10px
+				font-size: 11px
 	.inner
 		.choose__item
 			display: inline-block
@@ -125,6 +211,39 @@
 					padding: 11px 30px 11px 20px
 
 +r(720)
+	.content
+		.content__img
+			width: 60%
+			margin: 0 auto
+		.content__txt
+			position: static
+			transform: none
+			text-align: center
+			margin-bottom: 10px
+		.content__btn
+			.btn__item
+				float: left
+				margin-right: 10px
+	.reviews
+		.awards__item
+			display: block
+			margin-right: 0
+		.awards__item_grow
+			margin: 15px 0px 12px 0px
+	.pro
+		background-position: 35% 100%
+	.monitor
+		.monitor__inner
+			text-align: center
+		.monitor__txt
+			position: static
+			width: 100%
+			margin: 20px 0
+			text-align: center
+		.btn__item
+			position: static
+			display: inline-block
+			padding-bottom: 40px
 	.inner
 		.input__row
 			width: 100%
@@ -170,6 +289,19 @@
 			padding-left: 0
 
 +r(560)
+	.content
+		.content__img
+			width: 290px
+	.reviews
+		.reviews__ttl
+			font-size: 35px
+		.cycle__ttl
+			font-size: 22px
+	.monitor
+		.monitor__screenshot
+			img
+				width: 99%
+				margin: 0 auto
 	.inner
 		.choose__item
 			width: 100%
@@ -202,6 +334,54 @@
 			margin-top: 15px
 
 +r(445)
+	.reviews
+		.awards__best, .awards__macworld, .awards__macformat
+			display: block
+			margin: 0 auto 15px
+			padding: 0
+	.reviews__cycle
+		.cycle__inner
+			width: auto
+		.cycle__txt
+			float: none
+			text-align: center
+			margin-left: 0
+			padding-top: 0
+		.cycle__author
+			float: none
+			margin: 10px auto
+	.homeu
+		.homeu__txt
+			text-align: center
+		.homeu__desc
+			width: 100%
+			text-align: center
+	.compare
+		.compare__item
+			display: block
+			width: 50%
+			margin: 0 auto 30px
+			&:first-child
+				margin: 0 auto 30px
+			&:last-child
+				margin: 0 auto 30px
+	.pro
+		.pro__about, .pro__txt
+			padding-right: 0
+		.pro__txt, .pro__desc
+			width: 100%
+			text-align: center
+		.pro__p
+			color: #1D1D29
+		.compare
+			.compare__item
+				display: block
+				width: 50%
+				margin: 0 auto 30px
+				&:first-child
+					margin: 0 auto 30px
+				&:last-child
+					margin: 0 auto 30px
 	.inner
 		.btnSend.another
 			width: 200px
@@ -246,6 +426,18 @@
 		.header__txt
 			font-size: 25px
 			vertical-align: 20px
+	.content__inner
+		font-size: 35px
+	.content
+		.content__btn
+			.btn__item
+				float: none
+				margin-right: 0
+	.social
+		text-align: center
+	.features
+		.features__desc
+			font-size: 18px
 	.btnManual
 		width: 185px
 		.btnManual__txt

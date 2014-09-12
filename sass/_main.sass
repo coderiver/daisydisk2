@@ -1,11 +1,21 @@
 //main section
 .main
+	width: 100%
+	height: 100%
+	padding-top: 94px
+	padding-bottom: 3.5%
 	+gh(#001a46, #0e0e19)
-	padding-bottom: 50px
 
 .header
-	padding-top: 20px
+	position: fixed
+	width: 100%
+	top: 20px
+	padding: 0 3.1% 0 5.3%
+	z-index: 200
+	+box
 	+clr
+	&.hidden
+		display: none
 	.header__in
 		float: left
 	.header__in_right
@@ -19,33 +29,32 @@
 		padding-top: 10px
 	.header__ico
 		display: inline-block
-		+s(logo)
+		+sr(logo)
+		+transition(0.5s ease)
 	.header__txt
 		font-size: 35px
 		color: #FFF
-		padding-left: 13px
-		vertical-align: 18px
+		padding-left: 10px
+		vertical-align: 19px
 		+mus300
+		+transition(0.4s ease)
 	.header__txt_grey
 		color: #6c6c8f
 	&.fixed
-		position: fixed
 		width: 100%
 		height: 80px
 		top: 0
 		padding: 0 5.1% 0 5.4%
 		background: #1D1D29
-		z-index: 200
 		+box
 		&.is-visible
 			display: block
-		.header__logo
-			padding-top: 20px
 		.header__ico
-			+s(logo_menu)
+			vertical-align: middle
+			+transform(translateX(10px) scale(0.5))
 		.header__txt
 			font-size: 25px
-			vertical-align: 9px
+			vertical-align: middle
 			padding-left: 7px
 		.menu
 			float: left
@@ -79,6 +88,7 @@
 			float: left
 			position: relative
 			text-transform: uppercase
+			text-decoration: none
 			color: $blue
 			font-size: 17px
 			padding: 35px 12px 0 18px
@@ -109,21 +119,19 @@
 				display: none
 
 .content
+	position: relative
 	.content__img
-		display: inline-block
-		width: 43%
-		height: 0
-		padding-bottom: 43%
-		background: url(../img/svg/daisy.svg) no-repeat
-		background-size: cover
-		transform: rotate(-5deg) skew(13deg, -2deg) translateX(3.65%) translateY(3px)
+		max-width: 800px
+		max-height: 800px
+		img
+			width: 100%
 	.content__txt
 		position: absolute
-		top: 50vh
-		right: 12.5vw
-		margin-top: -157px
+		top: 50%
+		transform: translateY(-46%)
+		right: 9.1%
 		color: #FFF
-		font-size: 5.12vw
+		font-size: 5vw
 		text-transform: uppercase
 		text-align: right
 		line-height: 1.14
@@ -133,7 +141,7 @@
 		letter-spacing: -2.1px
 	.content__p_green
 		color: $neonGreen
-		padding-bottom: 4.5vh
+		padding-bottom: 4.5%
 		letter-spacing: -2.5px
 	.content__btn
 		display: inline-block
@@ -162,7 +170,7 @@
 .social
 	position: absolute
 	font-size: 0
-	bottom: 58px
+	bottom: 75px
 	.social__item
 		display: inline-block
 		margin-right: 10px
@@ -186,7 +194,7 @@
 .scrollThis
 	position: absolute
 	left: 50%
-	bottom: 70px
+	bottom: 85px
 	margin-left: -13px
 	+s(scroll)
 	&:hover
@@ -195,11 +203,9 @@
 //section reviews
 .reviews
 	+gh(#a0e695, #c3ea91)
-	.ab
-		margin-top: -415px
 	.reviews__ttl
-		height: 130px //for title to stay on the same place, when resize + padding-bottom: 65px
-		padding-top: 180px
+		padding: 11.1% 0 30px 0
+		letter-spacing: -1px
 		text-transform: uppercase
 		text-align: center
 		font-size: 4.2vw
@@ -207,13 +213,11 @@
 		+mus100
 	.reviews__awards
 		background: #97e08f
-		position: absolute
 		width: 100%
-		bottom: 0
 	.awards__bl
 		display: flex
-		width: 62.5%
-		padding: 41px 19% 41px 19.25%
+		padding: 41px 18.4% 45px 19.2%
+		+clr
 	.awards__item
 		color: #42A655
 		font-size: 15px
@@ -224,7 +228,7 @@
 		font-size: 2.8vw
 		text-align: center
 		letter-spacing: -3.5px
-		line-height: 1.5
+		line-height: 1.4
 		+mus300
 	.awards__desc
 		margin-top: -5px
@@ -237,11 +241,11 @@
 		text-align: center
 	.awards__best
 		display: inline-block
-		padding: 6px 50px 0 0
+		padding: 6px 53px 0 0
 		+s(best)
 	.awards__macworld
 		display: inline-block
-		padding: 9px 50px 0 0
+		padding: 9px 43px 0 0
 		+s(macworld)
 	.awards__macformat
 		display: inline-block
@@ -251,11 +255,13 @@
 
 //section homeu
 .homeu
+	padding-top: 12%
+	padding-bottom: 22%
 	background: url(../img/bg1.jpg) 0 100% no-repeat
 	background-size: cover
 	.homeu__txt
 		margin-left: -7px
-		padding: 19.7vh 0 3vh 0
+		padding-bottom: 30px
 		text-transform: uppercase
 		font-size: 4.25vw
 		line-height: 1.15
@@ -266,7 +272,8 @@
 	.homeu__p_green
 		color: $neonGreen
 	.homeu__desc
-		width: 38.5%
+		width: 38.1%
+		padding-bottom: 55px
 		font-size: 20px
 		color: #FFF
 		line-height: 1.2
@@ -274,12 +281,13 @@
 
 .compare
 	position: absolute
-	width: 90.4%
-	bottom: 50px
+	width: 90%
+	bottom: 57px
 	text-transform: uppercase
 	font-size: 15px
 	color: #FFF
 	+mus700
+	+box
 	.compare__item
 		text-align: center
 		display: inline-block
@@ -318,39 +326,39 @@
 
 //section pro
 .pro
+	padding-top: 11%
+	padding-bottom: 23%
 	background: url(../img/bg2.jpg) 0 72% no-repeat
 	background-size: cover
 	.pro__txt
-		padding: 19vh 6vw 1.5vh 0
+		padding: 0 7% 1.7% 0
 		font-size: 4.25vw
 		text-transform: uppercase
 		text-align: right
 		line-height: 1.2
-		letter-spacing: 0.3px
+		letter-spacing: -0.2px
 		+mus100
 	.pro__p
 		color: $black
 	.pro__p_green
 		color: $darkGreen
 	.pro__about
-		padding-right: 6vw
+		padding-right: 7.5%
 		text-align: right
 	.pro__desc
-		width: 38.5%
+		display: inline-block
+		width: 43%
+		padding-bottom: 55px
+		text-align: right
 		font-size: 20px
 		color: $black
-		display: inline-block
-		text-align: right
 		line-height: 1.2
 		+mus300
 		+clr
 	.compare
-		position: absolute
-		width: 90.4%
-		bottom: 50px
-		padding-right: 5.1%
 		text-align: right
-		box-sizing: border-box
+		padding-right: 4.7%
+		+box
 		.compare__item
 			line-height: 1.3
 			margin-right: 9%
@@ -373,13 +381,9 @@
 //features section
 .features
 	+gh(#f9d99f, #f9e59f)
-	.ab
-		margin-top: -419px
-		width: 90.4%
+	padding: 11.7% 0
 	.features__ttl
-		height: 145px
-		padding-top: 170px
-		margin-left: -14px
+		margin: 0 0 70px -14px
 		text-align: center
 		text-transform: uppercase
 		font-size: 4.2vw
@@ -387,14 +391,13 @@
 		letter-spacing: -0.5px
 		+mus100
 	.features__data
-		padding: 0 0 0 5%
-		max-width: 1300px
+		max-width: 1155px //1300px
 		margin: 0 auto
 		+clr
 	.features__item
 		display: inline-block
 		width: 180px
-		padding-bottom: 20px
+		margin-bottom: 20px
 		text-align: center
 		font-size: 0
 		color: #78644C
@@ -438,25 +441,26 @@
 
 //monitor section
 .monitor
+	padding-bottom: 7.7%
 	+gh(#151520, #0c3556)
 	.monitor__inner
-		padding-top: 115px
-	.monitor__deeper
 		position: relative
+		padding-top: 8.9%
+	.monitor__deeper
 		+clr
 	.monitor__screenshot
-		background: url(../img/screen.png) no-repeat
-		background-size: cover
-		width: 51.17%
-		margin-left: -10px
-		padding-bottom: 42%
-		height: 0
+		img
+			width: 51.17%
+			max-width: 800px
+			margin-left: -10px
 	.monitor__txt
 		position: absolute
 		width: 40%
-		top: 50vh
-		right: 6.5vw
-		margin-top: -322px
+		top: 20%
+		right: 7.3%
+		text-align: right
+		font-size: 20px
+		letter-spacing: -0.4px
 		text-align: right
 		font-size: 20px
 		color: #FFF
@@ -473,7 +477,7 @@
 	.btn__item
 		position: absolute
 		bottom: -26px
-		right: 6.5vw
+		right: 7.5%
 		.btnLoad
 			background: $blue
 			border-color: $blue
@@ -491,9 +495,11 @@
 
 //footer
 .footer
+	position: relative
 	background: $black
+	z-index: 10
 	.footer__inner
-		padding-top: 70px
+		padding: 70px 0
 		+clr
 		&.inside
 			padding: 4.6% 0 7% 5.4%
@@ -503,6 +509,8 @@
 		float: left
 	.footer__feedback
 		padding-right: 20px
+		position: relative
+		z-index: 5
 		+box
 	.footer__p
 		color: #fff
@@ -523,16 +531,17 @@
 		+clr
 		li
 			float: left
-			padding-right: 18px
+			padding-right: 10px
 			&:last-child
 				padding-right: 0
 	.symbol__disk
-		+s(logo_small)
+		+sr(logo)
 	.symbol__beat
-		+s(beat)
+		+svg(beat, 64, 64)
+		background-size: contain
 	.symbol__lily
-		+s(lily)
 		margin-top: -8px
+		+sr(lilyview)
 	.footer__copyright
 		color: $lightViolet
 		font-size: 13px

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_128x128@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#BAC0C6" offset="0%"></stop>
+            <stop stop-color="#82878E" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="48.898226%" cy="37.7686465%" fx="48.898226%" fy="37.7686465%" r="104.666382%" id="radialGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.441236413" offset="73.8122624%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="39.8949795%" fx="50%" fy="39.8949795%" r="34.2837474%" id="radialGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.103091033" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.28 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-5" cx="64" cy="64" r="56"></circle>
+        <linearGradient x1="50%" y1="-26.2436945%" x2="50%" y2="123.344848%" id="linearGradient-6">
+            <stop stop-color="#CDCFD2" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#EEEFF1" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="53.6833286%" y1="-32.1043409%" x2="53.6833279%" y2="126.633937%" id="linearGradient-7">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C96DD8" offset="100%"></stop>
+        </linearGradient>
+        <path id="path-8" d="M7,64.9311321 L45.0418502,65.1207547 L55.0859031,32 L72.6002203,98.9367925 L82.6442731,64.9311321 L120.937225,64.9311321"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="128" sketch:type="MSLayerGroup">
+            <g id="Main" filter="url(#filter-4)">
+                <use stroke-opacity="0.5" stroke="#FFFFFF" stroke-width="1" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup" xlink:href="#path-5"></use>
+                <use stroke="none" fill="url(#radialGradient-2)" xlink:href="#path-5"></use>
+                <use stroke="none" fill="url(#radialGradient-3)" xlink:href="#path-5"></use>
+            </g>
+            <g id="pulse-recolored">
+                <use stroke="url(#linearGradient-6)" stroke-width="8" sketch:type="MSShapeGroup" xlink:href="#path-8"></use>
+                <use stroke="url(#linearGradient-7)" stroke-width="5" xlink:href="#path-8"></use>
+            </g>
+        </g>
+    </g>
+</svg>

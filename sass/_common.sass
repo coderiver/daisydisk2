@@ -50,23 +50,23 @@ body
 	font-family: Arial, sans-serif
 	font-size: 12px
 	line-height: 1.4
-	+font-smoothing
+	min-width: 320px
 
 //fonts
-+font(museoSans-100, museoSans-100)
-+font(museoSans-300, museoSans-300)
-+font(museoSans-500, museoSans-500)
-+font(museoSans-700, museoSans-700)
++font(MuseoSansCyrl-100, MuseoSansCyrl-100)
++font(MuseoSansCyrl-300, MuseoSansCyrl-300)
++font(MuseoSansCyrl-500, MuseoSansCyrl-500)
++font(MuseoSansCyrl-700, MuseoSansCyrl-700)
 +font(FontAwesome, fontawesome-webfont)
 
 =mus100
-	font-family: "museoSans-100", Myriad Pro, Arial, sans-serif
+	font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif
 =mus300
-	font-family: "museoSans-300", Myriad Pro, Arial, sans-serif
+	font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif
 =mus500
-	font-family: "museoSans-500", Myriad Pro, Arial, sans-serif
+	font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif
 =mus700
-	font-family: "museoSans-700", Myriad Pro, Arial, sans-serif
+	font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif
 =fa
 	font-family: "FontAwesome", Myriad Pro, Arial, sans-serif
 
@@ -85,29 +85,17 @@ $bordo: #954326
 //common blocks
 .out
 	position: relative
+	height: 100%
 
 .section
 	padding: 0 4.3% 0 5.3%
 	position: relative
-	z-index: 1
-	&.is-slidedown,
-	&.is-slideup
-		+transition(1s linear)
-		z-index: -100
-	&.is-slidedown
-		+transform(translateY(500px))
-	&.is-slideup
-		+transform(translateY(-500px))
-	a
-		text-decoration: none
+	+box
 	&.reviews
 		padding: 0
-	> .header.fixed
-		padding: 0
-
-.ab
-	position: absolute
-	top: 50vh
+		padding-top: 5%
+	a
+		text-decoration: none
 
 //inner pages
 =gr

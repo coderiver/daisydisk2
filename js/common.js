@@ -1,6 +1,7 @@
 head.ready(function() {
 
 	var onIndexPage = window.location.href.indexOf("index.html") != -1;
+	var onInnerPage = window.location.href.indexOf("index.html") != 1;
 
 	if (onIndexPage) {
 
@@ -9,58 +10,8 @@ head.ready(function() {
 			$(this).parent().find('.menu').slideToggle();
 		});
 
-		$('#fullpage').fullpage({
-			anchors:['main', 'reviews', 'homeuse', 'prouse', 'features', 'monitor'],
-			scrollingSpeed: 300,
-			navigation: true,
-			navigationPosition: 'right',
-			navigationTooltips: ['Main', 'Reviews & Advantages', 'Perfect for home use', 'Professional use', 'Features', 'Monitor', 'Contacts'],
-			autoScrolling: true,
-			css3: true,
-			animateAnchor: true,
-			verticalCentered: false,
-
-
-			afterLoad: function(anchorLink, index){
-				var paginator = $('#fp-nav').find('span'),
-					menu = $('.fixed');
-
-				if (anchorLink == 'reviews' || anchorLink == 'features') {
-					paginator.addClass('another');
-				}
-				else {
-					paginator.removeClass('another');
-				};
-
-				if (anchorLink == 'reviews' || anchorLink == 'homeuse' || anchorLink == 'prouse' || anchorLink == 'features' || anchorLink == 'monitor' ) {
-					menu.slideDown();
-				}
-
-				else {
-					menu.slideUp();
-				};
-			},
-
-			onLeave: function(index, nextIndex, direction){
-				var prevPage = $('.section.active').prev('.section'),
-					nextPage = $('.section.active').next('.section');
-
-				if (direction =='down') {
-					prevPage.addClass('is-slidedown');
-					setTimeout(function() {
-						$('.section').removeClass('is-slidedown');
-					}, 600)
-				}
-				else if (direction =='up') {
-					nextPage.addClass('is-slideup');
-					setTimeout(function() {
-						$('.section').removeClass('is-slideup');
-					}, 600)
-				};
-			},
-		});
-	} else {
-		$("body").css("overflow", "auto");
+	} else if (onInnerPage) {
+		$("header").css('position', 'static');
 
 		//FAQ
 		$('.ask__list-item').click(function(event) {
