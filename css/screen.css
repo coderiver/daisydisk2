@@ -61,7 +61,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .header.fixed .menu .menu__item { margin-right: 39px; }
 .header.fixed .menu .menu__item:last-child { margin-right: 0; }
 .header.fixed .menu .menu__item a { margin-top: 10px; padding: 20px 15px 0 15px; text-decoration: none; }
-.header.fixed .btnBuy { float: right; width: 125px; height: 40px; margin-top: 20px; font-size: 17px; }
+.header.fixed .btnBuy { float: right; width: 125px; height: 40px; margin-top: 20px; font-size: 17px; display: none; }
 .header.fixed .btnBuy span { padding-left: 3px; }
 
 .menu { *zoom: 1; }
@@ -551,13 +551,15 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
   .content .content__txt { right: 0; }
   .social { margin-bottom: 15px; }
   .fa.fa-bars { display: block; }
-  .menu { position: absolute; display: none; right: 0; }
+  .menu { position: absolute; display: none; top: 58px; right: -20px; margin-right: 0; background: #1d1d29; padding: 10px 20px 20px 20px; }
   .menu.is-visible { display: block; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
   .menu .menu__item { display: block; margin-right: 0; }
   .menu .menu__item a { padding: 8px 0 7px; font-size: 15px; float: none; text-align: right; }
   .menu .menu__item a:after { display: none; }
   .header.fixed .fa.fa-bars { float: left; }
   .header.fixed .bntBuy { margin-left: 25px; }
+  .header.fixed .menu { margin-right: 0; }
+  .header.fixed .menu .menu__item { margin-right: 0; }
   .scrollThis { display: none; }
   .social { position: static; }
   .monitor .monitor__screenshot img { width: 470px; } }

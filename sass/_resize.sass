@@ -77,7 +77,11 @@
 	.menu
 		position: absolute
 		display: none
-		right: 0
+		top: 58px
+		right: -20px
+		margin-right: 0
+		background: #1d1d29
+		padding: 10px 20px 20px 20px
 		&.is-visible
 			display: block
 			+transition(all 0.2s ease)
@@ -97,6 +101,11 @@
 				float: left
 			.bntBuy
 				margin-left: 25px
+			.menu
+				margin-right: 0
+				.menu__item
+					margin-right: 0
+
 	.scrollThis
 		display: none
 	.social

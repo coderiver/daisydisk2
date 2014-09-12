@@ -5,10 +5,33 @@ head.ready(function() {
 
 	if (onIndexPage) {
 
+		$(".scrollThis").click(function (){
+			$('html, body').animate({scrollTop: $(".reviews").offset().top}, 700);
+		});
+
 		//menu mobile
 		$('.fa.fa-bars').click(function(event) {
 			$(this).parent().find('.menu').slideToggle();
 		});
+
+		//fixed menu
+		$(document).on("load scroll", menuChange);
+
+		function menuChange(event){
+	    var scrollPos = $(document).scrollTop();
+
+	    if (scrollPos > 0) {
+	    	$('.header').addClass('fixed');
+	        $('.menu__item.last').hide();
+	        $('.menu').find('button').show();
+
+	    }
+	    else {
+	        $('.header').removeClass('fixed');
+	        $('.menu__item.last').show();
+	        $('.menu').find('button').hide();
+	    }
+	}
 
 	} else if (onInnerPage) {
 		$("body", "html").css('height', 'auto');
