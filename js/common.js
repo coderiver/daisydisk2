@@ -3,6 +3,14 @@ head.ready(function() {
 	var onIndexPage = window.location.href.indexOf("index.html") != -1;
 	var onInnerPage = window.location.href.indexOf("index.html") != 1;
 
+	$(document.documentElement).keyup(function (event) {
+	        if (event.keyCode == 37) {
+	            $('.cycle-slideshow').cycle('prev');
+	        } else if (event.keyCode == 39) {
+	            $('.cycle-slideshow').cycle('next')
+	    }
+	});
+
 	if (onIndexPage) {
 
 		$(".scrollThis").click(function (){
