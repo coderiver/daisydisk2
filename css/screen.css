@@ -61,7 +61,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .header.fixed .menu .menu__item { margin-right: 39px; }
 .header.fixed .menu .menu__item:last-child { margin-right: 0; }
 .header.fixed .menu .menu__item a { margin-top: 10px; padding: 20px 15px 0 15px; text-decoration: none; }
-.header.fixed .btnBuy { float: right; width: 125px; height: 40px; margin-top: 20px; font-size: 17px; display: none; }
+.header.fixed .btnBuy { display: none; float: right; width: 125px; height: 40px; margin-top: 20px; font-size: 17px; line-height: 40px; }
 .header.fixed .btnBuy span { padding-left: 3px; }
 
 .menu { *zoom: 1; }
@@ -180,7 +180,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .monitor .monitor__p { font-size: 4.2vw; text-transform: uppercase; line-height: 1.2; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
 .monitor .monitor__p_green { margin-bottom: 18px; color: #b7fb5b; }
 .monitor .btn__item { position: absolute; bottom: -26px; right: 7.5%; }
-.monitor .btn__item .btnLoad, .monitor .btn__item .btnBuy { background: #1ac8f9; border-color: #1ac8f9; color: #1d1d29; }
+.monitor .btn__item .btnLoad, .monitor .btn__item .btnBuy { background: #1ac8f9; border-color: #1ac8f9; color: #1d1d29; line-height: 70px; }
 .monitor .btn__item .btnLoad:hover, .monitor .btn__item .btnBuy:hover { background: #52f9ff; border-color: #52f9ff; }
 .monitor .btn__item .btn__txt { display: block; color: #a1a1af; font-size: 13px; padding-top: 15px; text-align: center; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; }
 
@@ -211,10 +211,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .footer .nav__item a { font-size: 15px; margin-bottom: 13px; display: block; color: #00c7e4; }
 .footer .nav__item a:hover { color: #52f9ff; }
 
-.btnLoad, .btnBuy { background: none; color: #6c6c8f; font-size: 25px; width: 200px; height: 70px; padding: 0 23px; text-transform: uppercase; text-align: center; border: 3px solid #6c6c8f; border-radius: 4px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
+.btnLoad, .btnBuy { background: none; color: #6c6c8f; font-size: 25px; width: 200px; height: 70px; text-transform: uppercase; text-align: center; border: 3px solid #6c6c8f; border-radius: 4px; line-height: 64px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .btnLoad:hover, .btnBuy:hover { border-color: #52f9ff; color: #52f9ff; }
 
-.btnBuy { border: #1ac8f9; background: #1ac8f9; color: #15151f; padding: 0 15px; letter-spacing: 0.5px; text-align: center; }
+.btnBuy { border: #1ac8f9; background: #1ac8f9; color: #15151f; letter-spacing: 0.5px; text-align: center; line-height: 70px; }
 .btnBuy:hover { background: #52f9ff; color: #15151f; }
 .btnBuy .btnBuy__span { color: #005692; padding-left: 18px; }
 
@@ -223,7 +223,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .btnManual .btnManual__txt, .btnSend .btnManual__txt { display: inline-block; padding-left: 92px; vertical-align: middle; text-align: left; text-transform: uppercase; font-size: 15px; color: #15151f; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 .btnManual .btnManual__txt:before, .btnSend .btnManual__txt:before { content: ""; position: absolute; width: 71px; height: 60px; top: 15px; left: 30px; background: url(../img/svg/manual.svg) no-repeat; }
 
-.btnSend { width: 122px; height: 50px; text-transform: uppercase; font-size: 23.5px; color: #07243b; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; }
+.btnSend { width: 122px; height: 50px; text-transform: uppercase; font-size: 23.5px; color: #07243b; line-height: 50px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; }
 .btnSend.another { width: 280px; }
 
 .fa.fa-bars { color: white; font-size: 30px; cursor: pointer; display: none; margin-top: 30px; }
