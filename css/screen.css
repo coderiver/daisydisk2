@@ -211,10 +211,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .footer .nav__item a { font-size: 15px; margin-bottom: 13px; display: block; color: #00c7e4; }
 .footer .nav__item a:hover { color: #52f9ff; }
 
-.btnLoad, .btnBuy { background: none; color: #6c6c8f; font-size: 25px; width: 200px; height: 70px; border: 3px solid #6c6c8f; border-radius: 4px; text-transform: uppercase; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
+.btnLoad, .btnBuy { background: none; color: #6c6c8f; font-size: 25px; width: 200px; height: 70px; padding: 0 23px; text-transform: uppercase; text-align: center; border: 3px solid #6c6c8f; border-radius: 4px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
 .btnLoad:hover, .btnBuy:hover { border-color: #52f9ff; color: #52f9ff; }
 
-.btnBuy { border: #1ac8f9; background: #1ac8f9; color: #15151f; padding-right: 2px; letter-spacing: 0.5px; }
+.btnBuy { border: #1ac8f9; background: #1ac8f9; color: #15151f; padding: 0 15px; letter-spacing: 0.5px; text-align: center; }
 .btnBuy:hover { background: #52f9ff; color: #15151f; }
 .btnBuy .btnBuy__span { color: #005692; padding-left: 18px; }
 
@@ -223,8 +223,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .btnManual .btnManual__txt, .btnSend .btnManual__txt { display: inline-block; padding-left: 92px; vertical-align: middle; text-align: left; text-transform: uppercase; font-size: 15px; color: #15151f; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 .btnManual .btnManual__txt:before, .btnSend .btnManual__txt:before { content: ""; position: absolute; width: 71px; height: 60px; top: 15px; left: 30px; background: url(../img/svg/manual.svg) no-repeat; }
 
-.btnSend { width: 122px; height: 50px; padding: 0 0 0 4px; text-transform: uppercase; font-size: 23.5px; color: #07243b; letter-spacing: 1px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; }
-.btnSend.another { width: 280px; padding: 0px 0px 0 5px; letter-spacing: 0.55px; }
+.btnSend { width: 122px; height: 50px; text-transform: uppercase; font-size: 23.5px; color: #07243b; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; }
+.btnSend.another { width: 280px; }
 
 .fa.fa-bars { color: white; font-size: 30px; cursor: pointer; display: none; margin-top: 30px; }
 
@@ -354,8 +354,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .inner .formReg__prettl { padding-bottom: 52px; font-size: 30px; color: white; text-transform: uppercase; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .inner .formReg__ttl { margin-bottom: 24px; line-height: 1; font-size: 60px; color: white; text-transform: uppercase; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
 .inner .formReg__ttl.center { text-align: center; }
-.inner .formReg__desc { margin: 0 0 0.9px -3px; font-size: 20px; color: white; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
-.inner .formReg__desc.is-active { margin: -2px 0 2.9px -3px; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
+.inner .formReg__desc { margin: 0 0 3px 0; font-size: 20px; color: white; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
+.inner .formReg__desc.is-active { font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 .inner .formReg__input { margin-bottom: 41px; *zoom: 1; }
 .inner .formReg__input:after { content: " "; display: table; clear: both; }
 .inner .formReg__input.another { margin-bottom: 67px; }
@@ -516,7 +516,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .store .radio__title .amazon { margin-right: 5px; background: url('../img/icons-sd7cd721cbc.png') 0 -2003px no-repeat; width: 16px; height: 16px; }
 .store .proceed { margin-top: 52px; *zoom: 1; }
 .store .proceed:after { content: " "; display: table; clear: both; }
-.store .proceed .btnSend { float: right; margin: 2px 50px 0 0; padding-left: 5px; letter-spacing: 0.25px; }
+.store .proceed .btnSend { float: right; margin: 2px 50px 0 0; }
 .store .proceed__txt { float: left; width: 55%; padding-left: 3px; font-size: 15px; color: #a1a1af; line-height: 18px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; }
 .store .proceed__txt a { color: #1ac8f9; }
 .store .proceed__txt a:hover { color: #52f9ff; }
