@@ -213,7 +213,6 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .btnLoad, .btnBuy { background: none; color: #6c6c8f; font-size: 25px; width: 200px; height: 70px; border: 3px solid #6c6c8f; border-radius: 4px; text-transform: uppercase; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
 .btnLoad:hover, .btnBuy:hover { border-color: #52f9ff; color: #52f9ff; }
-.btnLoad:active, .btnBuy:active { top: -1px; }
 
 .btnBuy { border: #1ac8f9; background: #1ac8f9; color: #15151f; padding-right: 2px; letter-spacing: 0.5px; }
 .btnBuy:hover { background: #52f9ff; color: #15151f; }
@@ -221,7 +220,6 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .btnManual, .btnSend { display: block; position: relative; width: 214px; height: 87px; border-radius: 5px; background-clip: padding-box; background: #1ac8f9; }
 .btnManual:hover, .btnSend:hover { -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; background: #52f9ff; }
-.btnManual:active, .btnSend:active { top: -1px; }
 .btnManual .btnManual__txt, .btnSend .btnManual__txt { display: inline-block; padding-left: 92px; vertical-align: middle; text-align: left; text-transform: uppercase; font-size: 15px; color: #15151f; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 .btnManual .btnManual__txt:before, .btnSend .btnManual__txt:before { content: ""; position: absolute; width: 71px; height: 60px; top: 15px; left: 30px; background: url(../img/svg/manual.svg) no-repeat; }
 
