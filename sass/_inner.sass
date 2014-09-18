@@ -318,15 +318,15 @@
 		width: 87%
 		margin: 0 auto
 		position: relative
-		img
+		.worldmap
 			width: 100%
 		.dots
 			position: absolute
-			+s(dots)
+			+sr(dots)
 			&:hover
 			&.hover
 				margin: -4px 0 0 -4px
-				+s(dots-h)
+				+sr(dots-h)
 			&.c1
 				top: 14.2%
 				left: 20.2%
@@ -488,12 +488,12 @@
 		padding-left: 20px
 		&:hover
 			&:before
-				+s(scroll_active)
+				+sr(scroll_active)
 		&:before
 			content: ""
 			position: absolute
 			left: -5px
-			+s(scroll)
+			+sr(scroll)
 			+rotate(90)
 	.count
 		display: inline-block
@@ -521,12 +521,12 @@
 		position: relative
 		&:hover
 			&:before
-				+s(scroll_active)
+				+sr(scroll_active)
 		&:before
 			content: ""
 			position: absolute
 			right: 0
-			+s(scroll)
+			+sr(scroll)
 			+rotate(270)
 
 

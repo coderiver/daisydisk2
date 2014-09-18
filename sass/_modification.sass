@@ -138,7 +138,7 @@
 	&.is-active
 		border: 1px solid $neonGreen
 		&:after
-			+s(select_highlight)
+			+sr(select_highlight)
 		.chosen
 			color: $neonGreen
 	a
@@ -157,7 +157,7 @@
 		position: absolute
 		top: 20px
 		right: 17px
-		+s(dropdown)
+		+sr(dropdown)
 	&.another
 		width: 100%
 		margin-bottom: 20px
@@ -330,19 +330,19 @@
 		float: left
 		display: block
 		margin: 6px 28px 0 29px
-		+s(douglas)
+		+sr(douglas)
 	.cycle__next
 		position: absolute
 		top: 12px
 		right: -16px
 		cursor: pointer
-		+s(next)
+		+sr(next)
 	.cycle__prev
 		position: absolute
 		top: 12px
 		left: -16px
 		cursor: pointer
-		+s(next)
+		+sr(next)
 		+rotate(180)
 
 .blog__cycle
@@ -356,20 +356,20 @@
 		left: -50px
 		margin-top: -9px
 		cursor: pointer
-		+s(scroll)
+		+sr(scroll)
 		+rotate(90)
 		&:hover
-			+s(scroll_active)
+			+sr(scroll_active)
 	.blog__next
 		position: absolute
 		top: 50%
 		margin-top: -9px
 		right: -50px
 		cursor: pointer
-		+s(scroll)
+		+sr(scroll)
 		+rotate(270)
 		&:hover
-			+s(scroll_active)
+			+sr(scroll_active)
 	.cycle-pager
 		position: absolute
 		left: 50%
@@ -377,9 +377,9 @@
 		text-align: center
 		.cycle-pager-active
 			margin: 0 11px 0 -4px
-			+s(pagin_a)
+			+sr(pagin_a)
 			&:hover
-				+s(pagin_a)
+				+sr(pagin_a)
 		span
 			display: inline-block
 			width: 8px

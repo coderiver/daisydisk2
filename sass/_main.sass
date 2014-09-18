@@ -183,30 +183,30 @@
 		&:hover
 			+opacity(1)
 	.social__item_fb
-		+s(fb)
+		+sr(fb)
 	.social__item_tw
-		+s(tw)
+		+sr(tw)
 	.social__item_g
-		+s(g)
+		+sr(g)
 	.social__item_flckr
-		+s(flickr)
+		+sr(flickr)
 	.social__item_tube
-		+s(tube)
+		+sr(tube)
 
 .scrollThis
 	position: absolute
 	left: 50%
 	bottom: 85px
 	margin-left: -13px
-	+s(scroll)
+	+sr(scroll)
 	&:hover
-		+s(scroll_active)
+		+sr(scroll_active)
 
 //section reviews
 .reviews
 	+gh(#a0e695, #c3ea91)
 	.reviews__ttl
-		padding: 11.1% 0 30px 0
+		padding-bottom: 30px
 		letter-spacing: -1px
 		text-transform: uppercase
 		text-align: center
@@ -239,26 +239,25 @@
 	.awards__item_grow
 		flex-grow: 2
 		font-size: 0
-		margin-top: 10px
+		margin-top: 16px
 		text-align: center
 	.awards__best
 		display: inline-block
-		padding: 6px 53px 0 0
-		+s(best)
+		padding-right: 53px
+		+sr(best)
 	.awards__macworld
 		display: inline-block
-		padding: 9px 43px 0 0
-		+s(macworld)
+		padding-right: 43px
+		+sr(macworld)
 	.awards__macformat
 		display: inline-block
-		padding-top: 9px
-		+s(macformat)
+		+sr(macformat)
 
 
 //section homeu
 .homeu
 	padding-top: 12%
-	padding-bottom: 22%
+	padding-bottom: 20%
 	background: url(../img/bg1.jpg) 0 100% no-repeat
 	background-size: cover
 	.homeu__txt
@@ -328,8 +327,8 @@
 
 //section pro
 .pro
-	padding-top: 11%
-	padding-bottom: 23%
+	padding-top: 12%
+	padding-bottom: 19%
 	background: url(../img/bg2.jpg) 0 72% no-repeat
 	background-size: cover
 	.pro__txt
@@ -443,13 +442,11 @@
 
 //monitor section
 .monitor
+	padding-top: 12%
 	padding-bottom: 7.7%
 	+gh(#151520, #0c3556)
 	.monitor__inner
 		position: relative
-		padding-top: 8.9%
-	.monitor__deeper
-		+clr
 	.monitor__screenshot
 		img
 			width: 51.17%
@@ -458,13 +455,13 @@
 	.monitor__txt
 		position: absolute
 		width: 40%
-		top: 20%
+		top: 0
 		right: 7.3%
+		margin-top: 20px
 		text-align: right
 		font-size: 20px
 		letter-spacing: -0.4px
 		text-align: right
-		font-size: 20px
 		color: #FFF
 		+box
 		+mus300
@@ -478,13 +475,13 @@
 		color: $neonGreen
 	.btn__item
 		position: absolute
-		bottom: -26px
+		bottom: -2px
 		right: 7.5%
 		.btnLoad
 			background: $blue
 			border-color: $blue
 			color: $black
-			line-height: 70px
+			line-height: 65px
 			&:hover
 				background: $neon
 				border-color: $neon
@@ -492,7 +489,7 @@
 			display: block
 			color: #a1a1af
 			font-size: 13px
-			padding-top: 15px
+			padding-top: 8px
 			text-align: center
 			+mus500
 

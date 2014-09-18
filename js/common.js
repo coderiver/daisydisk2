@@ -23,15 +23,8 @@ head.ready(function() {
 		});
 
 		//fixed menu
-		// $(document).on("load", menuChange);
-		$(document).on("scroll", menuChange);
-
-		menuChange();
-
 		function menuChange(event){
 	    var scrollPos = $(document).scrollTop();
-
-	    console.log("scrollPos", scrollPos);
 
 	    if (scrollPos > 0) {
 	    	$('.header').addClass('fixed');
@@ -44,7 +37,10 @@ head.ready(function() {
 	        $('.menu__item.last').show();
 	        $('.menu').find('button').hide();
 	    }
+
 	}
+		$(document).on("scroll", menuChange);
+		menuChange();
 
 	} else if (onInnerPage) {
 		$("body", "html").css('height', 'auto');
