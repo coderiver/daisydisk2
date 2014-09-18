@@ -448,10 +448,17 @@
 	.monitor__inner
 		position: relative
 	.monitor__screenshot
+		width: 51%
 		img
-			width: 51.17%
+			width: 100%
 			max-width: 800px
-			margin-left: -10px
+		.retina
+			display: none
+		+retina
+			img
+				display: none
+			.retina
+				display: block
 	.monitor__txt
 		position: absolute
 		width: 40%

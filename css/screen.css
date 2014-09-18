@@ -85,7 +85,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .content .content__btn { display: inline-block; text-align: right; font-size: 0; }
 .content .content__btn .btn__item { float: left; text-align: center; margin-right: 32px; }
 .content .content__btn .btn__item:last-child { margin-right: 0; }
-.content .content__btn .btnLoad, .content .content__btn .btnBuy { margin: 0 auto; }
+.content .content__btn .btnLoad { margin: 0 auto; }
 .content .content__btn .btn__txt { display: block; color: #a1a1af; font-size: 13px; padding-top: 11px; text-transform: none; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; }
 .content .content__btn .btn__txt_blue { color: #1ac8f9; }
 .content .content__btn .btn__txt_blue:hover { color: #52f9ff; }
@@ -173,13 +173,17 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .monitor { padding-top: 12%; padding-bottom: 7.7%; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #151520), color-stop(100%, #0c3556)); background-image: -webkit-linear-gradient(left, #151520, #0c3556); background-image: -moz-linear-gradient(left, #151520, #0c3556); background-image: -o-linear-gradient(left, #151520, #0c3556); background-image: linear-gradient(left, #151520, #0c3556); }
 .monitor .monitor__inner { position: relative; }
-.monitor .monitor__screenshot img { width: 51.17%; max-width: 800px; margin-left: -10px; }
+.monitor .monitor__screenshot { width: 51%; }
+.monitor .monitor__screenshot img { width: 100%; max-width: 800px; }
+.monitor .monitor__screenshot .retina { display: none; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .monitor .monitor__screenshot img { display: none; }
+  .monitor .monitor__screenshot .retina { display: block; } }
 .monitor .monitor__txt { position: absolute; width: 40%; top: 0; right: 7.3%; margin-top: 20px; text-align: right; font-size: 20px; letter-spacing: -0.4px; text-align: right; color: white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .monitor .monitor__p { font-size: 4.2vw; text-transform: uppercase; line-height: 1.2; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
 .monitor .monitor__p_green { margin-bottom: 18px; color: #b7fb5b; }
 .monitor .btn__item { position: absolute; bottom: -2px; right: 7.5%; }
-.monitor .btn__item .btnLoad, .monitor .btn__item .btnBuy { background: #1ac8f9; border-color: #1ac8f9; color: #1d1d29; line-height: 65px; }
-.monitor .btn__item .btnLoad:hover, .monitor .btn__item .btnBuy:hover { background: #52f9ff; border-color: #52f9ff; }
+.monitor .btn__item .btnLoad { background: #1ac8f9; border-color: #1ac8f9; color: #1d1d29; line-height: 65px; }
+.monitor .btn__item .btnLoad:hover { background: #52f9ff; border-color: #52f9ff; }
 .monitor .btn__item .btn__txt { display: block; color: #a1a1af; font-size: 13px; padding-top: 8px; text-align: center; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; }
 
 .footer { position: relative; background: #1d1d29; z-index: 10; }
@@ -209,10 +213,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .footer .nav__item a { font-size: 15px; margin-bottom: 13px; display: block; color: #00c7e4; }
 .footer .nav__item a:hover { color: #52f9ff; }
 
-.btnLoad, .btnBuy { background: none; color: #6c6c8f; font-size: 25px; width: 200px; height: 70px; text-transform: uppercase; text-align: center; border: 3px solid #6c6c8f; border-radius: 4px; line-height: 64px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.btnLoad:hover, .btnBuy:hover { border-color: #52f9ff; color: #52f9ff; }
+.btnLoad { background: none; color: #6c6c8f; font-size: 25px; width: 200px; height: 70px; text-transform: uppercase; text-align: center; border: 3px solid #6c6c8f; border-radius: 4px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.btnLoad:hover { border-color: #52f9ff; color: #52f9ff; }
 
-.btnBuy { border: #1ac8f9; background: #1ac8f9; color: #15151f; letter-spacing: 0.5px; text-align: center; line-height: 70px; }
+.btnBuy { width: 200px; height: 70px; border: #1ac8f9; background: #1ac8f9; color: #15151f; text-transform: uppercase; text-align: center; font-size: 25px; letter-spacing: 0.5px; line-height: 70px; border-radius: 4px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .btnBuy:hover { background: #52f9ff; color: #15151f; }
 .btnBuy .btnBuy__span { color: #005692; padding-left: 18px; }
 
@@ -525,7 +529,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
   .features .features__item { font-size: 18px; line-height: 22px; }
   .features .features__item:last-child { margin-right: 5%; } }
 @media only screen and (max-width: 1115px) { .menu .menu__item { margin-right: 23px; }
-  .btnLoad, .btnBuy { width: 180px; }
+  .btnLoad { width: 180px; }
   .reviews .awards__bl { padding: 41px 10%; }
   .reviews .reviews__ttl { font-size: 40px; }
   .reviews .cycle__ttl, .reviews .awards__quantity { font-size: 25px; margin-bottom: 10px; }
@@ -557,11 +561,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
   .header.fixed .menu { margin-right: 0; }
   .header.fixed .menu .menu__item { margin-right: 0; }
   .scrollThis { display: none; }
-  .social { position: static; }
-  .monitor .monitor__screenshot img { width: 470px; } }
+  .social { position: static; } }
 @media only screen and (max-width: 900px) { .content__inner { font-size: 40px; }
   .content .content__btn .btn__item { margin-bottom: 15px; margin-right: 10px; }
-  .content .content__btn .btnBuy, .content .content__btn .btnLoad, .content .content__btn .btnBuy { width: 160px; font-size: 20px; }
+  .content .content__btn .btnBuy, .content .content__btn .btnLoad { width: 160px; font-size: 20px; }
   .content .content__btn .btn__txt { padding-top: 10px; font-size: 11px; }
   .reviews .awards__bl { display: block; padding: 41px 0; text-align: center; }
   .reviews .awards__item { display: inline-block; margin-right: 15px; }
@@ -581,7 +584,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
   .monitor .monitor__p { font-size: 35px; }
   .monitor .monitor__txt { width: 30%; font-size: 19px; right: 0; }
   .monitor .btn__item { right: 0; }
-  .monitor .btn__item .btnLoad, .monitor .btn__item .btnBuy { width: 160px; font-size: 20px; }
+  .monitor .btn__item .btnLoad { width: 160px; font-size: 20px; }
   .monitor .btn__item .btn__txt { padding-top: 10px; font-size: 11px; }
   .inner .choose__item { display: inline-block; width: 49%; vertical-align: top; }
   .inner .person, .inner .person:last-child { float: none; margin-bottom: 40px; text-align: center; }
@@ -601,6 +604,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
   .reviews .awards__item { display: block; margin-right: 0; }
   .reviews .awards__item_grow { margin: 15px 0px 12px 0px; }
   .pro { background-position: 35% 100%; }
+  .monitor .monitor__screenshot { width: 99%; margin: 0 auto; }
   .monitor .monitor__inner { text-align: center; }
   .monitor .monitor__txt { position: static; width: 100%; margin: 20px 0; text-align: center; }
   .monitor .btn__item { position: static; display: inline-block; padding-bottom: 40px; }
@@ -624,7 +628,6 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 @media only screen and (max-width: 560px) { .content .content__img { width: 290px; }
   .reviews .reviews__ttl { font-size: 35px; }
   .reviews .cycle__ttl { font-size: 22px; }
-  .monitor .monitor__screenshot img { width: 99%; margin: 0 auto; }
   .inner .choose__item { width: 100%; }
   .inner .about { font-size: 23px; }
   .inner .known__ttl { font-size: 24px; }

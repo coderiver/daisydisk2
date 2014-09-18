@@ -9,7 +9,6 @@
 	text-align: center
 	border: 3px solid $violet
 	border-radius: 4px
-	line-height: 64px
 	+mus500
 	+transition(all 0.4s ease)
 	+box
@@ -18,13 +17,20 @@
 		color: $neon
 
 .btnBuy
-	@extend .btnLoad
+	width: 200px
+	height: 70px
 	border: $blue
 	background: $blue
 	color: $dark
-	letter-spacing: 0.5px
+	text-transform: uppercase
 	text-align: center
+	font-size: 25px
+	letter-spacing: 0.5px
 	line-height: 70px
+	border-radius: 4px
+	+mus500
+	+transition(all 0.4s ease)
+	+box
 	&:hover
 		background: $neon
 		color: $dark
