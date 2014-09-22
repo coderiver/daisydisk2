@@ -322,11 +322,17 @@
 			width: 100%
 		.dots
 			position: absolute
-			+sr(dots)
+			+svg(dots, 8, 8)
+			&:before
+				content: ""
+				position: relative
+				top: -2px
+				left: -2px
+				display: none
 			&:hover
 			&.hover
-				margin: -4px 0 0 -4px
-				+sr(dots-h)
+				&:before
+					+svg(dots-h, 12, 12)
 			&.c1
 				top: 14.2%
 				left: 20.2%
@@ -372,48 +378,30 @@
 			&.c15
 				top: 32.4%
 				right: 42%
-				&:hover
-					margin: -4px -4px 0 0
 			&.c16
 				top: 42.4%
 				right: 31.1%
-				&:hover
-					margin: -4px -4px 0 0
 			&.c17
 				top: 30.5%
 				right: 14.3%
-				&:hover
-					margin: -4px -4px 0 0
 			&.c18
 				top: 33.4%
 				right: 20.6%
-				&:hover
-					margin: -4px -4px 0 0
 			&.c19
 				top: 40.2%
 				right: 19.7%
-				&:hover
-					margin: -4px -4px 0 0
 			&.c20
 				bottom: 30%
 				right: 13%
-				&:hover
-					margin: 0 -4px -4px 0
 			&.c21
 				bottom: 35.5%
 				right: 17.5%
-				&:hover
-					margin: 0 -4px -4px 0
 			&.c22
 				bottom: 44.2%
 				right: 18.2%
-				&:hover
-					margin: 0 -4px -4px 0
 			&.c23
 				bottom: 47.5%
 				right: 22.9%
-				&:hover
-					margin: 0 -4px -4px 0
 
 //blog page
 .blog
@@ -488,12 +476,12 @@
 		padding-left: 20px
 		&:hover
 			&:before
-				+sr(scroll_active)
+				+svg(scroll_active, 27, 16)
 		&:before
 			content: ""
 			position: absolute
 			left: -5px
-			+sr(scroll)
+			+svg(scroll, 27, 16)
 			+rotate(90)
 	.count
 		display: inline-block
@@ -521,12 +509,12 @@
 		position: relative
 		&:hover
 			&:before
-				+sr(scroll_active)
+			//	+sr(scroll_active)
 		&:before
 			content: ""
 			position: absolute
 			right: 0
-			+sr(scroll)
+		//	+sr(scroll)
 			+rotate(270)
 
 

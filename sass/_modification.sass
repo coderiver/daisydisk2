@@ -9,6 +9,7 @@
 	text-align: center
 	border: 3px solid $violet
 	border-radius: 4px
+	line-height: 67px
 	+mus500
 	+transition(all 0.4s ease)
 	+box
@@ -144,7 +145,7 @@
 	&.is-active
 		border: 1px solid $neonGreen
 		&:after
-			+sr(select_highlight)
+			+svg(select_highlight, 22, 14)
 		.chosen
 			color: $neonGreen
 	a
@@ -163,14 +164,15 @@
 		position: absolute
 		top: 20px
 		right: 17px
-		+sr(dropdown)
+		cursor: pointer
+		+svg(dropdown, 22, 14)
 	&.another
 		width: 100%
 		margin-bottom: 20px
 		&:before
 			display: none
 		&:after
-			top: 22px
+			top: 18px
 		.country
 			width: 100%
 			a
@@ -263,34 +265,6 @@
 		z-index: 2
 		+s(radio1)
 
-//slide nav
-.nav
-	position: fixed
-	right: 65px
-	top: 50%
-	margin-top: -86.5px
-	z-index: 10
-	.nav__item
-		background: $blue
-		border-radius: 1px
-		background-clip: padding-box
-		margin-bottom: 20px
-		list-style-type: none
-		width: 8px
-		height: 8px
-		&:last-child
-			margin-bottom: 0
-		&.active
-			background: none
-			margin-bottom: 25px
-			a
-				+s(pagin_a)
-				margin-left: -4px
-		a
-			display: block
-			width: 8px
-			height: 8px
-
 //cycle
 .reviews__cycle
 	position: relative
@@ -342,13 +316,13 @@
 		top: 12px
 		right: -16px
 		cursor: pointer
-		+sr(next)
+		+svg(next, 17, 27)
 	.cycle__prev
 		position: absolute
 		top: 12px
 		left: -16px
 		cursor: pointer
-		+sr(next)
+		+svg(next, 17, 27)
 		+rotate(180)
 
 .blog__cycle
@@ -362,20 +336,21 @@
 		left: -50px
 		margin-top: -9px
 		cursor: pointer
-		+sr(scroll)
+		+svg(scroll, 27, 16)
 		+rotate(90)
 		&:hover
-			+sr(scroll_active)
+			+svg(scroll_active, 27, 16)
+
 	.blog__next
 		position: absolute
 		top: 50%
 		margin-top: -9px
 		right: -50px
 		cursor: pointer
-		+sr(scroll)
+		+svg(scroll, 27, 16)
 		+rotate(270)
 		&:hover
-			+sr(scroll_active)
+			+svg(scroll_active, 27, 16)
 	.cycle-pager
 		position: absolute
 		left: 50%
@@ -383,9 +358,13 @@
 		text-align: center
 		.cycle-pager-active
 			margin: 0 11px 0 -4px
-			+sr(pagin_a)
+			width: 13px
+			height: 13px
+			border: 2px solid #fff
+			background-color: #15151e
+			+border-radius(4px)
 			&:hover
-				+sr(pagin_a)
+				background-color: #15151e
 		span
 			display: inline-block
 			width: 8px
