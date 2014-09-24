@@ -13,7 +13,6 @@ head.ready(function() {
 		$(this).parent().find('.menu').slideToggle();
 	});
 
-
 		$(".scrollThis").click(function (){
 			$('html, body').animate({scrollTop: $(".reviews").offset().top}, 700);
 		});

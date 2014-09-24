@@ -46,7 +46,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .main { width: 100%; height: 100%; padding-top: 94px; padding-bottom: 3.5%; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #001a46), color-stop(100%, #0e0e19)); background-image: -webkit-linear-gradient(left, #001a46, #0e0e19); background-image: -moz-linear-gradient(left, #001a46, #0e0e19); background-image: -o-linear-gradient(left, #001a46, #0e0e19); background-image: linear-gradient(left, #001a46, #0e0e19); }
 
-.header { position: fixed; width: 100%; top: 20px; padding: 0 3.1% 0 5.3%; z-index: 200; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
+.header { position: fixed; width: 100%; top: 20px; padding: 0 70px; z-index: 200; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
 .header.hidden { display: none; }
 .header .header__in { float: left; }
@@ -55,7 +55,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .header .header__ico { display: inline-block; background: url('../img/icons-sff53812b35.png') 0 -1384px no-repeat; background-position: 0 -692px; width: 64px; height: 64px; -moz-background-size: 128px 1147px; -webkit-background-size: 128px 1147px; background-size: 128px 1147px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
 .header .header__txt { font-size: 35px; color: white; padding-left: 10px; vertical-align: 19px; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; -webkit-transition: 0.4s ease; -moz-transition: 0.4s ease; -o-transition: 0.4s ease; transition: 0.4s ease; }
 .header .header__txt_grey { color: #6c6c8f; }
-.header.fixed { width: 100%; height: 80px; top: 0; padding: 0 5.1% 0 5.4%; background: #1d1d29; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.header.fixed { width: 100%; height: 80px; top: 0; background: #1d1d29; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .header.fixed.is-visible { display: block; }
 .header.fixed .header__ico { vertical-align: middle; -webkit-transform: translateX(10px) scale(0.5); -moz-transform: translateX(10px) scale(0.5); -ms-transform: translateX(10px) scale(0.5); -o-transform: translateX(10px) scale(0.5); transform: translateX(10px) scale(0.5); }
 .header.fixed .header__txt { font-size: 25px; vertical-align: middle; padding-left: 7px; }
@@ -88,7 +88,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .content .content__btn .btn__item { float: left; text-align: center; margin-right: 32px; }
 .content .content__btn .btn__item:last-child { margin-right: 0; }
 .content .content__btn .btnLoad { margin: 0 auto; }
-.content .content__btn .btnBuy .btnBuy__span { padding-bottom: 2px; }
+.content .content__btn .btnBuy .btnBuy__span { padding-bottom: 1px; }
 .content .content__btn .btn__txt { display: block; color: #a1a1af; font-size: 13px; padding-top: 11px; text-transform: none; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; font-weight: normal; }
 .content .content__btn .btn__txt_blue { color: #1ac8f9; }
 .content .content__btn .btn__txt_blue:hover { color: #52f9ff; }
@@ -511,7 +511,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 @media only screen and (max-width: 1500px) { .content .content__img { width: 55%; } }
 @media only screen and (max-width: 1440px) { .content .content__img { width: 50%; } }
 @media only screen and (max-width: 1115px) { .menu .menu__item { margin-right: 23px; } }
-@media only screen and (max-width: 1020px) { .main { height: auto; }
+@media only screen and (max-width: 1280px) { .main { height: auto; }
   .fa.fa-bars { display: block; }
   .menu { position: absolute; display: none; top: 58px; right: -20px; margin-right: 0; background: #1d1d29; padding: 10px 20px 20px 20px; }
   .menu.is-visible { display: block; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
