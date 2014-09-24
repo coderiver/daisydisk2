@@ -88,6 +88,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .content .content__btn .btn__item { float: left; text-align: center; margin-right: 32px; }
 .content .content__btn .btn__item:last-child { margin-right: 0; }
 .content .content__btn .btnLoad { margin: 0 auto; }
+.content .content__btn .btnBuy .btnBuy__span { padding-bottom: 2px; }
 .content .content__btn .btn__txt { display: block; color: #a1a1af; font-size: 13px; padding-top: 11px; text-transform: none; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; font-weight: normal; }
 .content .content__btn .btn__txt_blue { color: #1ac8f9; }
 .content .content__btn .btn__txt_blue:hover { color: #52f9ff; }
@@ -217,7 +218,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .btnBuy { width: 200px; height: 70px; border: 3px solid #1ac8f9; background: #1ac8f9; color: #15151f; text-transform: uppercase; text-align: center; font-size: 25px; letter-spacing: 0.5px; line-height: 1; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; font-weight: normal; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
 .btnBuy:hover { background: #52f9ff; color: #15151f; border-color: #52f9ff; }
-.btnBuy .btnBuy__span { color: #005692; padding-left: 18px; }
+.btnBuy .btnBuy__span { display: inline-block; color: #005692; padding-left: 18px; }
 
 .btnManual, .btnSend { display: block; position: relative; width: 214px; height: 87px; border-radius: 5px; background-clip: padding-box; background: #1ac8f9; }
 .btnManual:hover, .btnSend:hover { -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; background: #52f9ff; }
