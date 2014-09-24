@@ -11,38 +11,39 @@
 <body>
 <!-- begin  out-->
 <div class="out green">
+	<!-- begin header-->
+	<header class="header">
+		<div class="header__in">
+			<a href="index.html" class="header__logo">
+				<span class="header__ico"></span>
+				<span class="header__txt">Daisy<span class="header__txt_grey">Disk</span></span>
+			</a>
+		</div>
+		<div class="header__in_right">
+			<i class="fa fa-bars"></i>
+			<nav class="menu">
+				<li class="menu__item">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="menu__item">
+					<a href="store.html">Store</a>
+				</li>
+				<li class="menu__item">
+					<a href="support.html">Support</a>
+				</li>
+				<li class="menu__item last">
+					<a href="about.html">About</a>
+				</li>
+				<li class="menu__item menu__item_is-active">
+					<a href="blog.html">Blog</a>
+				</li>
+				<button type="button" class="btnBuy" hidden>Buy <span class="btnBuy__span">$9.99</span></button>
+			</nav>
+		</div>
+	</header>
+	<!-- end header -->
 	<!-- begin wrapper-->
 	<div class="wrapper">
-		<!-- begin header-->
-		<header class="header">
-			<div class="header__in">
-				<a href="index.html" class="header__logo">
-					<span class="header__ico"></span>
-					<span class="header__txt">Daisy<span class="header__txt_grey">Disk</span></span>
-				</a>
-			</div>
-			<div class="header__in_right">
-				<i class="fa fa-bars"></i>
-				<nav class="menu">
-					<li class="menu__item">
-						<a href="index.html">Home</a>
-					</li>
-					<li class="menu__item">
-						<a href="store.html">Store</a>
-					</li>
-					<li class="menu__item ">
-						<a href="support.html">Support</a>
-					</li>
-					<li class="menu__item">
-						<a href="about.html">About</a>
-					</li>
-					<li class="menu__item menu__item_is-active">
-						<a href="blog.html">Blog</a>
-					</li>
-				</nav>
-			</div>
-		</header>
-		<!-- end header -->
 		<!-- begin inner-->
 		<div class="inner">
 			<div class="blog">
@@ -57,6 +58,8 @@
 					<p class="post__txt padding">The good news is that you can <a href="#">try the beta</a> today and see what we’ve been working on during the past months. The beta will be updated until the final version is available. Better news: DaisyDisk 3 will be free for all DaisyDisk 2 users. It will be available in both Mac App Store and standalone edition and as usual we’ll offer free migration to standalone.</p>
 					<!-- begin cycle  -->
 					<div class="blog__cycle">
+						<span class="blog__prev"></span>
+						<span class="blog__next"></span>
 						<div class="cycle-slideshow"
 							data-cycle-timeout="0"
 							data-cycle-prev=".blog__prev"
@@ -72,8 +75,6 @@
 							<img src="img/slide_1.jpg" alt="slide1">
 						</div>
 						<div class="cycle-pager"></div>
-						<span class="blog__prev"></span>
-						<span class="blog__next"></span>
 					</div>
 					<!-- end cycle  -->
 					<p class="aftercycle">The list of changes includes a brand new design, full retina display support, a new engine and a huge amount of smaller, but useful features, updates and tweaks.</p>
