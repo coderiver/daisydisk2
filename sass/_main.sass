@@ -7,15 +7,15 @@
 	+gh(#001a46, #0e0e19)
 
 .header
-	position: fixed
+	position: absolute
 	width: 100%
-	top: 20px
-	padding: 0 70px
+	height: 80px
+	top: 0
+	padding: 0 75px
 	z-index: 200
 	+box
 	+clr
-	&.hidden
-		display: none
+	+transition(background 0.2s ease)
 	.header__in
 		float: left
 	.header__in_right
@@ -25,56 +25,19 @@
 	.header__logo
 		display: block
 		text-decoration: none
-		text-transform: uppercase
-		padding-top: 10px
+		line-height: 80px
 	.header__ico
 		display: inline-block
+		vertical-align: middle
 		+sr(logo)
-		+transition(0.5s ease)
 	.header__txt
 		font-size: 35px
 		color: #FFF
 		padding-left: 10px
-		vertical-align: 19px
-		+mus300
-		+transition(0.4s ease)
-	.header__txt_grey
-		color: #6c6c8f
+		vertical-align: middle
+		+mus100
 	&.fixed
-		width: 100%
-		height: 80px
-		top: 0
 		background: #1D1D29
-		+box
-		&.is-visible
-			display: block
-		.header__ico
-			vertical-align: middle
-			+transform(translateX(10px) scale(0.5))
-		.header__txt
-			font-size: 25px
-			vertical-align: middle
-			padding-left: 7px
-		.menu
-			float: left
-			margin-right: 58px
-			.menu__item
-				margin-right: 39px
-				&:last-child
-					margin-right: 0
-				a
-					margin-top: 10px
-					padding: 20px 15px 0 15px
-					text-decoration: none
-		.btnBuy
-			display: none
-			float: right
-			width: 125px
-			height: 40px
-			margin-top: 20px
-			font-size: 17px
-			span
-				padding-left: 3px
 
 .menu
 	+clr
@@ -84,14 +47,14 @@
 		&:last-child
 			margin-right: 0
 		a
+			position: relative
 			display: block
 			float: left
-			position: relative
+			padding: 31px 12px 35px 18px
 			text-transform: uppercase
 			text-decoration: none
 			color: $blue
 			font-size: 17px
-			padding: 35px 12px 0 18px
 			+mus500
 			+box
 			&:hover
@@ -104,7 +67,7 @@
 				position: absolute
 				width: 1%
 				height: 2px
-				top: 0
+				top: 10px
 				left: 0
 				opacity: 0
 				background: $neon
@@ -128,7 +91,7 @@
 		position: absolute
 		top: 50%
 		margin-top: -170px
-		right: 9.1%
+		right: 0
 		color: #FFF
 		font-size: 70px
 		text-transform: uppercase
@@ -282,16 +245,17 @@
 		color: #FFF
 		line-height: 1.2
 		+mus300
+	.compare
+		left: 75px
 
 .compare
 	position: absolute
-	width: 90%
+	width: 93%
 	bottom: 57px
 	text-transform: uppercase
 	font-size: 15px
 	color: #FFF
 	+mus700
-	+box
 	.compare__item
 		text-align: center
 		display: inline-block
@@ -335,7 +299,7 @@
 	background: url(../img/bg2.jpg) 0 72% no-repeat
 	background-size: cover
 	.pro__txt
-		padding: 0 7% 1.7% 0
+		padding: 0 0 1.7% 0
 		font-size: 60px
 		text-transform: uppercase
 		text-align: right
@@ -347,7 +311,6 @@
 	.pro__p_green
 		color: $darkGreen
 	.pro__about
-		padding-right: 7.5%
 		text-align: right
 	.pro__desc
 		display: inline-block
@@ -361,15 +324,12 @@
 		+clr
 	.compare
 		text-align: right
-		padding-right: 4.7%
-		+box
+		right: 50px
 		.compare__inner
 			@extend %in
 		.compare__item
 			line-height: 1.3
-			margin-right: 9%
-			&:first-child
-				margin-right: 9.5%
+			margin-right: 8.5%
 			&:last-child
 				margin-right: 0
 			.compare__item_cloud
@@ -399,7 +359,7 @@
 		+mus100
 	.features__data
 		min-width: 1280px
-		max-width: 1600px
+		max-width: 1500px
 		display: flex
 		justify-content: space-around
 		margin: 0 auto
@@ -464,7 +424,7 @@
 		position: absolute
 		width: 40%
 		top: 0
-		right: 7.3%
+		right: 0
 		margin-top: 20px
 		text-align: right
 		font-size: 20px
@@ -484,7 +444,7 @@
 	.btn__item
 		position: absolute
 		bottom: -2px
-		right: 7.5%
+		right: 0
 		.btnLoad
 			background: $blue
 			border-color: $blue
@@ -545,7 +505,7 @@
 			&:last-child
 				padding-right: 0
 	.symbol__disk
-		+sr(logo)
+		+sr(logo_footer)
 	.symbol__beat
 		+svg(beat, 64, 64)
 		background-size: contain

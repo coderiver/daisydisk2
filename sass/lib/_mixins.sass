@@ -75,6 +75,10 @@
 	@media only screen and (max-width: $width+'px')
 		@content
 
+=rl($width)
+	@media only screen and (min-width: $width+'px')
+		@content
+
 =fs($sizeValue: 16)
 	font-size: $sizeValue + px
 	font-size: $sizeValue / 10 + rem

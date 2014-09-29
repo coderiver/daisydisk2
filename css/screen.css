@@ -33,11 +33,15 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .out { position: relative; min-width: 1280px; min-height: 100%; }
 
-.section { padding: 0 4.3% 0 5.3%; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.section { padding: 0 75px; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .section.reviews { padding: 0; padding-top: 11%; }
 .section a { text-decoration: none; }
 
 .reviews .reviews__inner, .pro .compare .compare__inner { max-width: 1440px; }
+
+.is-visible { display: block; }
+
+.is-hidden { display: none; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
@@ -46,34 +50,23 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .main { width: 100%; height: 100%; padding-top: 94px; padding-bottom: 3.5%; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #001a46), color-stop(100%, #0e0e19)); background-image: -webkit-linear-gradient(left, #001a46, #0e0e19); background-image: -moz-linear-gradient(left, #001a46, #0e0e19); background-image: -o-linear-gradient(left, #001a46, #0e0e19); background-image: linear-gradient(left, #001a46, #0e0e19); }
 
-.header { position: fixed; width: 100%; top: 20px; padding: 0 70px; z-index: 200; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
+.header { position: absolute; width: 100%; height: 80px; top: 0; padding: 0 75px; z-index: 200; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *zoom: 1; -webkit-transition: background 0.2s ease; -moz-transition: background 0.2s ease; -o-transition: background 0.2s ease; transition: background 0.2s ease; }
 .header:after { content: " "; display: table; clear: both; }
-.header.hidden { display: none; }
 .header .header__in { float: left; }
 .header .header__in_right { float: right; position: relative; z-index: 10; }
-.header .header__logo { display: block; text-decoration: none; text-transform: uppercase; padding-top: 10px; }
-.header .header__ico { display: inline-block; background: url('../img/icons-sff53812b35.png') 0 -1384px no-repeat; background-position: 0 -692px; width: 64px; height: 64px; -moz-background-size: 128px 1147px; -webkit-background-size: 128px 1147px; background-size: 128px 1147px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
-.header .header__txt { font-size: 35px; color: white; padding-left: 10px; vertical-align: 19px; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; -webkit-transition: 0.4s ease; -moz-transition: 0.4s ease; -o-transition: 0.4s ease; transition: 0.4s ease; }
-.header .header__txt_grey { color: #6c6c8f; }
-.header.fixed { width: 100%; height: 80px; top: 0; background: #1d1d29; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.header.fixed.is-visible { display: block; }
-.header.fixed .header__ico { vertical-align: middle; -webkit-transform: translateX(10px) scale(0.5); -moz-transform: translateX(10px) scale(0.5); -ms-transform: translateX(10px) scale(0.5); -o-transform: translateX(10px) scale(0.5); transform: translateX(10px) scale(0.5); }
-.header.fixed .header__txt { font-size: 25px; vertical-align: middle; padding-left: 7px; }
-.header.fixed .menu { float: left; margin-right: 58px; }
-.header.fixed .menu .menu__item { margin-right: 39px; }
-.header.fixed .menu .menu__item:last-child { margin-right: 0; }
-.header.fixed .menu .menu__item a { margin-top: 10px; padding: 20px 15px 0 15px; text-decoration: none; }
-.header.fixed .btnBuy { display: none; float: right; width: 125px; height: 40px; margin-top: 20px; font-size: 17px; }
-.header.fixed .btnBuy span { padding-left: 3px; }
+.header .header__logo { display: block; text-decoration: none; line-height: 80px; }
+.header .header__ico { display: inline-block; vertical-align: middle; background: url('../img/icons-sabd171c2fb.png') 0 -1522px no-repeat; background-position: 0 -761px; width: 36px; height: 36px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
+.header .header__txt { font-size: 35px; color: white; padding-left: 10px; vertical-align: middle; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
+.header.fixed { background: #1d1d29; }
 
 .menu { *zoom: 1; }
 .menu:after { content: " "; display: table; clear: both; }
 .menu .menu__item { display: inline-block; margin-right: 57px; }
 .menu .menu__item:last-child { margin-right: 0; }
-.menu .menu__item a { display: block; float: left; position: relative; text-transform: uppercase; text-decoration: none; color: #1ac8f9; font-size: 17px; padding: 35px 12px 0 18px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; font-weight: normal; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.menu .menu__item a { position: relative; display: block; float: left; padding: 31px 12px 35px 18px; text-transform: uppercase; text-decoration: none; color: #1ac8f9; font-size: 17px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; font-weight: normal; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .menu .menu__item a:hover { color: #52f9ff; }
 .menu .menu__item a:hover:after { opacity: 1; width: 100%; }
-.menu .menu__item a:after { content: ""; position: absolute; width: 1%; height: 2px; top: 0; left: 0; opacity: 0; background: #52f9ff; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
+.menu .menu__item a:after { content: ""; position: absolute; width: 1%; height: 2px; top: 10px; left: 0; opacity: 0; background: #52f9ff; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
 .menu .menu__item_is-active a { color: white; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 .menu .menu__item_is-active a:hover { color: white; }
 .menu .menu__item_is-active a:after { display: none; }
@@ -81,7 +74,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .content { position: relative; }
 .content .content__img { max-width: 800px; }
 .content .content__img img { width: 100%; }
-.content .content__txt { position: absolute; top: 50%; margin-top: -170px; right: 9.1%; color: white; font-size: 70px; text-transform: uppercase; text-align: right; line-height: 1.14; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.content .content__txt { position: absolute; top: 50%; margin-top: -170px; right: 0; color: white; font-size: 70px; text-transform: uppercase; text-align: right; line-height: 1.14; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .content .content__p { letter-spacing: -2.1px; }
 .content .content__p_green { color: #b7fb5b; padding-bottom: 4.5%; letter-spacing: -2.5px; }
 .content .content__btn { display: inline-block; text-align: right; font-size: 0; }
@@ -116,17 +109,18 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .reviews .awards__quantity { display: block; font-size: 40px; text-align: center; letter-spacing: -3.5px; line-height: 1.4; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .reviews .awards__desc { margin-top: -5px; line-height: 19.5px; letter-spacing: 0.15px; }
 .reviews .awards__item_grow { flex-grow: 2; font-size: 0; margin-top: 16px; text-align: center; }
-.reviews .awards__best { display: inline-block; padding-right: 53px; background: url('../img/icons-sff53812b35.png') 0 -1640px no-repeat; background-position: 0 -820px; width: 87px; height: 57px; -moz-background-size: 128px 1147px; -webkit-background-size: 128px 1147px; background-size: 128px 1147px; }
-.reviews .awards__macworld { display: inline-block; padding-right: 43px; background: url('../img/icons-sff53812b35.png') 0 -1522px no-repeat; background-position: 0 -761px; width: 107px; height: 54px; -moz-background-size: 128px 1147px; -webkit-background-size: 128px 1147px; background-size: 128px 1147px; }
-.reviews .awards__macformat { display: inline-block; background: url('../img/icons-sff53812b35.png') 0 -1835px no-repeat; background-position: 0 -918px; width: 71px; height: 54px; -moz-background-size: 128px 1147px; -webkit-background-size: 128px 1147px; background-size: 128px 1147px; }
+.reviews .awards__best { display: inline-block; padding-right: 53px; background: url('../img/icons-sabd171c2fb.png') 0 -1722px no-repeat; background-position: 0 -861px; width: 87px; height: 57px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
+.reviews .awards__macworld { display: inline-block; padding-right: 43px; background: url('../img/icons-sabd171c2fb.png') 0 -1604px no-repeat; background-position: 0 -802px; width: 107px; height: 54px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
+.reviews .awards__macformat { display: inline-block; background: url('../img/icons-sabd171c2fb.png') 0 -1917px no-repeat; background-position: 0 -959px; width: 71px; height: 54px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
 
 .homeu { padding-top: 12%; padding-bottom: 20%; background: url(../img/bg1.jpg) 0 100% no-repeat; background-size: cover; }
 .homeu .homeu__txt { margin-left: -7px; padding-bottom: 30px; text-transform: uppercase; font-size: 60px; line-height: 1.15; letter-spacing: -0.76px; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
 .homeu .homeu__p { color: white; }
 .homeu .homeu__p_green { color: #b7fb5b; }
 .homeu .homeu__desc { width: 495px; padding-bottom: 55px; font-size: 20px; color: white; line-height: 1.2; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
+.homeu .compare { left: 75px; }
 
-.compare { position: absolute; width: 90%; bottom: 57px; text-transform: uppercase; font-size: 15px; color: white; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.compare { position: absolute; width: 93%; bottom: 57px; text-transform: uppercase; font-size: 15px; color: white; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 .compare .compare__item { text-align: center; display: inline-block; width: 135px; margin-right: 8.5%; }
 .compare .compare__item:first-child { margin-right: 8.65%; }
 .compare .compare__item:last-child { margin: 0 0 0 0.45%; }
@@ -140,15 +134,14 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .compare .compare__p_gr { color: #b7fb5b; }
 
 .pro { padding-top: 12%; padding-bottom: 19%; background: url(../img/bg2.jpg) 0 72% no-repeat; background-size: cover; }
-.pro .pro__txt { padding: 0 7% 1.7% 0; font-size: 60px; text-transform: uppercase; text-align: right; line-height: 1.2; letter-spacing: -0.2px; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
+.pro .pro__txt { padding: 0 0 1.7% 0; font-size: 60px; text-transform: uppercase; text-align: right; line-height: 1.2; letter-spacing: -0.2px; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
 .pro .pro__p { color: #1d1d29; }
 .pro .pro__p_green { color: #00991d; }
-.pro .pro__about { padding-right: 7.5%; text-align: right; }
+.pro .pro__about { text-align: right; }
 .pro .pro__desc { display: inline-block; width: 495px; padding-bottom: 55px; text-align: right; font-size: 20px; color: #1d1d29; line-height: 1.2; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; *zoom: 1; }
 .pro .pro__desc:after { content: " "; display: table; clear: both; }
-.pro .compare { text-align: right; padding-right: 4.7%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.pro .compare .compare__item { line-height: 1.3; margin-right: 9%; }
-.pro .compare .compare__item:first-child { margin-right: 9.5%; }
+.pro .compare { text-align: right; right: 50px; }
+.pro .compare .compare__item { line-height: 1.3; margin-right: 8.5%; }
 .pro .compare .compare__item:last-child { margin-right: 0; }
 .pro .compare .compare__item .compare__item_cloud .cloud { margin: 25px auto 28px; }
 .pro .compare .compare__item .compare__item_disk .disk { margin: 15px auto 24px; }
@@ -157,7 +150,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .features { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #f9d99f), color-stop(100%, #f9e59f)); background-image: -webkit-linear-gradient(left, #f9d99f, #f9e59f); background-image: -moz-linear-gradient(left, #f9d99f, #f9e59f); background-image: -o-linear-gradient(left, #f9d99f, #f9e59f); background-image: linear-gradient(left, #f9d99f, #f9e59f); padding: 11.7% 0; }
 .features .features__ttl { margin-bottom: 70px; padding-left: 8px; text-align: center; text-transform: uppercase; font-size: 60px; color: #954326; letter-spacing: -0.5px; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
-.features .features__data { min-width: 1280px; max-width: 1600px; display: flex; justify-content: space-around; margin: 0 auto; }
+.features .features__data { min-width: 1280px; max-width: 1500px; display: flex; justify-content: space-around; margin: 0 auto; }
 .features .features__item { display: inline-block; width: 180px; margin-bottom: 20px; text-align: center; font-size: 0; color: #78644c; line-height: 25px; vertical-align: top; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .features .features__item:first-child { width: 185px; }
 .features .features__item:nth-child(2) { width: 194px; }
@@ -178,10 +171,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .monitor .monitor__screenshot .retina { display: none; }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .monitor .monitor__screenshot img { display: none; }
   .monitor .monitor__screenshot .retina { display: block; } }
-.monitor .monitor__txt { position: absolute; width: 40%; top: 0; right: 7.3%; margin-top: 20px; text-align: right; font-size: 20px; letter-spacing: -0.4px; text-align: right; color: white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
+.monitor .monitor__txt { position: absolute; width: 40%; top: 0; right: 0; margin-top: 20px; text-align: right; font-size: 20px; letter-spacing: -0.4px; text-align: right; color: white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .monitor .monitor__p { font-size: 60px; text-transform: uppercase; line-height: 1.2; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
 .monitor .monitor__p_green { margin-bottom: 18px; color: #b7fb5b; }
-.monitor .btn__item { position: absolute; bottom: -2px; right: 7.5%; }
+.monitor .btn__item { position: absolute; bottom: -2px; right: 0; }
 .monitor .btn__item .btnLoad { background: #1ac8f9; border-color: #1ac8f9; color: #1d1d29; line-height: 65px; }
 .monitor .btn__item .btnLoad:hover { background: #52f9ff; border-color: #52f9ff; }
 .monitor .btn__item .btn__txt { display: block; color: #a1a1af; font-size: 13px; padding-top: 8px; text-align: center; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; font-weight: normal; }
@@ -201,9 +194,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .footer .symbol:after { content: " "; display: table; clear: both; }
 .footer .symbol li { float: left; padding-right: 10px; }
 .footer .symbol li:last-child { padding-right: 0; }
-.footer .symbol__disk { background: url('../img/icons-sff53812b35.png') 0 -1384px no-repeat; background-position: 0 -692px; width: 64px; height: 64px; -moz-background-size: 128px 1147px; -webkit-background-size: 128px 1147px; background-size: 128px 1147px; }
+.footer .symbol__disk { background: url('../img/icons-sabd171c2fb.png') 0 -1384px no-repeat; background-position: 0 -692px; width: 64px; height: 64px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
 .footer .symbol__beat { background: url("../img/svg/beat.svg") no-repeat 0 0; -moz-background-size: 64px 64px 100%; -webkit-background-size: 64px 64px 100%; background-size: 64px 64px 100%; width: 64px; height: 64px; display: inline-block; background-size: contain; }
-.footer .symbol__lily { margin-top: -8px; background: url('../img/icons-sff53812b35.png') 0 -1246px no-repeat; background-position: 0 -623px; width: 64px; height: 64px; -moz-background-size: 128px 1147px; -webkit-background-size: 128px 1147px; background-size: 128px 1147px; }
+.footer .symbol__lily { margin-top: -8px; background: url('../img/icons-sabd171c2fb.png') 0 -1246px no-repeat; background-position: 0 -623px; width: 64px; height: 64px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
 .footer .footer__copyright { color: #a1a1af; font-size: 13px; padding-left: 5px; line-height: 1.2; letter-spacing: 0.1px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; font-weight: normal; }
 .footer .footer__copyright a { color: #1ac8f9; }
 .footer .footer__copyright a:hover { color: #52f9ff; }
@@ -259,21 +252,21 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .select .country a { padding: 0px 0px 0px 53px; line-height: 24px; }
 .select .country a:before { content: ""; position: absolute; top: 5px; left: 19px; }
 .select .country a:hover { color: #52f9ff; }
-.select .us:before { background: url('../img/icons-sff53812b35.png') 0 -2151px no-repeat; width: 16px; height: 11px; }
-.select .canada:before { background: url('../img/icons-sff53812b35.png') 0 -2198px no-repeat; width: 16px; height: 11px; }
-.select .uk:before { background: url('../img/icons-sff53812b35.png') 0 -2130px no-repeat; width: 16px; height: 11px; }
-.select .au:before { background: url('../img/icons-sff53812b35.png') 0 -2109px no-repeat; width: 16px; height: 11px; }
-.select .denmark:before { background: url('../img/icons-sff53812b35.png') 0 -2261px no-repeat; width: 16px; height: 11px; }
-.select .france:before { background: url('../img/icons-sff53812b35.png') 0 -2240px no-repeat; width: 16px; height: 11px; }
-.select .germany:before { background: url('../img/icons-sff53812b35.png') 0 -2219px no-repeat; width: 16px; height: 11px; }
+.select .us:before { background: url('../img/icons-sabd171c2fb.png') 0 -2233px no-repeat; width: 16px; height: 11px; }
+.select .canada:before { background: url('../img/icons-sabd171c2fb.png') 0 -2280px no-repeat; width: 16px; height: 11px; }
+.select .uk:before { background: url('../img/icons-sabd171c2fb.png') 0 -2212px no-repeat; width: 16px; height: 11px; }
+.select .au:before { background: url('../img/icons-sabd171c2fb.png') 0 -2191px no-repeat; width: 16px; height: 11px; }
+.select .denmark:before { background: url('../img/icons-sabd171c2fb.png') 0 -2343px no-repeat; width: 16px; height: 11px; }
+.select .france:before { background: url('../img/icons-sabd171c2fb.png') 0 -2322px no-repeat; width: 16px; height: 11px; }
+.select .germany:before { background: url('../img/icons-sabd171c2fb.png') 0 -2301px no-repeat; width: 16px; height: 11px; }
 
 .radio { display: inline-block; position: relative; }
 .radio input { position: absolute; left: 0; top: 8px; width: 12px; height: 12px; z-index: 2; opacity: 0; }
 .radio input:checked + .radio__title:after { display: block; }
 
 .radio__title { display: inline-block; position: relative; z-index: 1; }
-.radio__title:before { content: ""; position: absolute; top: 10px; left: 2px; background: url('../img/icons-sff53812b35.png') 0 -2282px no-repeat; width: 12px; height: 12px; }
-.radio__title:after { content: ""; display: none; position: absolute; top: 7px; left: 0; z-index: 2; background: url('../img/icons-sff53812b35.png') 0 -2005px no-repeat; width: 16px; height: 16px; }
+.radio__title:before { content: ""; position: absolute; top: 10px; left: 2px; background: url('../img/icons-sabd171c2fb.png') 0 -2364px no-repeat; width: 12px; height: 12px; }
+.radio__title:after { content: ""; display: none; position: absolute; top: 7px; left: 0; z-index: 2; background: url('../img/icons-sabd171c2fb.png') 0 -2087px no-repeat; width: 16px; height: 16px; }
 
 .reviews__cycle { position: relative; width: 70%; margin: 0 auto; }
 .reviews__cycle .cycle__quote { text-align: center; width: 100%; }
@@ -286,7 +279,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .reviews__cycle .cycle__txt_left { text-align: left; }
 .reviews__cycle .cycle__txt_green { color: #00991d; display: block; text-transform: none; }
 .reviews__cycle .cycle__txt_sp { display: block; }
-.reviews__cycle .cycle__author { float: left; display: block; margin: 6px 28px 0 29px; background: url('../img/icons-sff53812b35.png') 0 -1064px no-repeat; background-position: 0 -532px; width: 85px; height: 86px; -moz-background-size: 128px 1147px; -webkit-background-size: 128px 1147px; background-size: 128px 1147px; }
+.reviews__cycle .cycle__author { float: left; display: block; margin: 6px 28px 0 29px; background: url('../img/icons-sabd171c2fb.png') 0 -1064px no-repeat; background-position: 0 -532px; width: 85px; height: 86px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
 .reviews__cycle .cycle__next { position: absolute; top: 12px; right: -16px; cursor: pointer; background: url("../img/svg/next.svg") no-repeat 0 0; -moz-background-size: 17px 27px 100%; -webkit-background-size: 17px 27px 100%; background-size: 17px 27px 100%; width: 17px; height: 27px; display: inline-block; }
 .reviews__cycle .cycle__prev { position: absolute; top: 12px; left: -16px; cursor: pointer; background: url("../img/svg/next.svg") no-repeat 0 0; -moz-background-size: 17px 27px 100%; -webkit-background-size: 17px 27px 100%; background-size: 17px 27px 100%; width: 17px; height: 27px; display: inline-block; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
@@ -378,10 +371,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .inner .choose__name { margin-bottom: 20px; text-transform: uppercase; font-size: 15px; color: #00d2ff; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 .inner .choose__desc { font-size: 15px; color: #a1a1af; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .inner .choose__disk { margin: 0 auto; }
-.inner .choose__disk-first { background: url('../img/icons-sff53812b35.png') 0 -798px no-repeat; background-position: 0 -399px; width: 128px; height: 128px; -moz-background-size: 128px 1147px; -webkit-background-size: 128px 1147px; background-size: 128px 1147px; }
-.inner .choose__disk-second { background: url('../img/icons-sff53812b35.png') 0 -532px no-repeat; background-position: 0 -266px; width: 128px; height: 128px; -moz-background-size: 128px 1147px; -webkit-background-size: 128px 1147px; background-size: 128px 1147px; }
-.inner .choose__disk-third { background: url('../img/icons-sff53812b35.png') 0 0 no-repeat; background-position: 0 0; width: 128px; height: 128px; -moz-background-size: 128px 1147px; -webkit-background-size: 128px 1147px; background-size: 128px 1147px; }
-.inner .choose__disk-fourth { background: url('../img/icons-sff53812b35.png') 0 -266px no-repeat; background-position: 0 -133px; width: 128px; height: 128px; -moz-background-size: 128px 1147px; -webkit-background-size: 128px 1147px; background-size: 128px 1147px; }
+.inner .choose__disk-first { background: url('../img/icons-sabd171c2fb.png') 0 -798px no-repeat; background-position: 0 -399px; width: 128px; height: 128px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
+.inner .choose__disk-second { background: url('../img/icons-sabd171c2fb.png') 0 -532px no-repeat; background-position: 0 -266px; width: 128px; height: 128px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
+.inner .choose__disk-third { background: url('../img/icons-sabd171c2fb.png') 0 0 no-repeat; background-position: 0 0; width: 128px; height: 128px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
+.inner .choose__disk-fourth { background: url('../img/icons-sabd171c2fb.png') 0 -266px no-repeat; background-position: 0 -133px; width: 128px; height: 128px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
 .inner .inner__source { margin-bottom: 200px; }
 .inner .source__ttl { padding-bottom: 15px; font-size: 60px; color: white; text-transform: uppercase; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
 .inner .source__ttl.small { padding-bottom: 30px; font-size: 30px; color: white; text-transform: uppercase; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
@@ -494,12 +487,12 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .store .radio__title .card { display: inline-block; margin-right: 3px; }
 .store .radio__title .card:first-child { margin-left: 5px; }
 .store .radio__title .card.last { margin-right: 12.5px; }
-.store .radio__title .viza { background: url('../img/icons-sff53812b35.png') 0 -1979px no-repeat; width: 25px; height: 16px; }
-.store .radio__title .mastercard { background: url('../img/icons-sff53812b35.png') 0 -1953px no-repeat; width: 26px; height: 16px; }
-.store .radio__title .untitled { background: url('../img/icons-sff53812b35.png') 0 -2083px no-repeat; width: 16px; height: 16px; }
-.store .radio__title .discover { background: url('../img/icons-sff53812b35.png') 0 -2057px no-repeat; width: 25px; height: 16px; }
-.store .radio__title .paypal { margin-right: 15px; background: url('../img/icons-sff53812b35.png') 0 -2031px no-repeat; width: 25px; height: 16px; }
-.store .radio__title .amazon { margin-right: 5px; background: url('../img/icons-sff53812b35.png') 0 -2172px no-repeat; width: 16px; height: 16px; }
+.store .radio__title .viza { background: url('../img/icons-sabd171c2fb.png') 0 -2061px no-repeat; width: 25px; height: 16px; }
+.store .radio__title .mastercard { background: url('../img/icons-sabd171c2fb.png') 0 -2035px no-repeat; width: 26px; height: 16px; }
+.store .radio__title .untitled { background: url('../img/icons-sabd171c2fb.png') 0 -2165px no-repeat; width: 16px; height: 16px; }
+.store .radio__title .discover { background: url('../img/icons-sabd171c2fb.png') 0 -2139px no-repeat; width: 25px; height: 16px; }
+.store .radio__title .paypal { margin-right: 15px; background: url('../img/icons-sabd171c2fb.png') 0 -2113px no-repeat; width: 25px; height: 16px; }
+.store .radio__title .amazon { margin-right: 5px; background: url('../img/icons-sabd171c2fb.png') 0 -2254px no-repeat; width: 16px; height: 16px; }
 .store .proceed { margin-top: 52px; *zoom: 1; }
 .store .proceed:after { content: " "; display: table; clear: both; }
 .store .proceed .btnSend { float: right; margin: 2px 50px 0 0; }
@@ -510,15 +503,3 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 @media only screen and (max-width: 1600px) { .content .content__img { width: 58%; } }
 @media only screen and (max-width: 1500px) { .content .content__img { width: 55%; } }
 @media only screen and (max-width: 1440px) { .content .content__img { width: 50%; } }
-@media only screen and (max-width: 1115px) { .menu .menu__item { margin-right: 23px; } }
-@media only screen and (max-width: 1280px) { .main { height: auto; }
-  .fa.fa-bars { display: block; }
-  .menu { position: absolute; display: none; top: 58px; right: -20px; margin-right: 0; background: #1d1d29; padding: 10px 20px 20px 20px; }
-  .menu.is-visible { display: block; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
-  .menu .menu__item { display: block; margin-right: 0; }
-  .menu .menu__item a { padding: 8px 0 7px; font-size: 15px; float: none; text-align: right; }
-  .menu .menu__item a:after { display: none; }
-  .header.fixed .fa.fa-bars { float: left; }
-  .header.fixed .bntBuy { margin-left: 25px; }
-  .header.fixed .menu { margin-right: 0; }
-  .header.fixed .menu .menu__item { margin-right: 0; } }
