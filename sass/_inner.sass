@@ -311,7 +311,7 @@
 		+mus300
 	.span__blue
 		color: $blue
-		&:hover
+		&:hover,
 		&.hover
 			color: $neon
 	.map
@@ -329,7 +329,7 @@
 				top: -2px
 				left: -2px
 				display: none
-			&:hover
+			&:hover,
 			&.hover
 				&:before
 					+svg(dots-h, 12, 12)
@@ -509,12 +509,12 @@
 		position: relative
 		&:hover
 			&:before
-			//	+sr(scroll_active)
+				+svg(scroll_active, 27, 16)
 		&:before
 			content: ""
 			position: absolute
 			right: 0
-		//	+sr(scroll)
+			+svg(scroll, 27, 16)
 			+rotate(270)
 
 

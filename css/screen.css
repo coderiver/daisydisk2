@@ -284,7 +284,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .reviews__cycle .cycle__next { position: absolute; top: 12px; right: -16px; cursor: pointer; background: url("../img/svg/next.svg") no-repeat 0 0; -moz-background-size: 17px 27px 100%; -webkit-background-size: 17px 27px 100%; background-size: 17px 27px 100%; width: 17px; height: 27px; display: inline-block; }
 .reviews__cycle .cycle__prev { position: absolute; top: 12px; left: -16px; cursor: pointer; background: url("../img/svg/next.svg") no-repeat 0 0; -moz-background-size: 17px 27px 100%; -webkit-background-size: 17px 27px 100%; background-size: 17px 27px 100%; width: 17px; height: 27px; display: inline-block; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
-.blog__cycle { margin: 42px 0; position: relative; }
+.blog__cycle { position: relative; margin: 42px 0; }
 .blog__cycle img { width: 100%; }
 .blog__cycle .blog__prev { position: absolute; top: 50%; left: -50px; margin-top: -9px; cursor: pointer; background: url("../img/svg/scroll.svg") no-repeat 0 0; -moz-background-size: 27px 16px 100%; -webkit-background-size: 27px 16px 100%; background-size: 27px 16px 100%; width: 27px; height: 16px; display: inline-block; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); }
 .blog__cycle .blog__prev:hover { background: url("../img/svg/scroll_active.svg") no-repeat 0 0; -moz-background-size: 27px 16px 100%; -webkit-background-size: 27px 16px 100%; background-size: 27px 16px 100%; width: 27px; height: 16px; display: inline-block; }
@@ -405,12 +405,12 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .inner .place__ttl { padding-bottom: 24px; line-height: 1; font-size: 30px; color: white; text-transform: uppercase; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .inner .place__txt { font-size: 20px; color: #a1a1af; line-height: 24px; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .inner .span__blue { color: #1ac8f9; }
-.inner .span__blue.hover { color: #52f9ff; }
+.inner .span__blue:hover, .inner .span__blue.hover { color: #52f9ff; }
 .inner .map { width: 87%; margin: 0 auto; position: relative; }
 .inner .map .worldmap { width: 100%; }
 .inner .map .dots { position: absolute; background: url("../img/svg/dots.svg") no-repeat 0 0; -moz-background-size: 8px 8px 100%; -webkit-background-size: 8px 8px 100%; background-size: 8px 8px 100%; width: 8px; height: 8px; display: inline-block; }
 .inner .map .dots:before { content: ""; position: relative; top: -2px; left: -2px; display: none; }
-.inner .map .dots.hover:before { background: url("../img/svg/dots-h.svg") no-repeat 0 0; -moz-background-size: 12px 12px 100%; -webkit-background-size: 12px 12px 100%; background-size: 12px 12px 100%; width: 12px; height: 12px; display: inline-block; }
+.inner .map .dots:hover:before, .inner .map .dots.hover:before { background: url("../img/svg/dots-h.svg") no-repeat 0 0; -moz-background-size: 12px 12px 100%; -webkit-background-size: 12px 12px 100%; background-size: 12px 12px 100%; width: 12px; height: 12px; display: inline-block; }
 .inner .map .dots.c1 { top: 14.2%; left: 20.2%; }
 .inner .map .dots.c2 { top: 32%; left: 6.3%; }
 .inner .map .dots.c3 { top: 20.6%; left: 25.6%; }
@@ -464,7 +464,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .blog .count__item:last-child { margin-right: 0; }
 .blog .count__item.is-active { background: none; color: white; }
 .blog .next { display: inline-block; padding-right: 29px; position: relative; }
-.blog .next:before { content: ""; position: absolute; right: 0; }
+.blog .next:hover:before { background: url("../img/svg/scroll_active.svg") no-repeat 0 0; -moz-background-size: 27px 16px 100%; -webkit-background-size: 27px 16px 100%; background-size: 27px 16px 100%; width: 27px; height: 16px; display: inline-block; }
+.blog .next:before { content: ""; position: absolute; right: 0; background: url("../img/svg/scroll.svg") no-repeat 0 0; -moz-background-size: 27px 16px 100%; -webkit-background-size: 27px 16px 100%; background-size: 27px 16px 100%; width: 27px; height: 16px; display: inline-block; -ms-transform: rotate(270deg); -webkit-transform: rotate(270deg); transform: rotate(270deg); }
 
 .store .product { margin: 35px 0 65px; }
 .store .product__row { margin-bottom: 24px; *zoom: 1; }
