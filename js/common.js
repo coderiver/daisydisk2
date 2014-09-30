@@ -17,10 +17,7 @@ head.ready(function() {
 		//fixed menu
 		function menuChange(event){
 	    var scrollPos = $(document).scrollTop();
-	    //var top = $(window).scrollTop();
-	    console.log(scrollPos);
-	   // console.log(top);
-	  // alert();
+
 	    if (scrollPos > 0) {
 	    	$('.header').addClass('fixed')
 
@@ -34,7 +31,7 @@ head.ready(function() {
 	$(window).scroll(function(){
 		menuChange();
 	});
-		
+
 
 		//FAQ
 		$('.ask__list-item').click(function(event) {
