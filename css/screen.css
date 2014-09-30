@@ -35,6 +35,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .section { padding: 0 75px; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .section.reviews { padding: 0; padding-top: 11%; }
+.section.pro .compare { padding: 0; }
 .section a { text-decoration: none; }
 
 .reviews .reviews__inner, .pro .compare .compare__inner { max-width: 1440px; }
@@ -66,7 +67,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .menu .menu__item a { position: relative; display: block; float: left; padding: 31px 12px 35px 18px; text-transform: uppercase; text-decoration: none; color: #1ac8f9; font-size: 17px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; font-weight: normal; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .menu .menu__item a:hover { color: #52f9ff; }
 .menu .menu__item a:hover:after { opacity: 1; width: 100%; }
-.menu .menu__item a:after { content: ""; position: absolute; width: 1%; height: 2px; top: 10px; left: 0; opacity: 0; background: #52f9ff; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
+.menu .menu__item a:after { content: ""; position: absolute; width: 1%; height: 2px; top: 10px; left: 0; opacity: 0; background: #52f9ff; -webkit-transition: width 0.3s ease; -moz-transition: width 0.3s ease; -o-transition: width 0.3s ease; transition: width 0.3s ease; }
 .menu .menu__item_is-active a { color: white; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 .menu .menu__item_is-active a:hover { color: white; }
 .menu .menu__item_is-active a:after { display: none; }
@@ -120,7 +121,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .homeu .homeu__desc { width: 495px; padding-bottom: 55px; font-size: 20px; color: white; line-height: 1.2; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .homeu .compare { left: 75px; }
 
-.compare { position: absolute; width: 93%; bottom: 57px; text-transform: uppercase; font-size: 15px; color: white; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
+.compare { position: absolute; width: 90%; bottom: 57px; text-transform: uppercase; font-size: 15px; color: white; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 .compare .compare__item { text-align: center; display: inline-block; width: 135px; margin-right: 8.5%; }
 .compare .compare__item:first-child { margin-right: 8.65%; }
 .compare .compare__item:last-child { margin: 0 0 0 0.45%; }
@@ -140,7 +141,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .pro .pro__about { text-align: right; }
 .pro .pro__desc { display: inline-block; width: 495px; padding-bottom: 55px; text-align: right; font-size: 20px; color: #1d1d29; line-height: 1.2; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; *zoom: 1; }
 .pro .pro__desc:after { content: " "; display: table; clear: both; }
-.pro .compare { text-align: right; right: 50px; }
+.pro .compare { width: 100%; left: 0; text-align: right; }
 .pro .compare .compare__item { line-height: 1.3; margin-right: 8.5%; }
 .pro .compare .compare__item:last-child { margin-right: 0; }
 .pro .compare .compare__item .compare__item_cloud .cloud { margin: 25px auto 28px; }
@@ -268,8 +269,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .radio__title:before { content: ""; position: absolute; top: 10px; left: 2px; background: url('../img/icons-sabd171c2fb.png') 0 -2364px no-repeat; width: 12px; height: 12px; }
 .radio__title:after { content: ""; display: none; position: absolute; top: 7px; left: 0; z-index: 2; background: url('../img/icons-sabd171c2fb.png') 0 -2087px no-repeat; width: 16px; height: 16px; }
 
-.reviews__cycle { position: relative; width: 70%; margin: 0 auto; }
-.reviews__cycle .cycle__quote { text-align: center; width: 100%; }
+.reviews__cycle { position: relative; width: 70%; min-height: 300px; margin: 0 auto; }
+.reviews__cycle .cycle-slideshow .cycle__quote { text-align: center; width: 100%; }
 .reviews__cycle .cycle__ttl { font-size: 40px; letter-spacing: 0.45px; line-height: 1.25; padding-top: 3px; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .reviews__cycle .cycle__bl { margin-top: 18px; padding-bottom: 70px; font-size: 0; }
 .reviews__cycle .cycle__inner { width: 310px; margin: 0 auto; *zoom: 1; }
