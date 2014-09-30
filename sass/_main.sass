@@ -184,6 +184,7 @@
 		width: 100%
 	.awards__bl
 		display: flex
+		display: -webkit-flex //safari
 		padding: 41px 18.4% 45px 19.2%
 		+clr
 	.awards__item
@@ -363,6 +364,8 @@
 		max-width: 1500px
 		display: flex
 		justify-content: space-around
+		display: -webkit-flex // safari
+		-webkit-justify-content:space-around // safari
 		margin: 0 auto
 	.features__item
 		display: inline-block

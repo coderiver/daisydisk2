@@ -104,7 +104,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .reviews .reviews__inner { margin: 0 auto; }
 .reviews .reviews__ttl { padding-bottom: 30px; letter-spacing: -1px; text-transform: uppercase; text-align: center; font-size: 60px; color: #1d1d29; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
 .reviews .reviews__awards { background: #97e08f; width: 100%; }
-.reviews .awards__bl { display: flex; padding: 41px 18.4% 45px 19.2%; *zoom: 1; }
+.reviews .awards__bl { display: flex; display: -webkit-flex; padding: 41px 18.4% 45px 19.2%; *zoom: 1; }
 .reviews .awards__bl:after { content: " "; display: table; clear: both; }
 .reviews .awards__item { color: #42a655; font-size: 15px; text-align: center; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 .reviews .awards__quantity { display: block; font-size: 40px; text-align: center; letter-spacing: -3.5px; line-height: 1.4; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
@@ -151,7 +151,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .features { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #f9d99f), color-stop(100%, #f9e59f)); background-image: -webkit-linear-gradient(left, #f9d99f, #f9e59f); background-image: -moz-linear-gradient(left, #f9d99f, #f9e59f); background-image: -o-linear-gradient(left, #f9d99f, #f9e59f); background-image: linear-gradient(left, #f9d99f, #f9e59f); padding: 11.7% 0; }
 .features .features__ttl { margin-bottom: 70px; padding-left: 8px; text-align: center; text-transform: uppercase; font-size: 60px; color: #954326; letter-spacing: -0.5px; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
-.features .features__data { min-width: 1280px; max-width: 1500px; display: flex; justify-content: space-around; margin: 0 auto; }
+.features .features__data { min-width: 1280px; max-width: 1500px; display: flex; justify-content: space-around; display: -webkit-flex; margin: 0 auto; }
 .features .features__item { display: inline-block; width: 180px; margin-bottom: 20px; text-align: center; font-size: 0; color: #78644c; line-height: 25px; vertical-align: top; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .features .features__item:first-child { width: 185px; }
 .features .features__item:nth-child(2) { width: 194px; }
