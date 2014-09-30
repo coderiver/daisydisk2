@@ -17,19 +17,24 @@ head.ready(function() {
 		//fixed menu
 		function menuChange(event){
 	    var scrollPos = $(document).scrollTop();
-	    var top = $(window).scrollTop();
-
+	    //var top = $(window).scrollTop();
+	    console.log(scrollPos);
+	   // console.log(top);
+	  // alert();
 	    if (scrollPos > 0) {
-	    	$('.header').addClass('fixed').css('top', top);
+	    	$('.header').addClass('fixed')
 
 	    }
 	    else {
-	        $('.header').removeClass('fixed').css('top', '0');
+	        $('.header').removeClass('fixed')
 	    }
 
 	}
-		$(document).on("scroll", menuChange);
+	menuChange();
+	$(window).scroll(function(){
 		menuChange();
+	});
+		
 
 		//FAQ
 		$('.ask__list-item').click(function(event) {
