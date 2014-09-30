@@ -32,7 +32,6 @@ head.ready(function() {
 		menuChange();
 	});
 
-
 		//FAQ
 		$('.ask__list-item').click(function(event) {
 			$(this).toggleClass('is-active');

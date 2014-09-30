@@ -31,7 +31,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 @font-face { font-family: FontAwesome; src: url("fonts/fontawesome-webfont.eot"); src: url("fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-.out { position: relative; min-width: 1280px; min-height: 100%; }
+.out { position: relative; min-width: 1280px; min-height: 100%; overflow: hidden; }
 
 .section { padding: 0 75px; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .section.reviews { padding: 0; padding-top: 11%; }
