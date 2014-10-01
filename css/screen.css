@@ -55,8 +55,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .header:after { content: " "; display: table; clear: both; }
 .header .header__in { float: left; }
 .header .header__in_right { float: right; position: relative; z-index: 10; }
-.header .header__logo { display: block; text-decoration: none; line-height: 80px; }
-.header .header__ico { display: inline-block; position: relative; top: -2px; vertical-align: middle; background: url('../img/icons-sabd171c2fb.png') 0 -1522px no-repeat; background-position: 0 -761px; width: 36px; height: 36px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
+.header .header__logo { display: block; text-decoration: none; line-height: 80px; text-align: center; font-size: 0; }
+.header .header__logo:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.header .header__ico { display: inline-block; position: relative; vertical-align: middle; background: url('../img/icons-sabd171c2fb.png') 0 -1522px no-repeat; background-position: 0 -761px; width: 36px; height: 36px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
 .header .header__txt { padding-left: 20px; color: white; font-size: 35px; vertical-align: middle; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
 .header.fixed { background: #1d1d29; }
 
