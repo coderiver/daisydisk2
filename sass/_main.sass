@@ -85,7 +85,7 @@
 .content
 	position: relative
 	.content__img
-		max-width: 800px
+		max-width: 600px
 		img
 			width: 100%
 	.content__txt
@@ -224,7 +224,7 @@
 
 //section homeu
 .homeu
-	padding-top: 12%
+	padding-top: 150px
 	padding-bottom: 20%
 	background: url(../img/bg1.jpg) 0 100% no-repeat
 	background-size: cover
@@ -247,8 +247,6 @@
 		color: #FFF
 		line-height: 1.2
 		+mus300
-	.compare
-		left: 75px
 
 .compare
 	position: absolute
@@ -262,11 +260,7 @@
 		text-align: center
 		display: inline-block
 		width: 135px
-		margin-right: 8.5%
-		&:first-child
-			margin-right: 8.65%
-		&:last-child
-			margin: 0 0 0 0.45%
+		margin-right: 110px
 	.compare__item_laptop
 		.laptop
 			display: block
@@ -296,10 +290,12 @@
 
 //section pro
 .pro
-	padding-top: 12%
-	padding-bottom: 19%
 	background: url(../img/bg2.jpg) 0 72% no-repeat
 	background-size: cover
+	.section__inside
+		padding-top: 150px
+		padding-bottom: 19%
+		position: relative
 	.pro__txt
 		padding: 0 0 1.7% 0
 		font-size: 60px
@@ -325,7 +321,8 @@
 		+mus300
 		+clr
 	.compare
-		right: 50px
+		width: 100%
+		right: 0
 		text-align: right
 		.compare__inner
 			@extend %in
@@ -334,6 +331,7 @@
 			margin-right: 8.5%
 			&:last-child
 				margin-right: 0
+				width: 80px
 			.compare__item_cloud
 				.cloud
 					margin: 25px auto 28px
@@ -349,7 +347,7 @@
 //features section
 .features
 	+gh(#f9d99f, #f9e59f)
-	padding: 11.7% 0
+	padding: 175px 0 160px 0
 	.features__ttl
 		margin-bottom: 70px
 		padding-left: 8px
@@ -360,13 +358,10 @@
 		letter-spacing: -0.5px
 		+mus100
 	.features__data
-		min-width: 1280px
-		max-width: 1500px
 		display: flex
 		justify-content: space-around
 		display: -webkit-flex // safari
 		-webkit-justify-content: space-around // safari
-		margin: 0 auto
 	.features__item
 		display: inline-block
 		width: 180px
@@ -377,6 +372,8 @@
 		line-height: 25px
 		vertical-align: top
 		+mus300
+		.fi
+			height: 90px
 		&:first-child
 			width: 185px
 		&:nth-child(2)
@@ -410,7 +407,7 @@
 	padding-top: 12%
 	padding-bottom: 7.7%
 	+gh(#151520, #0c3556)
-	.monitor__inner
+	.section__inside
 		position: relative
 	.monitor__screenshot
 		width: 51%
@@ -470,7 +467,7 @@
 	position: relative
 	background: $black
 	z-index: 10
-	.footer__inner
+	.footer__inside
 		padding: 70px 0
 		+clr
 		&.inside

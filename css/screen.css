@@ -38,7 +38,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .section.pro .compare { padding: 0; }
 .section a { text-decoration: none; }
 
-.reviews .reviews__inner, .pro .compare .compare__inner { max-width: 1440px; }
+.header__inside, .section__inside, .footer__inside { width: 1280px; margin: 0 auto; }
 
 .is-visible { display: block; }
 
@@ -73,7 +73,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .menu .menu__item_is-active a:after { display: none; }
 
 .content { position: relative; }
-.content .content__img { max-width: 800px; }
+.content .content__img { max-width: 600px; }
 .content .content__img img { width: 100%; }
 .content .content__txt { position: absolute; top: 50%; margin-top: -170px; right: 0; color: white; font-size: 70px; text-transform: uppercase; text-align: right; line-height: 1.14; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .content .content__p { letter-spacing: -2.1px; }
@@ -114,17 +114,14 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .reviews .awards__macworld { display: inline-block; padding-right: 43px; background: url('../img/icons-sabd171c2fb.png') 0 -1604px no-repeat; background-position: 0 -802px; width: 107px; height: 54px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
 .reviews .awards__macformat { display: inline-block; background: url('../img/icons-sabd171c2fb.png') 0 -1917px no-repeat; background-position: 0 -959px; width: 71px; height: 54px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
 
-.homeu { padding-top: 12%; padding-bottom: 20%; background: url(../img/bg1.jpg) 0 100% no-repeat; background-size: cover; }
+.homeu { padding-top: 150px; padding-bottom: 20%; background: url(../img/bg1.jpg) 0 100% no-repeat; background-size: cover; }
 .homeu .homeu__txt { margin-left: -7px; padding-bottom: 30px; text-transform: uppercase; font-size: 60px; line-height: 1.15; letter-spacing: -0.76px; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
 .homeu .homeu__p { color: white; }
 .homeu .homeu__p_green { color: #b7fb5b; }
 .homeu .homeu__desc { width: 495px; padding-bottom: 55px; font-size: 20px; color: white; line-height: 1.2; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
-.homeu .compare { left: 75px; }
 
 .compare { position: absolute; width: 90%; bottom: 57px; text-transform: uppercase; font-size: 15px; color: white; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
-.compare .compare__item { text-align: center; display: inline-block; width: 135px; margin-right: 8.5%; }
-.compare .compare__item:first-child { margin-right: 8.65%; }
-.compare .compare__item:last-child { margin: 0 0 0 0.45%; }
+.compare .compare__item { text-align: center; display: inline-block; width: 135px; margin-right: 110px; }
 .compare .compare__item_laptop .laptop { display: block; margin: 0 auto 32px; }
 .compare .compare__item_cloud .cloud { display: block; margin: 0 auto 26px; }
 .compare .compare__item_usb .usb { display: block; margin: 0 auto 24px; }
@@ -134,25 +131,27 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .compare .compare__p_green { color: #b7fb5b; padding-top: 14.2px; text-transform: none; }
 .compare .compare__p_gr { color: #b7fb5b; }
 
-.pro { padding-top: 12%; padding-bottom: 19%; background: url(../img/bg2.jpg) 0 72% no-repeat; background-size: cover; }
+.pro { background: url(../img/bg2.jpg) 0 72% no-repeat; background-size: cover; }
+.pro .section__inside { padding-top: 150px; padding-bottom: 19%; position: relative; }
 .pro .pro__txt { padding: 0 0 1.7% 0; font-size: 60px; text-transform: uppercase; text-align: right; line-height: 1.2; letter-spacing: -0.2px; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
 .pro .pro__p { color: #1d1d29; }
 .pro .pro__p_green { color: #00991d; }
 .pro .pro__about { text-align: right; }
 .pro .pro__desc { display: inline-block; width: 495px; padding-bottom: 55px; text-align: right; font-size: 20px; color: #1d1d29; line-height: 1.2; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; *zoom: 1; }
 .pro .pro__desc:after { content: " "; display: table; clear: both; }
-.pro .compare { right: 50px; text-align: right; }
+.pro .compare { width: 100%; right: 0; text-align: right; }
 .pro .compare .compare__item { line-height: 1.3; margin-right: 8.5%; }
-.pro .compare .compare__item:last-child { margin-right: 0; }
+.pro .compare .compare__item:last-child { margin-right: 0; width: 80px; }
 .pro .compare .compare__item .compare__item_cloud .cloud { margin: 25px auto 28px; }
 .pro .compare .compare__item .compare__item_disk .disk { margin: 15px auto 24px; }
 .pro .compare .compare__item .compare__item_usb .usb { margin: 20px auto 31px; }
 .pro .compare .compare__p_green { padding-top: 15px; }
 
-.features { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #f9d99f), color-stop(100%, #f9e59f)); background-image: -webkit-linear-gradient(left, #f9d99f, #f9e59f); background-image: -moz-linear-gradient(left, #f9d99f, #f9e59f); background-image: -o-linear-gradient(left, #f9d99f, #f9e59f); background-image: linear-gradient(left, #f9d99f, #f9e59f); padding: 11.7% 0; }
+.features { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #f9d99f), color-stop(100%, #f9e59f)); background-image: -webkit-linear-gradient(left, #f9d99f, #f9e59f); background-image: -moz-linear-gradient(left, #f9d99f, #f9e59f); background-image: -o-linear-gradient(left, #f9d99f, #f9e59f); background-image: linear-gradient(left, #f9d99f, #f9e59f); padding: 175px 0 160px 0; }
 .features .features__ttl { margin-bottom: 70px; padding-left: 8px; text-align: center; text-transform: uppercase; font-size: 60px; color: #954326; letter-spacing: -0.5px; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
-.features .features__data { min-width: 1280px; max-width: 1500px; display: flex; justify-content: space-around; display: -webkit-flex; -webkit-justify-content: space-around; margin: 0 auto; }
+.features .features__data { display: flex; justify-content: space-around; display: -webkit-flex; -webkit-justify-content: space-around; }
 .features .features__item { display: inline-block; width: 180px; margin-bottom: 20px; text-align: center; font-size: 0; color: #78644c; line-height: 25px; vertical-align: top; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
+.features .features__item .fi { height: 90px; }
 .features .features__item:first-child { width: 185px; }
 .features .features__item:nth-child(2) { width: 194px; }
 .features .features__item:nth-child(3) .features__about { padding-bottom: 32px; }
@@ -166,7 +165,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .features .features__about { font-size: 15px; padding-bottom: 35px; color: #954326; text-transform: uppercase; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 
 .monitor { padding-top: 12%; padding-bottom: 7.7%; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #151520), color-stop(100%, #0c3556)); background-image: -webkit-linear-gradient(left, #151520, #0c3556); background-image: -moz-linear-gradient(left, #151520, #0c3556); background-image: -o-linear-gradient(left, #151520, #0c3556); background-image: linear-gradient(left, #151520, #0c3556); }
-.monitor .monitor__inner { position: relative; }
+.monitor .section__inside { position: relative; }
 .monitor .monitor__screenshot { width: 51%; }
 .monitor .monitor__screenshot img { width: 100%; max-width: 700px; }
 .monitor .monitor__screenshot .retina { display: none; }
@@ -181,10 +180,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .monitor .btn__item .btn__txt { display: block; color: #a1a1af; font-size: 13px; padding-top: 8px; text-align: center; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; font-weight: normal; }
 
 .footer { position: relative; background: #1d1d29; z-index: 10; }
-.footer .footer__inner { padding: 70px 0; *zoom: 1; }
-.footer .footer__inner:after { content: " "; display: table; clear: both; }
-.footer .footer__inner.inside { padding: 4.6% 0 7% 5.4%; }
-.footer .footer__inner.inside a { text-decoration: none; }
+.footer .footer__inside { padding: 70px 0; *zoom: 1; }
+.footer .footer__inside:after { content: " "; display: table; clear: both; }
+.footer .footer__inside.inside { padding: 4.6% 0 7% 5.4%; }
+.footer .footer__inside.inside a { text-decoration: none; }
 .footer .footer__feedback, .footer .footer__menu { float: left; }
 .footer .footer__feedback { padding-right: 20px; position: relative; z-index: 5; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .footer .footer__p { padding-left: 5px; color: white; font-size: 15px; text-transform: uppercase; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
@@ -269,7 +268,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .radio__title:before { content: ""; position: absolute; top: 10px; left: 2px; background: url('../img/icons-sabd171c2fb.png') 0 -2364px no-repeat; width: 12px; height: 12px; }
 .radio__title:after { content: ""; display: none; position: absolute; top: 7px; left: 0; z-index: 2; background: url('../img/icons-sabd171c2fb.png') 0 -2087px no-repeat; width: 16px; height: 16px; }
 
-.reviews__cycle { position: relative; width: 70%; min-height: 300px; margin: 0 auto; }
+.reviews__cycle { position: relative; width: 85%; min-height: 300px; margin: 0 auto; }
 .reviews__cycle .cycle-slideshow .cycle__quote { text-align: center; width: 100%; }
 .reviews__cycle .cycle__ttl { font-size: 40px; letter-spacing: 0.45px; line-height: 1.25; padding-top: 3px; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .reviews__cycle .cycle__bl { margin-top: 18px; padding-bottom: 70px; font-size: 0; }
@@ -498,7 +497,3 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .store .proceed__txt { float: left; width: 55%; padding-left: 3px; font-size: 15px; color: #a1a1af; line-height: 18px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; font-weight: normal; }
 .store .proceed__txt a { color: #1ac8f9; }
 .store .proceed__txt a:hover { color: #52f9ff; }
-
-@media only screen and (max-width: 1600px) { .content .content__img { width: 58%; } }
-@media only screen and (max-width: 1500px) { .content .content__img { width: 55%; } }
-@media only screen and (max-width: 1440px) { .content .content__img { width: 50%; } }
