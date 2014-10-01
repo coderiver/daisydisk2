@@ -25,19 +25,20 @@
 	.header__logo
 		display: block
 		text-decoration: none
-		line-height: 80px
-		+vertical
-	.header__ico
-		display: inline-block
-		position: relative
-		vertical-align: middle
-		+sr(logo)
 	.header__txt
-		padding-left: 20px
+		position: relative
+		display: inline-block
+		padding: 20px 0 0 56px
 		color: #FFF
 		font-size: 35px
-		vertical-align: middle
+		line-height: 1
 		+mus100
+		.header__ico
+			content: ""
+			position: absolute
+			display: block
+			left: 0
+			+sr(logo)
 	&.fixed
 		background: #1D1D29
 
