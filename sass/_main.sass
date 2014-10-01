@@ -10,6 +10,7 @@
 	position: fixed
 	width: 100%
 	height: 80px
+	min-width: 1280px
 	top: 0
 	padding: 0 75px
 	z-index: 200
@@ -26,14 +27,15 @@
 		text-decoration: none
 		line-height: 80px
 	.header__ico
-		display: inline-block
-		vertical-align: middle
+		content: ""
+		position: absolute
+		top: 50%
+		margin-top: -18px
 		+sr(logo)
 	.header__txt
 		font-size: 35px
 		color: #FFF
-		padding-left: 10px
-		vertical-align: middle
+		padding-left: 53px
 		+mus100
 	&.fixed
 		background: #1D1D29

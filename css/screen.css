@@ -51,13 +51,13 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .main { width: 100%; height: 100%; padding-top: 94px; padding-bottom: 3.5%; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #001a46), color-stop(100%, #0e0e19)); background-image: -webkit-linear-gradient(left, #001a46, #0e0e19); background-image: -moz-linear-gradient(left, #001a46, #0e0e19); background-image: -o-linear-gradient(left, #001a46, #0e0e19); background-image: linear-gradient(left, #001a46, #0e0e19); }
 
-.header { position: fixed; width: 100%; height: 80px; top: 0; padding: 0 75px; z-index: 200; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
+.header { position: fixed; width: 100%; height: 80px; min-width: 1280px; top: 0; padding: 0 75px; z-index: 200; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
 .header .header__in { float: left; }
 .header .header__in_right { float: right; position: relative; z-index: 10; }
 .header .header__logo { display: block; text-decoration: none; line-height: 80px; }
-.header .header__ico { display: inline-block; vertical-align: middle; background: url('../img/icons-sabd171c2fb.png') 0 -1522px no-repeat; background-position: 0 -761px; width: 36px; height: 36px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
-.header .header__txt { font-size: 35px; color: white; padding-left: 10px; vertical-align: middle; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
+.header .header__ico { content: ""; position: absolute; top: 50%; margin-top: -18px; background: url('../img/icons-sabd171c2fb.png') 0 -1522px no-repeat; background-position: 0 -761px; width: 36px; height: 36px; -moz-background-size: 128px 1188px; -webkit-background-size: 128px 1188px; background-size: 128px 1188px; }
+.header .header__txt { font-size: 35px; color: white; padding-left: 53px; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
 .header.fixed { background: #1d1d29; }
 
 .menu { *zoom: 1; }
@@ -313,9 +313,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .pic { background: url(../img/pic.png) top center no-repeat; background-size: contain; }
 
-.wrapper { max-width: 1440px; min-width: 320px; margin: 0 auto; position: relative; }
-.wrapper .header { padding: 20px 3% 0 5.3%; }
-.wrapper a { text-decoration: none; }
+.wrapper { max-width: 1440px; margin: 0 auto; position: relative; }
 
 .inner { position: relative; padding: 9% 13.8% 0 15%; }
 .inner .inner__ttl { padding-top: 25px; *zoom: 1; }
@@ -326,10 +324,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .inner .ask__list-item { line-height: 36px; cursor: pointer; }
 .inner .ask__list-item span { font-size: 20px; color: #1ac8f9; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .inner .ask__list-item span:hover { color: #52f9ff; }
-.inner .ask__list-item.is-active { margin-top: -2.5px; }
-.inner .ask__list-item.is-active span { display: inline-block; margin-bottom: 19px; color: white; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
+.inner .ask__list-item.is-active span { display: inline-block; color: white; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 .inner .ask__list-item.is-active span:hover { color: white; }
-.inner .ask__answered { background-color: rgba(34, 34, 48, 0.4); margin-bottom: 35px; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
+.inner .ask__answered { background-color: rgba(34, 34, 48, 0.4); margin: 19px 0 35px 0; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .inner .ask__answered p { padding: 2.5% 4% 2.5% 5%; font-size: 20px; color: white; line-height: 24px; }
 .inner .inner__form { margin-bottom: 42px; background-color: rgba(34, 34, 48, 0.4); }
 .inner .inner__form.last { margin-bottom: 62px; }
@@ -505,5 +502,3 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 @media only screen and (max-width: 1600px) { .content .content__img { width: 58%; } }
 @media only screen and (max-width: 1500px) { .content .content__img { width: 55%; } }
 @media only screen and (max-width: 1440px) { .content .content__img { width: 50%; } }
-@media only screen and (max-width: 1150px) { .menu .menu__item { margin-right: 27px; } }
-@media only screen and (max-width: 1100px) { .menu .menu__item { margin-right: 10px; } }
