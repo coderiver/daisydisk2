@@ -33,7 +33,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .out { position: relative; min-width: 1280px; min-height: 100%; overflow: hidden; }
 
-.section { padding: 0 75px; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.section { position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .section.reviews { padding: 0; padding-top: 11%; }
 .section.pro .compare { padding: 0; }
 .section a { text-decoration: none; }
@@ -51,7 +51,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 
 .main { width: 100%; height: 100%; padding-top: 94px; padding-bottom: 3.5%; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #001a46), color-stop(100%, #0e0e19)); background-image: -webkit-linear-gradient(left, #001a46, #0e0e19); background-image: -moz-linear-gradient(left, #001a46, #0e0e19); background-image: -o-linear-gradient(left, #001a46, #0e0e19); background-image: linear-gradient(left, #001a46, #0e0e19); }
 
-.header { position: fixed; width: 100%; height: 80px; min-width: 1280px; top: 0; padding: 0 75px; z-index: 200; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
+.header { position: fixed; width: 100%; height: 80px; min-width: 1280px; top: 0; z-index: 200; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
 .header .header__in { float: left; }
 .header .header__in_right { float: right; position: relative; z-index: 10; }
@@ -64,7 +64,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .menu:after { content: " "; display: table; clear: both; }
 .menu .menu__item { display: inline-block; margin-right: 57px; }
 .menu .menu__item:last-child { margin-right: 0; }
-.menu .menu__item a { position: relative; display: block; float: left; padding: 31px 12px 35px 18px; text-transform: uppercase; text-decoration: none; color: #1ac8f9; font-size: 17px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; font-weight: normal; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.menu .menu__item a { position: relative; display: block; float: left; padding: 25px 12px 35px 18px; text-transform: uppercase; text-decoration: none; color: #1ac8f9; font-size: 17px; font-family: "MuseoSansCyrl-500", Myriad Pro, Arial, sans-serif; font-weight: normal; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .menu .menu__item a:hover { color: #52f9ff; }
 .menu .menu__item a:hover:after { opacity: 1; width: 100%; }
 .menu .menu__item a:after { content: ""; position: absolute; width: 1%; height: 2px; top: 10px; left: 0; opacity: 0; background: #52f9ff; -webkit-transition: width 0.3s ease; -moz-transition: width 0.3s ease; -o-transition: width 0.3s ease; transition: width 0.3s ease; }
