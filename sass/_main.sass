@@ -1,10 +1,11 @@
 //main section
 .main
-	width: 100%
-	height: 100%
-	padding-top: 94px
+	padding-top: 50px
 	padding-bottom: 3.5%
+	height: 100vh
 	+gh(#001a46, #0e0e19)
+	.section__inside
+		height: 100%
 
 .header
 	position: fixed
@@ -87,6 +88,13 @@
 
 .content
 	position: relative
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	display: -webkit-flex
+	-webkit-flex-direction: column
+	-webkit-justify-content: center
 	.content__img
 		max-width: 600px
 		img
@@ -94,7 +102,7 @@
 	.content__txt
 		position: absolute
 		top: 50%
-		margin-top: -170px
+		margin-top: -17vh
 		right: 0
 		color: #FFF
 		font-size: 70px
@@ -139,7 +147,7 @@
 .social
 	position: absolute
 	font-size: 0
-	bottom: 75px
+	bottom: 5vh
 	.social__item
 		display: inline-block
 		margin-right: 10px
@@ -163,7 +171,7 @@
 .scrollThis
 	position: absolute
 	left: 50%
-	bottom: 85px
+	bottom: 7vh
 	margin-left: -13px
 	+svg(scroll, 27, 16)
 	&:hover
@@ -172,9 +180,6 @@
 //section reviews
 .reviews
 	+gh(#a0e695, #c3ea91)
-	.reviews__inner
-		@extend %in
-		margin: 0 auto
 	.reviews__ttl
 		padding-bottom: 30px
 		letter-spacing: -1px
@@ -327,8 +332,6 @@
 		width: 100%
 		right: 0
 		text-align: right
-		.compare__inner
-			@extend %in
 		.compare__item
 			line-height: 1.3
 			margin-right: 8.5%

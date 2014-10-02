@@ -1,5 +1,18 @@
 head.ready(function() {
 
+		//main page height
+		function divHeight() {
+		  var windowHeight = $(window).height();
+		  $(".js-main-screen").css({
+		   height: windowHeight
+		  });
+		 }
+
+		 divHeight();
+		 $(window).resize(function(event) {
+		 	divHeight();
+		 });
+
 		//cycle keyboard
 		$(document.documentElement).keyup(function (event) {
 		        if (event.keyCode == 37) {
