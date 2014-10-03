@@ -273,9 +273,12 @@
 	min-height: 300px
 	margin: 0 auto
 	.cycle-slideshow
+		&:first-child
+			display: block
 		.cycle__quote
 			text-align: center
 			width: 100%
+			display: none
 	.cycle__ttl
 		font-size: 40px
 		letter-spacing: 0.45px
@@ -312,8 +315,8 @@
 	.cycle__author
 		float: left
 		display: block
+		height: 86px
 		margin: 6px 28px 0 29px
-		+sr(douglas)
 	.cycle__next
 		position: absolute
 		top: 12px
