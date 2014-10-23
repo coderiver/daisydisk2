@@ -266,14 +266,14 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .reviews__cycle .cycle-slideshow .cycle__quote { text-align: center; width: 100%; display: none; }
 .reviews__cycle .cycle__ttl { font-size: 40px; letter-spacing: 0.45px; line-height: 1.25; padding-top: 3px; font-family: "MuseoSansCyrl-300", Myriad Pro, Arial, sans-serif; }
 .reviews__cycle .cycle__bl { margin-top: 18px; padding-bottom: 70px; font-size: 0; }
-.reviews__cycle .cycle__inner { width: 310px; margin: 0 auto; *zoom: 1; }
+.reviews__cycle .cycle__inner { width: 310px; margin: 0 auto; *zoom: 1;}
 .reviews__cycle .cycle__inner:after { content: " "; display: table; clear: both; }
 .reviews__cycle .cycle__txt { float: left; text-transform: uppercase; font-size: 15px; color: #1d1d29; line-height: 20px; padding-top: 35px; font-family: "MuseoSansCyrl-700", Myriad Pro, Arial, sans-serif; }
 .reviews__cycle .cycle__txt_right { text-align: right; margin-left: 3px; }
 .reviews__cycle .cycle__txt_left { text-align: left; }
 .reviews__cycle .cycle__txt_green { color: #00991d; display: block; text-transform: none; }
 .reviews__cycle .cycle__txt_sp { display: block; }
-.reviews__cycle .cycle__author { float: left; display: block; height: 86px; margin: 6px 28px 0 29px; }
+.reviews__cycle .cycle__author { float: left; display: block; height: 60px; margin: 6px 28px 0 29px; }
 .reviews__cycle .cycle__next { position: absolute; top: 12px; right: -16px; cursor: pointer; background: url("../img/svg/next.svg") no-repeat 0 0; -moz-background-size: 17px 27px 100%; -webkit-background-size: 17px 27px 100%; background-size: 17px 27px 100%; width: 17px; height: 27px; display: inline-block; }
 .reviews__cycle .cycle__prev { position: absolute; top: 12px; left: -16px; cursor: pointer; background: url("../img/svg/next.svg") no-repeat 0 0; -moz-background-size: 17px 27px 100%; -webkit-background-size: 17px 27px 100%; background-size: 17px 27px 100%; width: 17px; height: 27px; display: inline-block; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
@@ -401,14 +401,14 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .inner .map .worldmap { width: 100%; }
 .inner .map .dots { position: absolute; background: url("../img/svg/dots.svg") no-repeat 0 0; -moz-background-size: 8px 8px 100%; -webkit-background-size: 8px 8px 100%; background-size: 8px 8px 100%; width: 8px; height: 8px; display: inline-block; }
 .inner .map .dots:before { content: ""; position: relative; top: -2px; left: -2px; display: none; }
-.inner .map .dots:hover:before, .inner .map .dots.hover:before { background: url("../img/svg/dots-h.svg") no-repeat 0 0; -moz-background-size: 12px 12px 100%; -webkit-background-size: 12px 12px 100%; background-size: 12px 12px 100%; width: 12px; height: 12px; display: inline-block; }
-.inner .map .dots.c1 { top: 14.2%; left: 20.2%; }
-.inner .map .dots.c2 { top: 32%; left: 6.3%; }
-.inner .map .dots.c3 { top: 20.6%; left: 25.6%; }
-.inner .map .dots.c4 { top: 34.5%; left: 17.2%; }
-.inner .map .dots.c5 { top: 40.6%; left: 13.9%; }
-.inner .map .dots.c6 { top: 51.2%; left: 22.3%; }
-.inner .map .dots.c7 { top: 57.5%; left: 28%; }
+/*.inner .map .dots:hover:before, .inner .map .dots.hover:before { background: url("../img/svg/dots-h.svg") no-repeat 0 0; -moz-background-size: 12px 12px 100%; -webkit-background-size: 12px 12px 100%; background-size: 12px 12px 100%; width: 12px; height: 12px; display: inline-block; }*/
+.inner .map .dots.c1 { top: 18%; left: 52%; }
+.inner .map .dots.c2 { top: 15%; left: 56%; }
+.inner .map .dots.c3 { top: 28%; left: 5%; }
+.inner .map .dots.c4 { top: 17%; left: 55%; }
+.inner .map .dots.c5 { top: 10%; left: 50%; }
+.inner .map .dots.c6 { top: 20%; left: 53%; }
+/*.inner .map .dots.c7 { top: 57.5%; left: 28%; }
 .inner .map .dots.c8 { left: 38.9%; top: 26.6%; }
 .inner .map .dots.c9 { top: 9.3%; left: 43.8%; }
 .inner .map .dots.c10 { top: 18.1%; left: 40.9%; }
@@ -425,7 +425,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-wi
 .inner .map .dots.c21 { bottom: 35.5%; right: 17.5%; }
 .inner .map .dots.c22 { bottom: 44.2%; right: 18.2%; }
 .inner .map .dots.c23 { bottom: 47.5%; right: 22.9%; }
-
+*/
 .blog a { color: #1ac8f9; }
 .blog a:hover { color: #52f9ff; }
 .blog .blog__ttl { margin: 42px 0 36px 0; line-height: 1; font-size: 60px; color: white; text-transform: uppercase; font-family: "MuseoSansCyrl-100", Myriad Pro, Arial, sans-serif; }
