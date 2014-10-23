@@ -57,6 +57,10 @@
 		float: right
 	.inner__ask
 		margin: 34px 0 51px 0
+		a
+			color: #1ac8f9
+			&:hover
+				color: #52F9FF
 	.ask__list-item
 		line-height: 36px
 		cursor: pointer
@@ -324,28 +328,28 @@
 				top: -2px
 				left: -2px
 				display: none
-			&:hover,
-			&.hover
-				&:before
-					+svg(dots-h, 12, 12)
+			// &:hover,
+			// &.hover
+			// 	&:before
+			// 		+svg(dots-h, 12, 12)
 			&.c1
-				top: 14.2%
-				left: 20.2%
+				top: 18%
+				left: 52%
 			&.c2
-				top: 32%
-				left: 6.3%
+				top: 15%
+				left: 56%
 			&.c3
-				top: 20.6%
-				left: 25.6%
+				top: 28%
+				left: 5%
 			&.c4
-				top: 34.5%
-				left: 17.2%
+				top: 17%
+				left: 55%
 			&.c5
-				top: 40.6%
-				left: 13.9%
+				top: 10%
+				left: 50%
 			&.c6
-				top: 51.2%
-				left: 22.3%
+				top: 20%
+				left: 53%
 			&.c7
 				top: 57.5%
 				left: 28%
@@ -573,6 +577,7 @@
 		+s-ttl
 	.payment__choice
 		line-height: 35px
+		+user-select(none)
 	.radio__title
 		font-size: 20px
 		padding-left: 21px

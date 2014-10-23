@@ -68,15 +68,15 @@ head.ready(function() {
 		});
 
 		//double hover on link with same href
-		var doubleHover = function(selector, hoverClass) {
-		$(document).on('mouseover mouseout', selector, function(e) {
-			$(selector)
-				.filter('[href="' + $(this).attr('href') + '"]')
-				.toggleClass(hoverClass, e.type == 'mouseover');
-			});
-		}
+		// var doubleHover = function(selector, hoverClass) {
+		// $(document).on('mouseover mouseout', selector, function(e) {
+		// 	$(selector)
+		// 		.filter('[href="' + $(this).attr('href') + '"]')
+		// 		.toggleClass(hoverClass, e.type == 'mouseover');
+		// 	});
+		// }
 
-		doubleHover('a', 'hover');
+		// doubleHover('a', 'hover');
 
 		//store page select
 		function showCountryList(elem) {
